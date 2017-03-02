@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170301 16:21:52.985" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="C:\Development\Robot\Dotcom\Tests\DSK_NSS_RES_SHOP_BUNDLES\001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.robot" id="s1" name="001 CC .COM ENGLISH NSS Res Shop Bundles">
+<test id="s1-t1" name="001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_Multi-Language_Online &amp; Mobile_Language Toggle Display on Bundle Product Page">
+<kw type="setup" name="Begin Web Test" library="common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170301 16:21:53.155" level="INFO">Opening browser 'Chrome' to base url 'https://qat03.frontier.com/'</msg>
+<status status="PASS" endtime="20170301 16:21:55.178" starttime="20170301 16:21:53.155"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:21:55.178" starttime="20170301 16:21:53.155"></status>
+</kw>
+<kw name="User launch Ftr.com application using URL" library="001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW">
+<kw name="Load" library="loginPage">
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170301 16:21:55.358" starttime="20170301 16:21:55.180"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${SIGNIN_BTN}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 16:21:55.398" starttime="20170301 16:21:55.358"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>${URL_PASSWORD}</arg>
+<arg>${URL_PASSWORD_DATA}</arg>
+</arguments>
+<msg timestamp="20170301 16:21:55.398" level="INFO">Typing password into text field 'name=password'</msg>
+<status status="PASS" endtime="20170301 16:21:55.484" starttime="20170301 16:21:55.398"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${SIGNIN_BTN}</arg>
+</arguments>
+<msg timestamp="20170301 16:21:55.485" level="INFO">Clicking button 'css=html&gt;body&gt;form&gt;button'.</msg>
+<status status="PASS" endtime="20170301 16:21:59.641" starttime="20170301 16:21:55.485"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:21:59.641" starttime="20170301 16:21:55.180"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:21:59.641" starttime="20170301 16:21:55.179"></status>
+</kw>
+<kw name="Select change option from header" library="001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${CHANGE_DROPDOWN}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 16:21:59.703" starttime="20170301 16:21:59.643"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CHANGE_DROPDOWN}</arg>
+</arguments>
+<msg timestamp="20170301 16:21:59.705" level="INFO">Clicking element 'css=#locationDropdown &gt; span'.</msg>
+<status status="PASS" endtime="20170301 16:21:59.779" starttime="20170301 16:21:59.704"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:21:59.779" starttime="20170301 16:21:59.643"></status>
+</kw>
+<kw name="Enter copper Zip Code and select Check Availability Button" library="001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${ZIP_CODE}</arg>
+<arg>${ZIP_CODE_DATA}</arg>
+</arguments>
+<msg timestamp="20170301 16:21:59.781" level="INFO">Typing text '14626' into text field 'css=#zipcode'</msg>
+<status status="PASS" endtime="20170301 16:21:59.915" starttime="20170301 16:21:59.780"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${CHEK_AVAILABILITY_BTN}</arg>
+</arguments>
+<msg timestamp="20170301 16:21:59.916" level="INFO">Clicking link 'id=zipcodeAnchor'.</msg>
+<status status="PASS" endtime="20170301 16:22:00.008" starttime="20170301 16:21:59.915"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:22:00.008" starttime="20170301 16:21:59.780"></status>
+</kw>
+<kw name="Select Bundle from Shop Category Drop down" library="001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${SHOP_DROPDOWN}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 16:22:00.117" starttime="20170301 16:22:00.009"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${SHOP_DROPDOWN}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 16:22:00.204" starttime="20170301 16:22:00.118"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170301 16:22:03.205" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170301 16:22:03.205" starttime="20170301 16:22:00.204"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>${SHOP_DROPDOWN}</arg>
+</arguments>
+<msg timestamp="20170301 16:22:03.205" level="INFO">Simulating Mouse Over on element 'link=Shop'</msg>
+<status status="PASS" endtime="20170301 16:22:03.378" starttime="20170301 16:22:03.205"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170301 16:22:05.387" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170301 16:22:05.387" starttime="20170301 16:22:03.378"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${BUNDLE_OPTION}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 16:22:05.508" starttime="20170301 16:22:05.387"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${BUNDLE_OPTION}</arg>
+</arguments>
+<msg timestamp="20170301 16:22:05.508" level="INFO">Clicking link 'link=Bundles'.</msg>
+<status status="PASS" endtime="20170301 16:22:07.173" starttime="20170301 16:22:05.508"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:22:07.173" starttime="20170301 16:22:00.009"></status>
+</kw>
+<kw name="Verify Multi-Language Toggle displayed in Header" library="001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW">
+<arguments>
+<arg>Españo</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${LANGUAGE_TOGGLE}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 16:22:07.214" starttime="20170301 16:22:07.174"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${LANGUAGE_TOGGLE}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 16:22:07.237" starttime="20170301 16:22:07.215"></status>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>${LANGUAGE_TOGGLE}</arg>
+</arguments>
+<assign>
+<var>${Actual_Toggle_Text}</var>
+</assign>
+<msg timestamp="20170301 16:22:07.269" level="INFO">${Actual_Toggle_Text} = Español</msg>
+<status status="PASS" endtime="20170301 16:22:07.269" starttime="20170301 16:22:07.237"></status>
+</kw>
+<kw name="Verify Toggle image is present on the page" library="001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${LANGUAGE_TOGGLE_IMAGE}</arg>
+</arguments>
+<status status="PASS" endtime="20170301 16:22:07.295" starttime="20170301 16:22:07.270"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>${LANGUAGE_TOGGLE_IMAGE}</arg>
+</arguments>
+<msg timestamp="20170301 16:22:07.303" level="INFO">Current page contains element 'css=.lang-selector.hidden-xs&gt;a&gt;i'.</msg>
+<status status="PASS" endtime="20170301 16:22:07.303" starttime="20170301 16:22:07.296"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:22:07.303" starttime="20170301 16:22:07.269"></status>
+</kw>
+<kw name="verify Toggle text is displayed as expeted" library="001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW">
+<arguments>
+<arg>${Expected_Toggle_Text}</arg>
+<arg>${Actual_Toggle_Text}</arg>
+</arguments>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${Expected_Toggle_Text}'=='${Actual_Toggle_Text}'</arg>
+<arg>Log</arg>
+<arg>Pass</arg>
+<arg>ELSE</arg>
+<arg>log</arg>
+<arg>Fail</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Fail</arg>
+</arguments>
+<msg timestamp="20170301 16:22:07.305" level="INFO">Fail</msg>
+<status status="PASS" endtime="20170301 16:22:07.305" starttime="20170301 16:22:07.305"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:22:07.305" starttime="20170301 16:22:07.304"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:22:07.305" starttime="20170301 16:22:07.303"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:22:07.306" starttime="20170301 16:22:07.173"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="common">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170301 16:22:09.531" starttime="20170301 16:22:07.306"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:22:09.531" starttime="20170301 16:22:07.306"></status>
+</kw>
+<status status="PASS" endtime="20170301 16:22:09.541" critical="yes" starttime="20170301 16:21:53.155"></status>
+</test>
+<doc>Ftr.com-Non Self Service-Resedential-Shop-Bundles - All Test Cases</doc>
+<status status="PASS" endtime="20170301 16:22:09.551" starttime="20170301 16:21:52.985"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="001 CC .COM ENGLISH NSS Res Shop Bundles" pass="1">001 CC .COM ENGLISH NSS Res Shop Bundles</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

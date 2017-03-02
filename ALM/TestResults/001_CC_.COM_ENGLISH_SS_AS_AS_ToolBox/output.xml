@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170302 14:48:10.261" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="c:\Development\Robot\Dotcom\Tests\DESK_SS_AS_ToolBox\001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.robot" id="s1" name="001 CC .COM ENGLISH SS AS AS ToolBox">
+<test id="s1-t1" name="001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_Multi-Language_Online &amp; Mobile_Language Toggle Display on Bundle Product Page">
+<kw type="setup" name="Begin Web Test" library="common">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:10.431" level="INFO">Opening browser 'Chrome' to base url 'https://qat03.frontier.com/'</msg>
+<status status="PASS" endtime="20170302 14:48:12.524" starttime="20170302 14:48:10.431"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:12.524" starttime="20170302 14:48:10.431"></status>
+</kw>
+<kw name="User launch Ftr.com application using URL" library="001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW">
+<kw name="Load" library="loginPage">
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170302 14:48:12.692" starttime="20170302 14:48:12.525"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${SIGNIN_BTN}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:12.757" starttime="20170302 14:48:12.692"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>${URL_PASSWORD}</arg>
+<arg>${URL_PASSWORD_DATA}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:12.767" level="INFO">Typing password into text field 'name=password'</msg>
+<status status="PASS" endtime="20170302 14:48:12.833" starttime="20170302 14:48:12.767"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${SIGNIN_BTN}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:12.833" level="INFO">Clicking button 'css=html&gt;body&gt;form&gt;button'.</msg>
+<status status="PASS" endtime="20170302 14:48:16.134" starttime="20170302 14:48:12.833"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:16.134" starttime="20170302 14:48:12.525"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:16.134" starttime="20170302 14:48:12.525"></status>
+</kw>
+<kw name="Select the Sign In link" library="001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW">
+<kw name="Sign In link" library="homePage">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${SIGNIN_DROPDOWN}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:16.389" starttime="20170302 14:48:16.135"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${SIGNIN_DROPDOWN}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:16.389" level="INFO">Clicking link 'link=Sign In'.</msg>
+<status status="PASS" endtime="20170302 14:48:16.517" starttime="20170302 14:48:16.389"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:16.518" starttime="20170302 14:48:16.135"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:16.518" starttime="20170302 14:48:16.134"></status>
+</kw>
+<kw name="Enter User name and Password and Select Sign In button" library="001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW">
+<arguments>
+<arg>${USERNAME_INP}</arg>
+<arg>${PASSWORD_INP}</arg>
+</arguments>
+<kw name="User Sign In" library="homePage">
+<arguments>
+<arg>${USERNAME_INP}</arg>
+<arg>${PASSWORD_INP}</arg>
+</arguments>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:16.593" starttime="20170302 14:48:16.519"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${USERNAME}</arg>
+<arg>${Username_Inp}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:16.593" level="INFO">Typing text 'ftrqat03+3@gmail.com' into text field 'css=.login-modal-table #fid-login-inline-username'</msg>
+<status status="PASS" endtime="20170302 14:48:16.721" starttime="20170302 14:48:16.593"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:16.774" starttime="20170302 14:48:16.721"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PASSWORD}</arg>
+<arg>${Password_Inp}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:16.775" level="INFO">Typing password into text field 'css=.login-modal-table #fid-login-inline-password'</msg>
+<status status="PASS" endtime="20170302 14:48:16.876" starttime="20170302 14:48:16.774"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${USER_SIGNIN_BTN}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:16.914" starttime="20170302 14:48:16.877"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>${USER_SIGNIN_BTN}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:16.915" level="INFO">Clicking button 'css=.btn.btn-primary.btn-block'.</msg>
+<status status="PASS" endtime="20170302 14:48:16.981" starttime="20170302 14:48:16.914"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>welcome to Frontier!</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:25.272" starttime="20170302 14:48:16.981"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:25.272" starttime="20170302 14:48:16.518"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:25.273" starttime="20170302 14:48:16.518"></status>
+</kw>
+<kw name="Select Account Summary option under Account Summary" library="001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW">
+<kw name="Select Account Summary link" library="accountSummary">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${ACCOUNT_SUMMARY_DROPDOWN}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:25.315" starttime="20170302 14:48:25.274"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${ACCOUNT_SUMMARY_DROPDOWN}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:25.336" starttime="20170302 14:48:25.316"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170302 14:48:28.336" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170302 14:48:28.336" starttime="20170302 14:48:25.336"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>${ACCOUNT_SUMMARY_DROPDOWN}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:28.336" level="INFO">Simulating Mouse Over on element 'css=#lnkSummary'</msg>
+<status status="PASS" endtime="20170302 14:48:28.363" starttime="20170302 14:48:28.336"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${ACCOUNT_SUMMARY_OPTION}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:28.427" starttime="20170302 14:48:28.364"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${ACCOUNT_SUMMARY_OPTION}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:28.469" starttime="20170302 14:48:28.428"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20170302 14:48:30.469" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170302 14:48:30.469" starttime="20170302 14:48:28.469"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>${ACCOUNT_SUMMARY_OPTION}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:30.471" level="INFO">Clicking link 'link=Account Summary'.</msg>
+<status status="PASS" endtime="20170302 14:48:30.587" starttime="20170302 14:48:30.470"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Key Account Info</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:30.732" starttime="20170302 14:48:30.587"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>My Account</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:30.762" starttime="20170302 14:48:30.732"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${PHONE_IMG}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:51.337" starttime="20170302 14:48:30.763"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:51.337" starttime="20170302 14:48:25.273"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:51.337" starttime="20170302 14:48:25.273"></status>
+</kw>
+<kw name="Verify the display of the My Services Section under AccountSummary" library="001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>My Services</arg>
+</arguments>
+<msg timestamp="20170302 14:48:51.358" level="INFO">Current page contains text 'My Services'.</msg>
+<status status="PASS" endtime="20170302 14:48:51.358" starttime="20170302 14:48:51.338"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:51.358" starttime="20170302 14:48:51.337"></status>
+</kw>
+<kw name="TR2.1- Validate when a Core Product is available on the account" library="001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW">
+<kw name="validate Internet and Phone products icons" library="accountSummary">
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${PHONE_IMG}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:51.373" starttime="20170302 14:48:51.359"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is enabled.</doc>
+<arguments>
+<arg>${INTERNET_IMG}</arg>
+</arguments>
+<status status="PASS" endtime="20170302 14:48:51.407" starttime="20170302 14:48:51.373"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>${PHONE_IMG}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:51.417" level="INFO">Current page contains element 'css=[ng-class="'fa-custom-phone'"]'.</msg>
+<status status="PASS" endtime="20170302 14:48:51.417" starttime="20170302 14:48:51.407"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>${INTERNET_IMG}</arg>
+</arguments>
+<msg timestamp="20170302 14:48:51.427" level="INFO">Current page contains element 'css=[ng-class="'fa-custom-internet'"]'.</msg>
+<status status="PASS" endtime="20170302 14:48:51.427" starttime="20170302 14:48:51.417"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:51.427" starttime="20170302 14:48:51.359"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:51.427" starttime="20170302 14:48:51.358"></status>
+</kw>
+<kw name="TR4.1- Verify Frontier.com to display Billing Product Name" library="001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Broadband Max</arg>
+</arguments>
+<msg timestamp="20170302 14:48:51.447" level="INFO">Current page contains text 'Broadband Max'.</msg>
+<status status="PASS" endtime="20170302 14:48:51.447" starttime="20170302 14:48:51.427"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Single Party Residence Service</arg>
+</arguments>
+<msg timestamp="20170302 14:48:51.467" level="INFO">Current page contains text 'Single Party Residence Service'.</msg>
+<status status="PASS" endtime="20170302 14:48:51.467" starttime="20170302 14:48:51.447"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:51.467" starttime="20170302 14:48:51.427"></status>
+</kw>
+<kw name="TR4.2- Verify For products without a SKU" library="001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW">
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Internet</arg>
+</arguments>
+<msg timestamp="20170302 14:48:51.487" level="INFO">Current page contains text 'Internet'.</msg>
+<status status="PASS" endtime="20170302 14:48:51.487" starttime="20170302 14:48:51.467"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Phone</arg>
+</arguments>
+<msg timestamp="20170302 14:48:51.507" level="INFO">Current page contains text 'Phone'.</msg>
+<status status="PASS" endtime="20170302 14:48:51.507" starttime="20170302 14:48:51.487"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:51.507" starttime="20170302 14:48:51.467"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="common">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170302 14:48:53.717" starttime="20170302 14:48:51.507"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:53.717" starttime="20170302 14:48:51.507"></status>
+</kw>
+<status status="PASS" endtime="20170302 14:48:53.717" critical="yes" starttime="20170302 14:48:10.421"></status>
+</test>
+<status status="PASS" endtime="20170302 14:48:53.717" starttime="20170302 14:48:10.261"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="001 CC .COM ENGLISH SS AS AS ToolBox" pass="1">001 CC .COM ENGLISH SS AS AS ToolBox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

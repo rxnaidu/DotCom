@@ -1,0 +1,43 @@
+*** Settings ***
+#what is this doing??????? --Test libraries are normally imported using the Library setting in the Setting table and having the library name in the subsequent column.
+Library  Selenium2Library  60
+
+
+*** Variables ***
+${URL}  https://qat03.frontier.com/
+${BROWSER}  Chrome
+#${BROWSER}  firefox
+
+*** Keywords ***
+
+Begin Web Test
+    open browser  ${URL}  ${BROWSER}
+
+Begin Old Web Test
+
+    #${options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
+    #Call Method    ${options}    add_argument      always-authorize-plugins
+    #Call Method    ${options}    add_argument      enable-npapi
+    #Create WebDriver  Chrome    chrome_options=${options}
+
+    #what is this doing???????
+    ${options}=  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
+
+    #Call Method  ${options}  add_argument  --allow-running-insecure-content
+
+    #what is this doing???????
+    Call Method  ${options}  add_argument  --test-type
+    #what is this doing???????
+    Call Method  ${options}  add_argument  --disable-extensions
+    #Call Method  ${options}  add_argument  --disable-web-security
+    #Call Method  ${options}  add_argument  --user-data-dir\=c://Users/rnn723/AppData/Local/Google/Chrome/User Data
+
+    #what is this doing???????
+    create webdriver  ${BROWSER}  chrome_options=${options}
+    #create webdriver  ${BROWSER}  chrome_options=${options}
+
+    #Open Browser  about:blank  ${BROWSER}
+
+End Web Test
+    #what is this doing??????? - Closes the current opened browser.
+    close browser

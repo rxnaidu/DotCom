@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170308 11:09:30.694" generator="Robot 3.0 (Python 2.7.12 on win32)">
-<suite source="C:\Development\Robot\Dotcom\Tests\01HomePage\01Headers\01_ZipCode_CheckAvailability.robot" id="s1" name="01 ZipCode CheckAvailability">
+<robot generated="20170308 11:58:53.501" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="c:\Development\Robot\DotCom\Tests\01HomePage\01Headers\01_ZipCode_CheckAvailability.robot" id="s1" name="01 ZipCode CheckAvailability">
 <test id="s1-t1" name="01_ZipCode_CheckAvailability">
 <kw type="setup" name="Begin Web Test" library="common">
 <kw name="Open Browser" library="Selenium2Library">
@@ -9,23 +9,23 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:30.875" level="INFO">Opening browser 'Chrome' to base url 'https://qat03.frontier.com/'</msg>
-<status status="PASS" endtime="20170308 11:09:32.441" starttime="20170308 11:09:30.875"></status>
+<msg timestamp="20170308 11:58:53.691" level="INFO">Opening browser 'Chrome' to base url 'https://qat03.frontier.com/'</msg>
+<status status="PASS" endtime="20170308 11:58:55.469" starttime="20170308 11:58:53.691"></status>
 </kw>
-<status status="PASS" endtime="20170308 11:09:32.441" starttime="20170308 11:09:30.875"></status>
+<status status="PASS" endtime="20170308 11:58:55.470" starttime="20170308 11:58:53.691"></status>
 </kw>
 <kw name="User launch Ftr.com application using URL" library="01_ZipCode_CheckAvailability_KW">
 <kw name="Load" library="loginPage">
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20170308 11:09:32.611" starttime="20170308 11:09:32.452"></status>
+<status status="PASS" endtime="20170308 11:58:55.617" starttime="20170308 11:58:55.471"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
 <arguments>
 <arg>${SIGNIN_BTN}</arg>
 </arguments>
-<status status="PASS" endtime="20170308 11:09:32.632" starttime="20170308 11:09:32.611"></status>
+<status status="PASS" endtime="20170308 11:58:55.648" starttime="20170308 11:58:55.617"></status>
 </kw>
 <kw name="Input Password" library="Selenium2Library">
 <doc>Types the given password into text field identified by `locator`.</doc>
@@ -33,20 +33,20 @@
 <arg>${URL_PASSWORD}</arg>
 <arg>${URL_PASSWORD_DATA}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:32.633" level="INFO">Typing password into text field 'name=password'</msg>
-<status status="PASS" endtime="20170308 11:09:32.709" starttime="20170308 11:09:32.633"></status>
+<msg timestamp="20170308 11:58:55.648" level="INFO">Typing password into text field 'name=password'</msg>
+<status status="PASS" endtime="20170308 11:58:55.730" starttime="20170308 11:58:55.648"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>${SIGNIN_BTN}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:32.710" level="INFO">Clicking button 'css=html&gt;body&gt;form&gt;button'.</msg>
-<status status="PASS" endtime="20170308 11:09:36.181" starttime="20170308 11:09:32.710"></status>
+<msg timestamp="20170308 11:58:55.731" level="INFO">Clicking button 'css=html&gt;body&gt;form&gt;button'.</msg>
+<status status="PASS" endtime="20170308 11:59:00.304" starttime="20170308 11:58:55.730"></status>
 </kw>
-<status status="PASS" endtime="20170308 11:09:36.181" starttime="20170308 11:09:32.452"></status>
+<status status="PASS" endtime="20170308 11:59:00.305" starttime="20170308 11:58:55.471"></status>
 </kw>
-<status status="PASS" endtime="20170308 11:09:36.182" starttime="20170308 11:09:32.451"></status>
+<status status="PASS" endtime="20170308 11:59:00.305" starttime="20170308 11:58:55.470"></status>
 </kw>
 <kw name="Select change option from header" library="01_ZipCode_CheckAvailability_KW">
 <kw name="Wait Until Element Is Enabled" library="Selenium2Library">
@@ -54,17 +54,17 @@
 <arguments>
 <arg>${CHANGE_DROPDOWN}</arg>
 </arguments>
-<status status="PASS" endtime="20170308 11:09:36.310" starttime="20170308 11:09:36.183"></status>
+<status status="PASS" endtime="20170308 11:59:00.339" starttime="20170308 11:59:00.306"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${CHANGE_DROPDOWN}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:36.311" level="INFO">Clicking element 'css=#locationDropdown &gt; span'.</msg>
-<status status="PASS" endtime="20170308 11:09:36.567" starttime="20170308 11:09:36.311"></status>
+<msg timestamp="20170308 11:59:00.339" level="INFO">Clicking element 'css=#locationDropdown &gt; span'.</msg>
+<status status="PASS" endtime="20170308 11:59:00.391" starttime="20170308 11:59:00.339"></status>
 </kw>
-<status status="PASS" endtime="20170308 11:09:36.567" starttime="20170308 11:09:36.182"></status>
+<status status="PASS" endtime="20170308 11:59:00.391" starttime="20170308 11:59:00.305"></status>
 </kw>
 <kw name="Enter Zip Code and select Check Availability Button" library="01_ZipCode_CheckAvailability_KW">
 <arguments>
@@ -76,18 +76,18 @@
 <arg>${ZIP_CODE}</arg>
 <arg>${Zip_Code1_Inp}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:36.569" level="INFO">Typing text '75024' into text field 'css=#zipcode'</msg>
-<status status="PASS" endtime="20170308 11:09:36.676" starttime="20170308 11:09:36.568"></status>
+<msg timestamp="20170308 11:59:00.393" level="INFO">Typing text '75024' into text field 'css=#zipcode'</msg>
+<status status="PASS" endtime="20170308 11:59:00.480" starttime="20170308 11:59:00.392"></status>
 </kw>
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by locator.</doc>
 <arguments>
 <arg>${CHEK_AVAILABILITY_BTN}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:36.677" level="INFO">Clicking link 'id=zipcodeAnchor'.</msg>
-<status status="PASS" endtime="20170308 11:09:36.814" starttime="20170308 11:09:36.676"></status>
+<msg timestamp="20170308 11:59:00.481" level="INFO">Clicking link 'id=zipcodeAnchor'.</msg>
+<status status="PASS" endtime="20170308 11:59:00.539" starttime="20170308 11:59:00.481"></status>
 </kw>
-<status status="PASS" endtime="20170308 11:09:36.815" starttime="20170308 11:09:36.568"></status>
+<status status="PASS" endtime="20170308 11:59:00.539" starttime="20170308 11:59:00.391"></status>
 </kw>
 <kw name="Verify black header now changes to &quot;Plano,TX&quot;" library="01_ZipCode_CheckAvailability_KW">
 <arguments>
@@ -98,22 +98,22 @@
 <arguments>
 <arg>${ZIP_CODE_LOCATION}</arg>
 </arguments>
-<status status="PASS" endtime="20170308 11:09:36.850" starttime="20170308 11:09:36.815"></status>
+<status status="PASS" endtime="20170308 11:59:00.576" starttime="20170308 11:59:00.540"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>${ZIP_CODE_LOCATION}</arg>
 </arguments>
-<status status="PASS" endtime="20170308 11:09:36.881" starttime="20170308 11:09:36.851"></status>
+<status status="PASS" endtime="20170308 11:59:00.596" starttime="20170308 11:59:00.577"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20170308 11:09:38.881" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20170308 11:09:38.881" starttime="20170308 11:09:36.881"></status>
+<msg timestamp="20170308 11:59:02.596" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170308 11:59:02.596" starttime="20170308 11:59:00.596"></status>
 </kw>
 <kw name="Get Text" library="Selenium2Library">
 <doc>Returns the text value of element identified by `locator`.</doc>
@@ -123,24 +123,24 @@
 <assign>
 <var>${Actual_Location_Text}</var>
 </assign>
-<msg timestamp="20170308 11:09:40.026" level="INFO">${Actual_Location_Text} = Plano TX (change)</msg>
-<status status="PASS" endtime="20170308 11:09:40.026" starttime="20170308 11:09:38.881"></status>
+<msg timestamp="20170308 11:59:04.042" level="INFO">${Actual_Location_Text} = Plano TX (change)</msg>
+<status status="PASS" endtime="20170308 11:59:04.042" starttime="20170308 11:59:02.596"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${Expected_Location_Text}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:40.027" level="INFO">Plano TX (change)</msg>
-<status status="PASS" endtime="20170308 11:09:40.027" starttime="20170308 11:09:40.026"></status>
+<msg timestamp="20170308 11:59:04.043" level="INFO">Plano TX (change)</msg>
+<status status="PASS" endtime="20170308 11:59:04.043" starttime="20170308 11:59:04.042"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${Actual_Location_Text}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:40.028" level="INFO">Plano TX (change)</msg>
-<status status="PASS" endtime="20170308 11:09:40.028" starttime="20170308 11:09:40.027"></status>
+<msg timestamp="20170308 11:59:04.044" level="INFO">Plano TX (change)</msg>
+<status status="PASS" endtime="20170308 11:59:04.045" starttime="20170308 11:59:04.044"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -148,9 +148,9 @@
 <arg>${Expected_Location_Text}</arg>
 <arg>${Actual_Location_Text}</arg>
 </arguments>
-<status status="PASS" endtime="20170308 11:09:40.029" starttime="20170308 11:09:40.028"></status>
+<status status="PASS" endtime="20170308 11:59:04.046" starttime="20170308 11:59:04.045"></status>
 </kw>
-<status status="PASS" endtime="20170308 11:09:40.029" starttime="20170308 11:09:36.815"></status>
+<status status="PASS" endtime="20170308 11:59:04.047" starttime="20170308 11:59:00.539"></status>
 </kw>
 <kw name="Select Change link again and enter zip code and select Check Availability Button" library="01_ZipCode_CheckAvailability_KW">
 <arguments>
@@ -161,15 +161,15 @@
 <arguments>
 <arg>${CHANGE_DROPDOWN}</arg>
 </arguments>
-<status status="PASS" endtime="20170308 11:09:40.193" starttime="20170308 11:09:40.031"></status>
+<status status="PASS" endtime="20170308 11:59:04.068" starttime="20170308 11:59:04.048"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${CHANGE_DROPDOWN}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:40.193" level="INFO">Clicking element 'css=#locationDropdown &gt; span'.</msg>
-<status status="PASS" endtime="20170308 11:09:40.284" starttime="20170308 11:09:40.193"></status>
+<msg timestamp="20170308 11:59:04.068" level="INFO">Clicking element 'css=#locationDropdown &gt; span'.</msg>
+<status status="PASS" endtime="20170308 11:59:04.124" starttime="20170308 11:59:04.068"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -177,18 +177,18 @@
 <arg>${ZIP_CODE}</arg>
 <arg>${Zip_Code2_Inp}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:40.286" level="INFO">Typing text '14450' into text field 'css=#zipcode'</msg>
-<status status="PASS" endtime="20170308 11:09:40.365" starttime="20170308 11:09:40.285"></status>
+<msg timestamp="20170308 11:59:04.125" level="INFO">Typing text '14450' into text field 'css=#zipcode'</msg>
+<status status="PASS" endtime="20170308 11:59:04.199" starttime="20170308 11:59:04.124"></status>
 </kw>
 <kw name="Click Link" library="Selenium2Library">
 <doc>Clicks a link identified by locator.</doc>
 <arguments>
 <arg>${CHEK_AVAILABILITY_BTN}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:40.365" level="INFO">Clicking link 'id=zipcodeAnchor'.</msg>
-<status status="PASS" endtime="20170308 11:09:40.438" starttime="20170308 11:09:40.365"></status>
+<msg timestamp="20170308 11:59:04.199" level="INFO">Clicking link 'id=zipcodeAnchor'.</msg>
+<status status="PASS" endtime="20170308 11:59:04.268" starttime="20170308 11:59:04.199"></status>
 </kw>
-<status status="PASS" endtime="20170308 11:09:40.439" starttime="20170308 11:09:40.030"></status>
+<status status="PASS" endtime="20170308 11:59:04.268" starttime="20170308 11:59:04.047"></status>
 </kw>
 <kw name="Verify black header now changes to 'Fairport NY'" library="01_ZipCode_CheckAvailability_KW">
 <arguments>
@@ -199,22 +199,22 @@
 <arguments>
 <arg>${ZIP_CODE_LOCATION}</arg>
 </arguments>
-<status status="PASS" endtime="20170308 11:09:40.486" starttime="20170308 11:09:40.440"></status>
+<status status="PASS" endtime="20170308 11:59:04.287" starttime="20170308 11:59:04.269"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="Selenium2Library">
 <doc>Waits until element specified with `locator` is visible.</doc>
 <arguments>
 <arg>${ZIP_CODE_LOCATION}</arg>
 </arguments>
-<status status="PASS" endtime="20170308 11:09:40.517" starttime="20170308 11:09:40.486"></status>
+<status status="PASS" endtime="20170308 11:59:04.308" starttime="20170308 11:59:04.287"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20170308 11:09:42.524" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20170308 11:09:42.524" starttime="20170308 11:09:40.518"></status>
+<msg timestamp="20170308 11:59:06.309" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20170308 11:59:06.309" starttime="20170308 11:59:04.308"></status>
 </kw>
 <kw name="Get Text" library="Selenium2Library">
 <doc>Returns the text value of element identified by `locator`.</doc>
@@ -224,24 +224,24 @@
 <assign>
 <var>${Actual_Location_Text}</var>
 </assign>
-<msg timestamp="20170308 11:09:43.008" level="INFO">${Actual_Location_Text} = Fairport NY (change)</msg>
-<status status="PASS" endtime="20170308 11:09:43.008" starttime="20170308 11:09:42.524"></status>
+<msg timestamp="20170308 11:59:07.479" level="INFO">${Actual_Location_Text} = Fairport NY (change)</msg>
+<status status="PASS" endtime="20170308 11:59:07.479" starttime="20170308 11:59:06.309"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${Expected_Location_Text}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:43.009" level="INFO">Fairport NY (change)</msg>
-<status status="PASS" endtime="20170308 11:09:43.009" starttime="20170308 11:09:43.008"></status>
+<msg timestamp="20170308 11:59:07.480" level="INFO">Fairport NY (change)</msg>
+<status status="PASS" endtime="20170308 11:59:07.480" starttime="20170308 11:59:07.480"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${Actual_Location_Text}</arg>
 </arguments>
-<msg timestamp="20170308 11:09:43.009" level="INFO">Fairport NY (change)</msg>
-<status status="PASS" endtime="20170308 11:09:43.009" starttime="20170308 11:09:43.009"></status>
+<msg timestamp="20170308 11:59:07.481" level="INFO">Fairport NY (change)</msg>
+<status status="PASS" endtime="20170308 11:59:07.481" starttime="20170308 11:59:07.480"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -249,14 +249,21 @@
 <arg>${Expected_Location_Text}</arg>
 <arg>${Actual_Location_Text}</arg>
 </arguments>
-<status status="PASS" endtime="20170308 11:09:43.010" starttime="20170308 11:09:43.010"></status>
+<status status="PASS" endtime="20170308 11:59:07.481" starttime="20170308 11:59:07.481"></status>
 </kw>
-<status status="PASS" endtime="20170308 11:09:43.010" starttime="20170308 11:09:40.439"></status>
+<status status="PASS" endtime="20170308 11:59:07.481" starttime="20170308 11:59:04.268"></status>
 </kw>
-<status status="PASS" endtime="20170308 11:09:43.011" critical="yes" starttime="20170308 11:09:30.875"></status>
+<kw type="teardown" name="End Web Test" library="common">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170308 11:59:09.724" starttime="20170308 11:59:07.482"></status>
+</kw>
+<status status="PASS" endtime="20170308 11:59:09.724" starttime="20170308 11:59:07.481"></status>
+</kw>
+<status status="PASS" endtime="20170308 11:59:09.724" critical="yes" starttime="20170308 11:58:53.691"></status>
 </test>
 <doc>Ftr.com Automation</doc>
-<status status="PASS" endtime="20170308 11:09:43.012" starttime="20170308 11:09:30.697"></status>
+<status status="PASS" endtime="20170308 11:59:09.724" starttime="20170308 11:58:53.511"></status>
 </suite>
 <statistics>
 <total>

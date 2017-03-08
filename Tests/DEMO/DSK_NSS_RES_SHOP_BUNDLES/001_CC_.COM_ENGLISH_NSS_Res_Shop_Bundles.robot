@@ -2,8 +2,8 @@
 Documentation  Ftr.com-Non Self Service-Resedential-Shop-Bundles - All Test Cases
 Library  Selenium2Library  60
 
-Resource  ../../Resources/KW/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW.robot
-Resource  ../../Resources/PO/Common/common.robot
+Resource  ../../../Resources/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW.robot
+Resource  ../../../Resources/PO/Common/common.robot
 
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test

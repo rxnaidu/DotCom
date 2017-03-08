@@ -1,8 +1,8 @@
 *** Settings ***
 Library  Selenium2Library  60
 
-Resource  ../../Resources/KW/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW.robot
-Resource  ../../Resources/PO/Common/common.robot
+Resource  ../../../Resources/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW.robot
+Resource  ../../../Resources/PO/Common/common.robot
 
 Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test

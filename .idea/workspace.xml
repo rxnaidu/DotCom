@@ -2,56 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bd40783-94b6-4352-ae4e-54326680f33f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ALM/BatchFiles/01HomePage/01Headers/01_ZipCode_CheckAvailability.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ALM/BatchFiles/01HomePage/01Headers/02_LanguageToggle_NonSignIn.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ALM/BatchFiles/01HomePage/01Headers/03_SignInWindow.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ALM/BatchFiles/01HomePage/01Headers/04_BusinessTab.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ALM/BatchFiles/01HomePage/01Headers/05_WholeSaleTab.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ALM/BatchFiles/01HomePage/01Headers/06_shopTab.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ALM/BatchFiles/01HomePage/01Headers/07_ MyAccountTab.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ALM/BatchFiles/01HomePage/01Headers/08_SupportTab.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ALM/BatchFiles/01HomePage/01Headers/09_SearchboxFunctionality.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/KW/01HomePage/01Headers/01_ZipCode_CheckAvailability_KW.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/KW/01HomePage/01Headers/02_LanguageToggle_NonSignIn_KW.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/KW/01HomePage/01Headers/04_BusinessTab_KW.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/KW/01HomePage/01Headers/05_WholeSaleTab_KW.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/KW/01HomePage/01Headers/06_shopTab_KW.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/KW/01HomePage/01Headers/07_ MyAccountTab_KW.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/KW/01HomePage/01Headers/08_SupportTab_KW.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/KW/01HomePage/01Headers/09_SearchboxFunctionality_KW.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/01HomePage/01Headers/01_ZipCode_CheckAvailability.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/01HomePage/01Headers/02_LanguageToggle_NonSignIn.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/01HomePage/01Headers/03_SignInWindow.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/01HomePage/01Headers/04_BusinessTab.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/01HomePage/01Headers/05_WholeSaleTab.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/01HomePage/01Headers/06_shopTab.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/01HomePage/01Headers/07_ MyAccountTab.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/01HomePage/01Headers/08_SupportTab.robot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tests/01HomePage/01Headers/09_SearchboxFunctionality.robot" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ALM/TestResults/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles/log.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ALM/TestResults/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles/output.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ALM/TestResults/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles/report.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ALM/TestResults/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles/selenium-screenshot-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ALM/TestResults/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox/log.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ALM/TestResults/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox/output.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ALM/TestResults/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox/report.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ALM/TestResults/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox/selenium-screenshot-1.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ALM/BatchFiles/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.bat" afterPath="$PROJECT_DIR$/ALM/BatchFiles/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.bat" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ALM/BatchFiles/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.bat" afterPath="$PROJECT_DIR$/ALM/BatchFiles/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.bat" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Resources/KW/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW.robot" afterPath="$PROJECT_DIR$/Resources/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW.robot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Resources/KW/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW.robot" afterPath="$PROJECT_DIR$/Resources/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles_KW.robot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Resources/PO/ShopInternetKey.robot" afterPath="$PROJECT_DIR$/Resources/DEMO/ShopInternetKey.robot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Resources/PO/shopBundleKeyword.robot" afterPath="$PROJECT_DIR$/Resources/DEMO/shopBundleKeyword.robot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/BDD/dotCom.robot" afterPath="$PROJECT_DIR$/Tests/DEMO/BDD/dotCom.robot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/BDD/res_int_Landing_page.robot" afterPath="$PROJECT_DIR$/Tests/DEMO/BDD/res_int_Landing_page.robot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/DESK_NSS_RES_SHOP_BUNDLES.robot" afterPath="$PROJECT_DIR$/Tests/DEMO/DESK_NSS_RES_SHOP_BUNDLES.robot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.robot" afterPath="$PROJECT_DIR$/Tests/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.robot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.robot" afterPath="$PROJECT_DIR$/Tests/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.robot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Tests/resShopInternetLandingPage.robot" afterPath="$PROJECT_DIR$/Tests/DEMO/resShopInternetLandingPage.robot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Results/log.html" afterPath="$PROJECT_DIR$/Results/log.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Results/output.xml" afterPath="$PROJECT_DIR$/Results/output.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Results/report.html" afterPath="$PROJECT_DIR$/Results/report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ALM/BatchFiles/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.bat" afterPath="$PROJECT_DIR$/ALM/BatchFiles/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ALM/BatchFiles/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.bat" afterPath="$PROJECT_DIR$/ALM/BatchFiles/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ALM/TestResults/01_ZipCode_CheckAvailability/log.html" afterPath="$PROJECT_DIR$/ALM/TestResults/01_ZipCode_CheckAvailability/log.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ALM/TestResults/01_ZipCode_CheckAvailability/output.xml" afterPath="$PROJECT_DIR$/ALM/TestResults/01_ZipCode_CheckAvailability/output.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ALM/TestResults/01_ZipCode_CheckAvailability/report.html" afterPath="$PROJECT_DIR$/ALM/TestResults/01_ZipCode_CheckAvailability/report.html" />
     </list>
     <ignored path="Dotcom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,66 +26,7 @@
     <favorites_list name="Dotcom" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="02_LanguageToggle_NonSignIn.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/01HomePage/01Headers/02_LanguageToggle_NonSignIn.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#293#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#360#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox_KW.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#192#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.robot" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#268#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="02_LanguageToggle_NonSignIn_KW.robot" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/KW/01HomePage/01Headers/02_LanguageToggle_NonSignIn_KW.robot">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -144,7 +41,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Tests/Internet_LandingPage.py" />
         <option value="$PROJECT_DIR$/Tests/hari.robot" />
         <option value="$PROJECT_DIR$/Tests/residentialShopInternetLandingPage.robot" />
         <option value="$PROJECT_DIR$/Tests/hari.robot.py" />
@@ -194,6 +90,8 @@
         <option value="$PROJECT_DIR$/Tests/01HomePage/01Headers/02_LanguageToggle_NonSignIn.robot" />
         <option value="$PROJECT_DIR$/Tests/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.robot" />
         <option value="$PROJECT_DIR$/Tests/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.robot" />
+        <option value="$PROJECT_DIR$/ALM/BatchFiles/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.bat" />
+        <option value="$PROJECT_DIR$/ALM/BatchFiles/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.bat" />
       </list>
     </option>
   </component>
@@ -330,130 +228,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01HomePage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="KW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01HomePage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01Headers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DEMO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DEMO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DSK_NSS_RES_SHOP_BUNDLES" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DotCom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DEMO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DESK_SS_AS_ToolBox" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -717,13 +491,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26606956" sideWeight="0.49411765" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26606956" sideWeight="0.49411765" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.282516" sideWeight="0.37934667" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18722944" sideWeight="0.62065333" order="9" side_tool="false" content_ui="tabs" />
@@ -811,13 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1955">
           <caret line="115" column="28" lean-forward="false" selection-start-line="115" selection-start-column="28" selection-end-line="115" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ALM/BatchFiles/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="124" lean-forward="false" selection-start-line="4" selection-start-column="124" selection-end-line="4" selection-end-column="124" />
         </state>
       </provider>
     </entry>
@@ -949,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ALM/BatchFiles/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ALM/BatchFiles/01HomePage/01Headers/01_ZipCode_CheckAvailability.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1041,7 +801,7 @@
         <state relative-caret-position="204">
           <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding>
-            <element signature="e#0#294#0" expanded="true" />
+            <element signature="e#0#294#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1049,28 +809,26 @@
     <entry file="file://$PROJECT_DIR$/Resources/KW/01HomePage/01Headers/02_LanguageToggle_NonSignIn_KW.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/01HomePage/01Headers/02_LanguageToggle_NonSignIn.robot">
+    <entry file="file://$PROJECT_DIR$/Tests/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#0#293#0" expanded="true" />
+            <element signature="e#0#268#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.robot">
+    <entry file="file://$PROJECT_DIR$/ALM/BatchFiles/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#360#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="82" lean-forward="false" selection-start-line="4" selection-start-column="82" selection-end-line="4" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,13 +842,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.robot">
+    <entry file="file://$PROJECT_DIR$/Tests/DEMO/DSK_NSS_RES_SHOP_BUNDLES/001_CC_.COM_ENGLISH_NSS_Res_Shop_Bundles.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
-            <element signature="e#0#268#0" expanded="true" />
+            <element signature="e#0#360#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/01HomePage/01Headers/02_LanguageToggle_NonSignIn.robot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ALM/BatchFiles/DEMO/DESK_SS_AS_ToolBox/001_CC_.COM_ENGLISH_SS_AS_AS_ToolBox.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="73" lean-forward="false" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>

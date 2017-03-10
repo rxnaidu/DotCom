@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  Ftr.com Automation
 Library  Selenium2Library  60
-Resource  ../../../Resources/KW/01HomePage/01Headers/06_shopTab_KW.robot
+Resource  ../../../Resources/KW/01HomePage/01Headers/07_MyAccountTab_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
 Test Setup  Common.Begin Web Test
@@ -15,6 +15,6 @@ Test Teardown  Common.End Web Test
 
     User launch Ftr.com application using URL
 
-    User mouse over on Shop Tab
+    User mouse over on My Account Tab
 
-    Verify all sub tabs are displayed under Shop Tab
+    Verify all subtabs are displayed under My Account Tab

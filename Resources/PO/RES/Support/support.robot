@@ -2,23 +2,49 @@
 Library  Selenium2Library  60
 
 *** Variables ***
-${SUPPORT_SPA}  link=Soporte
-
+${SUPPORT_TAB_SPA}  link=Soporte
 ${HELP_CENTER_SPA}  link=Centro de ayuda
 ${SUPPORT_WIZARD_SPA}  link=Asistente de soporte
 ${TROUBLE_TICKET_STATUS_SPA}  link=Estado de la boleta del problema
 ${ORDER_STATUS_SPA}  link=Estado del pedido
 ${CONTACT_US_SPA}  link=Contáctanos
 
+${SUPPORT_TAB}  link=Support
+${HELP_CENTER}  link=Help Center
+${SUPPORT_WIZARD}  link=Support Wizard
+${TROUBLE_TICKET_STATUS}  link=Trouble Ticket Status
+${ORDER_STATUS}  link=Order Status
+${CONTACT_US}  link=Contact Us
+
 *** Keywords ***
+
+Mouse over on Support Tab
+    wait until page contains  Support
+    wait until element is enabled  ${SUPPORT_TAB}
+    sleep  2s
+    focus  ${SUPPORT_TAB}
+    sleep  2s
+    mouse over  ${SUPPORT_TAB}
+
+Verify support sub Tabs are displayed
+    wait until element is enabled  ${SUPPORT_TAB}
+    sleep  2s
+    page should contain  Help Center
+    page should contain  Support Wizard
+    page should contain  Trouble Ticket Status
+    page should contain  Order Status
+    page should contain  Contact Us
+
+
+
 #----------------SPANISH  LANGUAGE--------------------------#
 Mouse over on Support Tab-Spanish
     wait until page contains  Comprar
-    wait until element is enabled  ${SUPPORT_SPA}
+    wait until element is enabled  ${SUPPORT_TAB_SPA}
     sleep  2s
-    focus  ${SUPPORT_SPA}
+    focus  ${SUPPORT_TAB_SPA}
     sleep  2s
-    mouse over  ${SUPPORT_SPA}
+    mouse over  ${SUPPORT_TAB_SPA}
 
 Select Help Center option-Spanish
     sleep  3s

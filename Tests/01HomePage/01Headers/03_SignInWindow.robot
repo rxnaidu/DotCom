@@ -5,7 +5,7 @@ Resource  ../../../Resources/KW/01HomePage/01Headers/03_SignInWindow_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
 Test Setup  Common.Begin Web Test
-#Test Teardown  Common.End Web Test
+Test Teardown  Common.End Web Test
 
 *** Variables ***
 ${USERNAME_INP}  ftrfrank1+automation@gmail.com

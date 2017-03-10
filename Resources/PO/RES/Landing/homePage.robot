@@ -8,9 +8,12 @@ ${PASSWORD}  css=.login-modal-table #fid-login-inline-password
 ${USER_SIGNIN_BTN}  css=.btn.btn-primary.btn-block
 ${LANGUAGE_TOGGLE}  css=.lang-selector.hidden-xs>a
 ${SIGN_OUT}  link=Sign Out
-${RESIDENTIAL_TAB}  link=
+${RESIDENTIAL_TAB}  link=Residential
 ${BUSINESS_TAB}  link=Business
-${WHOLESALE_TAB}  link=
+${WHOLESALE_TAB}  link=Wholesale
+
+${SEARCH_TEXT}  id=gsc-i-id1
+${SEARCH_BTN}  css=[title="search"]
 
 *** Keywords ***
 
@@ -37,9 +40,17 @@ User Sign In
     wait until page contains  welcome to Frontier!
     sleep  3s
 
+Select Residential Tab
+    wait until element is enabled  ${RESIDENTIAL_TAB}
+    click link  ${RESIDENTIAL_TAB}
+
 Select Business Tab
     wait until element is enabled  ${BUSINESS_TAB}
     click link  ${BUSINESS_TAB}
+
+Select Wholesale Tab
+    wait until element is enabled  ${WHOLESALE_TAB}
+    click link  ${WHOLESALE_TAB}
 
 Select Multi-Language Toggle for Spanish Language
     wait until page contains  Shop
@@ -64,3 +75,19 @@ Verify Residential Home Page
     page should contain  Pay Your Bill
     page should contain  Check Your Mail
     page should contain  Check Your Order Status
+
+Search Text
+    [Arguments]  ${Search_Inp}
+    wait until element is enabled  ${SEARCH_TEXT}
+
+    input text  ${SEARCH_TEXT}  ${Search_Inp}
+    click element  ${SEARCH_BTN}
+
+Verify Search Text Results
+    [Arguments]  ${Search_Inp}
+    wait until page contains  All
+    wait until page contains  Help Center
+
+    page should contain  ${Search_Inp}
+
+

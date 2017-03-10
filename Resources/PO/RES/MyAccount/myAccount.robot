@@ -2,27 +2,48 @@
 Library  Selenium2Library  60
 
 *** Variables ***
-${MY_ACCOUNT_SPA}  link=Mi cuenta
+${MY_ACCOUNT_TAB}  link=My Account
+${ACCOUNT_SUMMARY}  link=Account Summary
+${MY_PAYMENTS}  link=My Payments
+${MY_BILLS}  link=My Bills
+${MY_PROFILE}  link=My Profile
+${MY_FRONTIER_MOBILE_APP}  link=MyFrontier Mobile App
+
+#----------Spanish Language-------------#
+${MY_ACCOUNT_TAB_SPA}  link=Mi cuenta
 ${ACCOUNT_SUMMARY_SPA}  link=Resumen de cuenta
 ${MY_PAYMENTS_SPA}  link=Mis pagos
 ${MY_BILLS_SPA}  link=Mis facturas
 ${MY_PROFILE_SPA}  link=Mi perfil
 ${MY_FRONTIER_MOBILE_APP_SPA}  link=Aplicación móvil MyFrontier
 
-
 *** Keywords ***
 
-Mouse over on Shop Tab-English
-    log  hari
+Mouse over on My Account Tab
+    wait until page contains  My Account
+    wait until element is enabled  ${MY_ACCOUNT_TAB}
+    sleep  2s
+    focus  ${MY_ACCOUNT_TAB}
+    sleep  2s
+    mouse over  ${MY_ACCOUNT_TAB}
+
+Verify My Account sub Tabs are displayed
+    wait until element is enabled  ${MY_ACCOUNT_TAB}
+    sleep  2s
+    page should contain  Account Summary
+    page should contain  My Payments
+    page should contain  My Bills
+    page should contain  My Profile
+    page should contain  MyFrontier Mobile App
 
 #----------------SPANISH  LANGUAGE--------------------------#
 Mouse over on My Account Tab-Spanish
     wait until page contains  Comprar
-    wait until element is enabled  ${MY_ACCOUNT_SPA}
+    wait until element is enabled  ${MY_ACCOUNT_TAB_SPA}
     sleep  2s
-    focus  ${MY_ACCOUNT_SPA}
+    focus  ${MY_ACCOUNT_TAB_SPA}
     sleep  2s
-    mouse over  ${MY_ACCOUNT_SPA}
+    mouse over  ${MY_ACCOUNT_TAB_SPA}
 
 Select Account Summary option-Spanish
     sleep  3s

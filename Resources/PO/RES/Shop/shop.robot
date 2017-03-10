@@ -2,7 +2,16 @@
 Library  Selenium2Library  60
 
 *** Variables ***
-${SHOP_SPA}  link=Comprar
+${SHOP_TAB}  link=Shop
+${BUNDLE}  link=Bundles
+${INTERNET}  link=Internet
+${PHONE}  link=Phone
+${VIDEO/TV}  link=Video/TV
+${DIGITAL_ESSENTIALS}  link=Digital Essentials
+${MOVING}  link=Moving
+
+#----------spanish---------------#
+${SHOP_TAB_SPA}  link=Comprar
 ${BUNDLE_SPA}  link=Paquetes
 ${INTERNET_SPA}  link=Internet
 ${PHONE_SPA}  link=Teléfono
@@ -12,17 +21,38 @@ ${MOVING_SPA}  link=Mudanzas
 
 *** Keywords ***
 
-Mouse over on Shop Tab-English
-    log  hari
+Mouse over on Shop Tab
+    wait until page contains  Shop
+    wait until element is enabled  ${SHOP_TAB}
+    sleep  2s
+    focus  ${SHOP_TAB}
+    sleep  2s
+    mouse over  ${SHOP_TAB}
+
+Verify Shop sub tabs are displayed
+    wait until element is enabled  ${BUNDLE}
+    sleep  2s
+
+    page should contain  Bundles
+    page should contain  Internet
+    page should contain  Phone
+    page should contain  Video/TV
+    page should contain  Digital Essentials
+    page should contain  Moving
+
+
+
+
+
 
 #----------------SPANISH  LANGUAGE--------------------------#
 Mouse over on Shop Tab-Spanish
     wait until page contains  Comprar
-    wait until element is enabled  ${SHOP_SPA}
+    wait until element is enabled  ${SHOP_TAB_SPA}
     sleep  2s
-    focus  ${SHOP_SPA}
+    focus  ${SHOP_TAB_SPA}
     sleep  2s
-    mouse over  ${SHOP_SPA}
+    mouse over  ${SHOP_TAB_SPA}
 
 Select Bundle option-Spanish
     sleep  3s

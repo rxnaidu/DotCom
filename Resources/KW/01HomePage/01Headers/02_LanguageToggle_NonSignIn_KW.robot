@@ -1,67 +1,117 @@
 *** Settings ***
 Library  Selenium2Library  60
 Resource  ../../../PO/Login/loginPage.robot
-
-*** Variables ***
-${CHANGE_DROPDOWN}  css=#locationDropdown > span
-${ZIP_CODE}  css=#zipcode
-${CHEK_AVAILABILITY_BTN}  id=zipcodeAnchor
-${SHOP_DROPDOWN}   link=Shop
-${BUNDLE_OPTION}  link=Bundles
-${LANGUAGE_TOGGLE}  css=.lang-selector.hidden-xs>a
-${LANGUAGE_TOGGLE_IMAGE}  css=.lang-selector.hidden-xs>a>i
-
-
-${ZIP_CODE_LOCATION}  xpath=//a[@id='locationDropdown']/span
+Resource  ../../../PO/RES/Shop/shop.robot
+Resource  ../../../PO/RES/MyAccount/myAccount.robot
+Resource  ../../../PO/RES/Support/support.robot
+Resource  ../../../PO/RES/Landing/homePage.robot
 
 *** Keywords ***
-
 User launch Ftr.com application using URL
     loginPage.Load
 
-Select change option from header
-    wait until element is enabled  ${CHANGE_DROPDOWN}
-    click element  ${CHANGE_DROPDOWN}
+Select the new Multi-Language Toggle on the Residential Home page
+    homePage.Select Multi-Language Toggle for Spanish Language
 
-Enter Zip Code and select Check Availability Button
-    [Arguments]  ${Zip_Code1_Inp}
-    input text  ${ZIP_CODE}  ${Zip_Code1_Inp}
-    click link  ${CHEK_AVAILABILITY_BTN}
+Home page should display in Spanish and toggle display 'English'
+    homePage.Verify Toggle display English
 
-Verify black header now changes to "Plano,TX"
-    [Arguments]  ${Expected_Location_Text}
+Navigate to the other pages on the site: Shop
+    log  Navigating to Shop Tab
 
-    wait until element is enabled  ${ZIP_CODE_LOCATION}
-    wait until element is visible  ${ZIP_CODE_LOCATION}
+Navigate to Bundles and verify Spanish text is displayed
+    shop.Mouse over on Shop Tab-Spanish
+    shop.Select Bundle option-Spanish
+    shop.Verify Spanish Text is displayed on Bundle page
+
+Navigate to Internet and verify Spanish text is displayed
+    shop.Mouse over on Shop Tab-Spanish
+    shop.Select Internet option-Spanish
+    shop.Verify Spanish Text is displayed on Internet page
+
+Navigate to Phone and verify Spanish text is displayed
+    shop.Mouse over on Shop Tab-Spanish
+    shop.Select Phone option-Spanish
+    shop.Verify Spanish Text is displayed on Phone page
+
+Navigate to Video/TV and verify Spanish text is displayed
+    shop.Mouse over on Shop Tab-Spanish
+    shop.Select Video/TV option-Spanish
+    shop.Verify Spanish Text is displayed on Video/TV page
+
+Navigate to Digital Essentials and verify Spanish text is displayed
+    shop.Mouse over on Shop Tab-Spanish
+    shop.Select Digital Essentials option-Spanish
+    shop.Verify Spanish Text is displayed on Degital Essentials page
+
+Navigate to Moving and verify Spanish text is displayed
+    shop.Mouse over on Shop Tab-Spanish
+    shop.Select Moving option-Spanish
+    shop.Verify Spanish Text is displayed on Moving page
+
+Navigate to the other pages on the site: My Account
+    Log  Navigating to My Account Tab
+
+Navigate to Account Summary and verify Spanish text is displayed
+    myAccount.Mouse over on My Account Tab-Spanish
+    myAccount.Select Account Summary option-Spanish
+    myAccount.Verify Spanish Text is displayed on Account Summary page
+    go back
     sleep  2s
-    ${Actual_Location_Text}  get text  ${ZIP_CODE_LOCATION}
 
-    log  ${Expected_Location_Text}
-    log  ${Actual_Location_Text}
-
-    should be equal   ${Expected_Location_Text}  ${Actual_Location_Text}
-
-Select Change link again and enter zip code and select Check Availability Button
-    [Arguments]  ${Zip_Code2_Inp}
-
-    wait until element is enabled  ${CHANGE_DROPDOWN}
-    click element  ${CHANGE_DROPDOWN}
-
-    input text  ${ZIP_CODE}  ${Zip_Code2_Inp}
-    click link  ${CHEK_AVAILABILITY_BTN}
-
-Verify black header now changes to 'Fairport NY'
-    [Arguments]  ${Expected_Location_Text}
-
-    wait until element is enabled  ${ZIP_CODE_LOCATION}
-    wait until element is visible  ${ZIP_CODE_LOCATION}
+Navigate to My Payments and verify Spanish text is displayed
+    myAccount.Mouse over on My Account Tab-Spanish
+    myAccount.Select My Payments option-Spanish
+    myAccount.Verify Spanish Text is displayed on My Payments page
+    go back
     sleep  2s
-    ${Actual_Location_Text}  get text  ${ZIP_CODE_LOCATION}
 
-    log  ${Expected_Location_Text}
-    log  ${Actual_Location_Text}
+Navigate to My Bills and verify Spanish text is displayed
+    myAccount.Mouse over on My Account Tab-Spanish
+    myAccount.Select My Bills option-Spanish
+    myAccount.Verify Spanish Text is displayed on My Bills page
+    go back
+    sleep  2s
 
-    should be equal   ${Expected_Location_Text}  ${Actual_Location_Text}
+Navigate to My Profile and verify Spanish text is displayed
+    myAccount.Mouse over on My Account Tab-Spanish
+    myAccount.Select My Profile option-Spanish
+    myAccount.Verify Spanish Text is displayed on My Profile page
+    go back
+    sleep  2s
+
+Navigate to My Frontier Mobile App and verify Spanish text is displayed
+    myAccount.Mouse over on My Account Tab-Spanish
+    myAccount.Select My Frontier Mobile App option-Spanish
+    myAccount.Verify Spanish Text is displayed on My Frontier Mobile App page
+
+Navigate to the other pages on the site: Support
+    log  Navigating to Support Tab
+
+Navigate to Help Center and verify Spanish text is displayed
+    support.Mouse over on Support Tab-Spanish
+    support.Select Help Center option-Spanish
+    support.Verify Spanish Text is displayed on Help Center page
+
+Navigate to Support Wizard and verify Spanish text is displayed
+    support.Mouse over on Support Tab-Spanish
+    support.Select Support Wizard option-Spanish
+    support.Verify Spanish Text is displayed on Support Wizard page
+
+Navigate to Trouble Ticket Status and verify Spanish text is displayed
+    support.Mouse over on Support Tab-Spanish
+    support.Select Trouble Ticket Status option-Spanish
+    support.Verify Spanish Text is displayed on Trouble Ticket Status page
+
+Navigate to Order Status and verify Spanish text is displayed
+    support.Mouse over on Support Tab-Spanish
+    support.Select Order Status option-Spanish
+    support.Verify Spanish Text is displayed on Order Status page
+
+Navigate to Contact us and verify Spanish text is displayed
+    support.Mouse over on Support Tab-Spanish
+    support.Select Contact us option-Spanish
+    support.Verify Spanish Text is displayed on Contact us page
 
 
 

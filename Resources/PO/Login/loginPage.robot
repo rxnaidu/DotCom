@@ -3,7 +3,8 @@ Library  Selenium2Library  60
 
 *** Variables ***
 ${SIGNIN_BTN}  css=html>body>form>button
-${URL_PASSWORD_DATA}  francis
+${URL_PASSWORD_DATA}  k33p1ngITr3al
+#francis
 ${URL_PASSWORD}  name=password
 
 *** Keywords ***

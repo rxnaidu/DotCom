@@ -1,5 +1,4 @@
 *** Settings ***
-#what is this doing??????? --Test libraries are normally imported using the Library setting in the Setting table and having the library name in the subsequent column.
 Library  Selenium2Library  60
 
 
@@ -7,7 +6,8 @@ Library  Selenium2Library  60
 ${URL}  https://qat03.frontier.com/
 ${BROWSER}  Chrome
 #${BROWSER}  firefox
-
+#${BROWSER}  PhantomJS
+#${BROWSER}  ie
 *** Keywords ***
 
 Begin Web Test

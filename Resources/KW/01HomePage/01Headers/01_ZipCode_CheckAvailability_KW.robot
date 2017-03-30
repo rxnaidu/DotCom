@@ -26,6 +26,8 @@ Select change option from header
 Enter Zip Code and select Check Availability Button
     [Arguments]  ${Zip_Code1_Inp}
     input text  ${ZIP_CODE}  ${Zip_Code1_Inp}
+
+    wait until element is enabled  ${CHEK_AVAILABILITY_BTN}
     click link  ${CHEK_AVAILABILITY_BTN}
 
 Verify black header now changes to "Plano,TX"

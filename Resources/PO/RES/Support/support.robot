@@ -35,6 +35,30 @@ Verify support sub Tabs are displayed
     page should contain  Order Status
     page should contain  Contact Us
 
+Select Help Center option
+    sleep  3s
+    wait until element is enabled  ${HELP_CENTER}
+    click link  ${HELP_CENTER}
+
+Select Support Wizard option
+    sleep  3s
+    wait until element is enabled  ${SUPPORT_WIZARD}
+    click link  ${SUPPORT_WIZARD}
+
+Select Trouble Ticket Status option
+    sleep  3s
+    wait until element is enabled  ${TROUBLE_TICKET_STATUS}
+    click link  ${TROUBLE_TICKET_STATUS}
+
+Select Order Status option
+    sleep  3s
+    wait until element is enabled  ${ORDER_STATUS}
+    click link  ${ORDER_STATUS}
+
+Select Contact Us option
+    sleep  3s
+    wait until element is enabled  ${CONTACT_US}
+    click link  ${CONTACT_US}
 
 
 #----------------SPANISH  LANGUAGE--------------------------#

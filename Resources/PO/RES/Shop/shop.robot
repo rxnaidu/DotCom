@@ -3,6 +3,7 @@ Library  Selenium2Library  60
 
 *** Variables ***
 ${SHOP_TAB}  link=Shop
+${MY_ACCOUNT_TAB}  link=My Account
 ${BUNDLE}  link=Bundles
 ${INTERNET}  link=Internet
 ${PHONE}  link=Phone
@@ -27,6 +28,7 @@ Mouse over on Shop Tab
     sleep  2s
     focus  ${SHOP_TAB}
     sleep  2s
+    wait until element is enabled  ${SHOP_TAB}
     mouse over  ${SHOP_TAB}
 
 Verify Shop sub tabs are displayed
@@ -40,10 +42,33 @@ Verify Shop sub tabs are displayed
     page should contain  Digital Essentials
     page should contain  Moving
 
+Select Bundle option
+#    sleep  3s
+    wait until element is enabled  ${BUNDLE}
+    click link  ${BUNDLE}
 
+Select Internet option
+    sleep  3s
+    wait until element is enabled  ${INTERNET}
+    click link  ${INTERNET}
 
+Select Phone option
+#    sleep  3s
+    wait until element is enabled  ${PHONE}
+    click link  ${PHONE}
 
+Select Video/TV option
+#    sleep  3s
+    wait until element is enabled  ${VIDEO/TV}
+    click link  ${VIDEO/TV}
 
+Select Digital Essentials option
+    wait until element is enabled  ${DIGITAL_ESSENTIALS}
+    click link  ${DIGITAL_ESSENTIALS}
+
+Select Moving option
+    wait until element is enabled  ${DIGITAL_ESSENTIALS}
+    click link  ${MOVING}
 
 #----------------SPANISH  LANGUAGE--------------------------#
 Mouse over on Shop Tab-Spanish

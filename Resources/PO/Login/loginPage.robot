@@ -12,6 +12,7 @@ ${URL_PASSWORD}  name=password
 Load
     maximize browser window
     wait until page contains element  ${SIGNIN_BTN}
+    wait until element is enabled  ${SIGNIN_BTN}
 
     input password  ${URL_PASSWORD}  ${URL_PASSWORD_DATA}
     click button  ${SIGNIN_BTN}

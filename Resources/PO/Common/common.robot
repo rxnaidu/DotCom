@@ -36,8 +36,9 @@ Begin Old Web Test
     create webdriver  ${BROWSER}  chrome_options=${options}
     #create webdriver  ${BROWSER}  chrome_options=${options}
 
-    #Open Browser  about:blank  ${BROWSER}
+    Open Browser  about:blank  ${BROWSER}
+    go to  ${URL}
 
 End Web Test
-    #what is this doing??????? - Closes the current opened browser.
+    #Close the current browser
     close browser

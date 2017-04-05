@@ -2,7 +2,7 @@
 Library  Selenium2Library  60
 
 *** Variables ***
-${MY_ACCOUNT_TAB}  link=My Account
+${MY_ACCOUNT_TAB}  link=My Account    #xpath=//div[@id='header-main']//a[contains(text(),'My Account')]
 ${ACCOUNT_SUMMARY}  link=Account Summary
 ${MY_PAYMENTS}  link=My Payments
 ${MY_BILLS}  link=My Bills
@@ -17,6 +17,9 @@ ${MY_BILLS_SPA}  link=Mis facturas
 ${MY_PROFILE_SPA}  link=Mi perfil
 ${MY_FRONTIER_MOBILE_APP_SPA}  link=Aplicación móvil MyFrontier
 
+${CANCEL_BTN}  xpath=//button[contains(text(),'Cancel')]
+${SIGN_IN_BTN}  xpath=//button[contains(text(),'Sign In')]
+
 *** Keywords ***
 
 Mouse over on My Account Tab
@@ -25,7 +28,7 @@ Mouse over on My Account Tab
     sleep  2s
     focus  ${MY_ACCOUNT_TAB}
     sleep  2s
-    mouse over  ${MY_ACCOUNT_TAB}
+    mouse over   ${MY_ACCOUNT_TAB}
 
 Verify My Account sub Tabs are displayed
     wait until element is enabled  ${MY_ACCOUNT_TAB}
@@ -35,6 +38,37 @@ Verify My Account sub Tabs are displayed
     page should contain  My Bills
     page should contain  My Profile
     page should contain  MyFrontier Mobile App
+
+Verify Sign In, Cancel, Username, Password fields
+    wait until element is visible  ${CANCEL_BTN}
+
+    page should contain  Frontier ID / Username
+    page should contain  Password
+    page should contain button   ${CANCEL_BTN}  CANCEL
+#    page should contain button   ${SIGN_IN_BTN}  SIGN IN
+
+
+Select Account Summary option
+    wait until element is enabled  ${ACCOUNT_SUMMARY}
+    click link  ${ACCOUNT_SUMMARY}
+
+Select My Payments option
+    wait until element is enabled  ${MY_PAYMENTS}
+    click link  ${MY_PAYMENTS}
+
+Select My Bills option
+    wait until element is enabled  ${MY_BILLS}
+    click link  ${MY_BILLS}
+
+Select My Profile option
+    wait until element is enabled  ${MY_PROFILE}
+    click link  ${MY_PROFILE}
+
+Select My Frontier Mobile App option
+    wait until element is enabled  ${MY_FRONTIER_MOBILE_APP}
+    click link  ${MY_FRONTIER_MOBILE_APP}
+
+
 
 #----------------SPANISH  LANGUAGE--------------------------#
 Mouse over on My Account Tab-Spanish

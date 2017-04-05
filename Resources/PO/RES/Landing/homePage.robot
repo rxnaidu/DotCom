@@ -18,7 +18,7 @@ ${SEARCH_BTN}  css=[title="search"]
 *** Keywords ***
 
 Sign In link
-    wait until page contains element  ${SIGNIN_DROPDOWN}
+    wait until element is enabled  ${SIGNIN_DROPDOWN}
     click link  ${SIGNIN_DROPDOWN}
 
 Sign Out

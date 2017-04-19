@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${SUPPORT_WIZARDURL}  https://qat03.frontier.com/HelpCenter/SupportWizard/Troubleshoot/Sign-in/Get-Started
+${SUPPORT_WIZARDURL}  https://qat01.frontier.com/HelpCenter/SupportWizard/Troubleshoot/Sign-in/Get-Started
 
 *** Test Cases ***
 

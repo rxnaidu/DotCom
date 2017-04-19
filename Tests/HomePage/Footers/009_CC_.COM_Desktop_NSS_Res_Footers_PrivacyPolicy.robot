@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${PRIVACY_POLICY_URL}  https://qat03.frontier.com/~/media/resources/policies/privacy-policy.ashx
+${PRIVACY_POLICY_URL}  https://qat01.frontier.com/~/media/resources/policies/privacy-policy.ashx
 
 *** Test Cases ***
 

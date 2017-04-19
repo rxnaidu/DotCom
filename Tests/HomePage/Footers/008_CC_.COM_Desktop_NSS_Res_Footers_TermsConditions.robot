@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${TERMS_CONDITIONS_URL}  https://qat03.frontier.com/corporate/terms
+${TERMS_CONDITIONS_URL}  https://qat01.frontier.com/corporate/terms
 
 *** Test Cases ***
 

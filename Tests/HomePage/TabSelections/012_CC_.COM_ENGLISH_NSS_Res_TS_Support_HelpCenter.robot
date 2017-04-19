@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${HELP_CENTER_URL}  https://qat03.frontier.com/helpcenter
+${HELP_CENTER_URL}  https://qat01.frontier.com/helpcenter
 
 *** Test Cases ***
 

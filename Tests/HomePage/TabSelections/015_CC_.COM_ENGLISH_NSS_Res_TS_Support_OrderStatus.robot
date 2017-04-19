@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${ORDER_STATUS_URL}  https://qat03.frontier.com/helpcenter/categories/order-status
+${ORDER_STATUS_URL}  https://qat01.frontier.com/helpcenter/categories/order-status
 
 *** Test Cases ***
 

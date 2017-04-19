@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${SHOP_INTERNET_URL}  https://qat03.frontier.com/shop/internet
+${SHOP_INTERNET_URL}  https://qat01.frontier.com/shop/internet
 
 *** Test Cases ***
 

@@ -60,7 +60,7 @@ Verify URL changes to Frontier Yahoo Portal Page
 Navigate to bottom of the Footer home page and click: Frontier Sites > Referral Program
     homePage.Select Referral Program option from Footer
 
-Verify URL changes toReferral Program Page
+Verify URL changes to Referral Program Page
     [Arguments]  ${EXPECTED_URL}
     Verify currnt URL  ${EXPECTED_URL}
 

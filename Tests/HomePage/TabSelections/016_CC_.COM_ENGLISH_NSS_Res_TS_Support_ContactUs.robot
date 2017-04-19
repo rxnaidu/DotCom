@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${CONTACT_US_URL}  https://qat03.frontier.com/contact-us#/residential
+${CONTACT_US_URL}  https://qat01.frontier.com/contact-us#/residential
 
 *** Test Cases ***
 

@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${TROUBLE_TICKET_STATUS_URL}  https://qat03.frontier.com/helpcenter/categories/ticket-status
+${TROUBLE_TICKET_STATUS_URL}  https://qat01.frontier.com/helpcenter/categories/ticket-status
 
 *** Test Cases ***
 

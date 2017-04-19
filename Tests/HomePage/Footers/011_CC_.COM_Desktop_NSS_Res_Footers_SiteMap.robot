@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${SITE_MAP_URL}  https://qat03.frontier.com/sitemap
+${SITE_MAP_URL}  https://qat01.frontier.com/sitemap
 
 *** Test Cases ***
 

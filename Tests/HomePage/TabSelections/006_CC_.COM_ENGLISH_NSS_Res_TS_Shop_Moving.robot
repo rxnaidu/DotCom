@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${SHOP_MOVING_URL}  https://qat03.frontier.com/corporate/movers
+${SHOP_MOVING_URL}  https://qat01.frontier.com/corporate/movers
 
 *** Test Cases ***
 

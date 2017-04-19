@@ -6,7 +6,7 @@ Resource  ../../../Resources/KW/HomePage/Footers/013_CC_.COM_Desktop_NSS_Res_Foo
 Resource  ../../../Resources/PO/Common/common.robot
 
 Test Setup  Common.Begin Web Test
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 
 *** Variables ***
 ${FACEBOOK_URL}  https://www.facebook.com/FrontierCorp

@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${SHOP_VIDEO_URL}  https://qat03.frontier.com/shop/tv
+${SHOP_VIDEO_URL}  https://qat01.frontier.com/shop/tv
 
 *** Test Cases ***
 

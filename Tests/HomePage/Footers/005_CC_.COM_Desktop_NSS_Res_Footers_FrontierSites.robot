@@ -69,7 +69,7 @@ ${BUSINESSEDGE_PARTNER_PROGRAM_URL}  https://business.frontier.com/become-a-part
 
     Navigate to bottom of the Footer home page and click: Frontier Sites > Referral Program
 
-    Verify URL changes toReferral Program Page  ${REFERRAL_PROGRAM_URL}
+    Verify URL changes to Referral Program Page  ${REFERRAL_PROGRAM_URL}
 
     Go back to Home Page
 

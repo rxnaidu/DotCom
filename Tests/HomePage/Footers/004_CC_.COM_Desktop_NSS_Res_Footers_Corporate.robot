@@ -9,13 +9,13 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${ABOUT_US_URL}  https://qat03.frontier.com/corporate/about-us/overview
+${ABOUT_US_URL}  https://qat01.frontier.com/corporate/about-us/overview
 ${INVESTOR_RELATIONS_URL}  http://investor.frontier.com/
 ${NEWS_URL}  http://investor.frontier.com/releases.cfm
-${CAREERS_URL}  https://qat03.frontier.com/corporate/careers/overview
-${SUPPLIERS_URL}  https://qat03.frontier.com/corporate/suppliers
+${CAREERS_URL}  https://qat01.frontier.com/corporate/careers/overview
+${SUPPLIERS_URL}  https://qat01.frontier.com/corporate/suppliers
 ${PRESSROOM_URL}  https://frontier.com/corporate/pressroom
-${PUBLIC_INSPECTION_FILES_URL}  https://qat03.frontier.com/corporate/pif/public-inspection-files
+${PUBLIC_INSPECTION_FILES_URL}  https://qat01.frontier.com/corporate/pif/public-inspection-files
 
 *** Test Cases ***
 003_CC_.COM_Desktop_NSS_Res_Footers_Support

@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${POLICIES_NOTIFICATIONS}  https://qat03.frontier.com/corporate/policies
+${POLICIES_NOTIFICATIONS}  https://qat01.frontier.com/corporate/policies
 
 *** Test Cases ***
 

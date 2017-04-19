@@ -1,14 +1,18 @@
 *** Settings ***
-Library  Selenium2Library  60
-
+Library  Selenium2Library
+Library  readExcel
 
 *** Variables ***
-${URL}  https://qat03.frontier.com/
+${URL}  https://qat01.frontier.com/
 ${BROWSER}  Chrome
-#${BROWSER}  firefox
-#${BROWSER}  PhantomJS
-#${BROWSER}  ie
+
 *** Keywords ***
+Begin Web Test from Excel
+    [Arguments]  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
+    ${BROWSER_EXCEL}  read_cell_data_by_Header_name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${BROWSER_NAME}
+    ${URL_EXCEL}   read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${DOTCOM_URL}
+
+    open browser  ${URL_EXCEL}  ${BROWSER_EXCEL}
 
 Begin Web Test
     open browser  ${URL}  ${BROWSER}

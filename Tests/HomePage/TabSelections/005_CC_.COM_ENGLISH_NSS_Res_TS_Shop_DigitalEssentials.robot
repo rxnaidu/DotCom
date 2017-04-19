@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${SHOP_DEGITAL_ESSENTIAL_URL}  https://qat03.frontier.com/shop/frontier-secure
+${SHOP_DEGITAL_ESSENTIAL_URL}  https://qat01.frontier.com/shop/frontier-secure
 
 *** Test Cases ***
 

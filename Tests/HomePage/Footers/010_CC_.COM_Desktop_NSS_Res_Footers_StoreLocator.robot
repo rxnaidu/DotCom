@@ -9,7 +9,7 @@ Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Variables ***
-${STORE_LOCATOR_URL}  https://qat03.frontier.com/corporate/retailstores/locations
+${STORE_LOCATOR_URL}  https://qat01.frontier.com/corporate/retailstores/locations
 
 *** Test Cases ***
 

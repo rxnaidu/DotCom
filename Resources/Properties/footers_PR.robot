@@ -5,6 +5,7 @@ ${BROWSER_NAME}  Browser
 ${DOTCOM_URL}  DotCom_Url
 ${DOTCOM_URL_PASSWORD}  DotCom_Url_Password
 
+#TC01
 ${BUNDLES_URL}  Bundles_Url
 ${INTERNET_URL}  Internet_url
 ${PHONE_URL}  Phone_url
@@ -13,9 +14,79 @@ ${DEGITAL_ESSENTIAL_URL}  Degital_essential_url
 ${MOVING_URL}  Moving_Url
 ${DISCOUNT_PROGRAMS_URL}  Discount_Programs_Url
 
+#TC02
 ${PAY_BILLS_URL}  Pay_Bills_Url
 ${CHECK_EMAIL_URL}  Check_Email_Url
 ${MANAGE_ACCOUNT_URL}  Manage_account_Url
 ${MYFRONTIER_APP}  MyFrontier_App_Url
 ${WATCH_TV_URL}  Watch_TV_Url
 ${ENTERPRISE_ACCOUNTS_URL}  Enterprise_Accounts_Url
+
+#TC03
+${CONTACT_US_URL}  Contact_Us_Url
+${HELP_CENTER_URL}  Help_Center_Url
+${ORDER_STATUS_URL}  Order_Status_Url
+${TROUBLE_TICKET_STATUS_URL}  Trouble_Ticket_Status_Url
+${SUPPORT_WIZARD_URL}  Support_Wizard_Url
+${TEST_YOUR_SPEED_URL}  Test_Your_Speed_Url
+${VIDEO_GALLERY_URL}  Video_Gallery_Url
+
+#TC04
+${ABOUT_US_URL}  About_Us_Url
+${INVESTOR_RELATIONS_URL}  Investor_Relations_Url
+${NEWS_URL}  News_Url
+${CAREERS_URL}  Careers_Url
+${SUPPLIERS_URL}  Suppliers_Url
+${PRESSROOM_URL}  Pressroom_Url
+${PUBLIC_INSPECTION_FILES_URL}  Public_Inspection_Files_Url
+
+#TC05
+${GET_VANTAGE_URL}  Get_Vantage_Url
+${FRONTIER_SECURE_URL}  Frontier_secure_Url
+${FRONTIER_BUSINESSEDGE_URL}  Frontier_BusinessEdge_Url
+${FRONTIER_GAMES_URL}  Frontier_Games_Url
+${FRONTIER_WIFI_URL}  Frontier_Wifi_Url
+${WHOLESALE_URL}  Wholesale_Url
+${FRONTIER_YAHOO_PORTAL_URL}  Frontier_Yahoo_Portal_Url
+${REFERRAL_PROGRAM_URL}  Referral_Program_Url
+${BUSINESSEDGE_PARTNER_PROGRAM_URL}  Business_Partner_Program_Url
+
+#TC06
+${CENTRAL_URL}  Central_Url
+${EAST_URL}  East_Url
+${MID-SOUTH_URL}  Mid_South_Url
+${NATIONAL-IL-IA-MN-NE-UT_URL}  National-IL-LA-MN-NE-UT_Url
+${NATIONAL-ID-MT_URL}  National-ID-MT_Url
+${SOUTH_URL}  South_Url
+${SOUTHEAST_URL}  SouthEast_Url
+${WEST_URL}  West_Url
+
+#TC07
+${POLICIES_NOTIFICATIONS}  Policies_Notifications
+
+#TC08
+${TERMS_CONDITIONS_URL}  Terms_Conditions_Url
+
+#TC09
+${PRIVACY_POLICY_URL}  Privacy_Policy_Url
+
+#TC10
+${STORE_LOCATOR_URL}  Store_Locator_Url
+
+#TC11
+${SITE_MAP_URL}  Site_Map_Url
+
+#TC12
+${TWITTER_URL}  Twitter_Url
+
+#TC13
+${FACEBOOK_URL}  Facebook_Url
+
+#TC14
+${LINKEDIN_URL}  LinkedIn_Url
+
+#TC15
+${YOUTUBE_URL}  Youtube_Url
+
+#TC16
+${GOOGLE+_URL}  Google+_Url

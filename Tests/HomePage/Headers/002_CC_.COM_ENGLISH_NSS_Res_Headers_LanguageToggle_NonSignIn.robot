@@ -4,10 +4,7 @@ Library  Selenium2Library  60
 Resource  ../../../Resources/KW/HomePage/Headers/02_LanguageToggle_NonSignIn_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
-Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
-
-*** Variables ***
 
 *** Test Cases ***
 02_LanguageToggle_NonSignIn

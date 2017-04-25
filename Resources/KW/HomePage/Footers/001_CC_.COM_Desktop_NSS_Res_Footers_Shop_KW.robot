@@ -1,5 +1,5 @@
 *** Settings ***
-Library  Selenium2Library  60
+Library  Selenium2Library  30
 Library  String
 Resource  ../../../PO/Login/loginPage.robot
 Resource  ../../../PO/RES/Landing/homePage.robot

@@ -39,13 +39,15 @@ Verify My Account sub Tabs are displayed
     page should contain  My Profile
     page should contain  MyFrontier Mobile App
 
-Verify Sign In, Cancel, Username, Password fields
+Verify Sign In page fields
     wait until element is visible  ${CANCEL_BTN}
+    wait until page contains  Sign In
 
     page should contain  Frontier ID / Username
     page should contain  Password
     page should contain button   ${CANCEL_BTN}  CANCEL
 #    page should contain button   ${SIGN_IN_BTN}  SIGN IN
+#    page should contain  SIGN IN
 
 
 Select Account Summary option

@@ -5,10 +5,16 @@ Resource  ../../../PO/RES/Shop/shop.robot
 Resource  ../../../PO/RES/MyAccount/myAccount.robot
 Resource  ../../../PO/RES/Support/support.robot
 Resource  ../../../PO/RES/Landing/homePage.robot
+Resource  ../../../PO/Common/common.robot
+Resource  ../../../Properties/Headers_PR.robot
+
+*** Variables ***
+${TESTCASE_NO}  TC02
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    loginPage.Load
+    common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
+    loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Select the new Multi-Language Toggle on the Residential Home page
     homePage.Select Multi-Language Toggle for Spanish Language

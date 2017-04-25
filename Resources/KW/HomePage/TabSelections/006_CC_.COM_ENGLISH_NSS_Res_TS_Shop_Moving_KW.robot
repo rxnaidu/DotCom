@@ -4,20 +4,26 @@ Library  String
 Resource  ../../../PO/Login/loginPage.robot
 Resource  ../../../PO/RES/Landing/homePage.robot
 Resource  ../../../PO/RES/Shop/shop.robot
+Resource  ../../../PO/Common/common.robot
+Resource  ../../../Properties/tabSelections_PR.robot
+
+*** Variables ***
+${TESTCASE_NO}  TC06
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    loginPage.Load
+    common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
+    loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
-Click on the Tab selections as follows: Shop > Bundles
+Click on the Tab selections as follows: Shop > Moving
     shop.Mouse over on Shop Tab
     shop.Select Moving option
 
-Verify URL changes to
-    [Arguments]  ${SHOP_MOVING_URL}
+Verify URL changes to Moving page
+    ${Shop_Moving_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_MOVING_URL}
 
-    log  ${SHOP_MOVING_URL}
+    Encode String To Bytes  ${Shop_Moving_Url}  ASCII
 
-    Encode String To Bytes  ${SHOP_MOVING_URL}  ASCII
+    wait until page contains  Whether you’re moving in from out of town
 
-    location should be  ${SHOP_MOVING_URL}
+    location should be  ${Shop_Moving_Url}

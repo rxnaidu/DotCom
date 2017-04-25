@@ -4,10 +4,7 @@ Library  Selenium2Library  60
 Resource  ../../../Resources/KW/HomePage/Headers/09_SearchboxFunctionality_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
-Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
-
-*** Variables ***
 
 *** Test Cases ***
 

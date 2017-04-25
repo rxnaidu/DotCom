@@ -18,8 +18,8 @@ Sign Out
 User Sign In from Excel
     [Arguments]  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
-    ${Username_Inp_Ex}  read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${USERNAME_SIGNIN}
-    ${Password_Inp_Ex}  read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PASSWORD_SIGNIN}
+    ${Username_Inp_Ex}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${USERNAME_SIGNIN}
+    ${Password_Inp_Ex}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PASSWORD_SIGNIN}
 
     wait until element is enabled  ${USERNAME}
     input text  ${USERNAME}  ${Username_Inp_Ex}

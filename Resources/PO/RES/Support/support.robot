@@ -21,9 +21,9 @@ ${CONTACT_US}  link=Contact Us
 Mouse over on Support Tab
     wait until page contains  Support
     wait until element is enabled  ${SUPPORT_TAB}
-    sleep  2s
+    sleep  1s
     focus  ${SUPPORT_TAB}
-    sleep  2s
+    sleep  1s
     mouse over  ${SUPPORT_TAB}
 
 Verify support sub Tabs are displayed
@@ -36,27 +36,22 @@ Verify support sub Tabs are displayed
     page should contain  Contact Us
 
 Select Help Center option
-    sleep  3s
     wait until element is enabled  ${HELP_CENTER}
     click link  ${HELP_CENTER}
 
 Select Support Wizard option
-    sleep  3s
     wait until element is enabled  ${SUPPORT_WIZARD}
     click link  ${SUPPORT_WIZARD}
 
 Select Trouble Ticket Status option
-    sleep  3s
     wait until element is enabled  ${TROUBLE_TICKET_STATUS}
     click link  ${TROUBLE_TICKET_STATUS}
 
 Select Order Status option
-    sleep  3s
     wait until element is enabled  ${ORDER_STATUS}
     click link  ${ORDER_STATUS}
 
 Select Contact Us option
-    sleep  3s
     wait until element is enabled  ${CONTACT_US}
     click link  ${CONTACT_US}
 
@@ -71,27 +66,22 @@ Mouse over on Support Tab-Spanish
     mouse over  ${SUPPORT_TAB_SPA}
 
 Select Help Center option-Spanish
-    sleep  3s
     wait until element is enabled  ${HELP_CENTER_SPA}
     click link  ${HELP_CENTER_SPA}
 
 Select Support Wizard option-Spanish
-    sleep  3s
     wait until element is enabled  ${SUPPORT_WIZARD_SPA}
     click link  ${SUPPORT_WIZARD_SPA}
 
 Select Trouble Ticket Status option-Spanish
-    sleep  3s
     wait until element is enabled  ${TROUBLE_TICKET_STATUS_SPA}
     click link  ${TROUBLE_TICKET_STATUS_SPA}
 
 Select Order Status option-Spanish
-    sleep  3s
     wait until element is enabled  ${ORDER_STATUS_SPA}
     click link  ${ORDER_STATUS_SPA}
 
 Select Contact Us option-Spanish
-    sleep  3s
     wait until element is enabled  ${CONTACT_US_SPA}
     click link  ${CONTACT_US_SPA}
 

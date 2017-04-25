@@ -4,12 +4,7 @@ Library  Selenium2Library  60
 Resource  ../../../Resources/KW/HomePage/Headers/03_SignInWindow_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
-Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
-
-*** Variables ***
-${USERNAME_INP}  ftrfrank1+automation@gmail.com
-${PASSWORD_INP}  Frontier999
 
 *** Test Cases ***
 
@@ -19,7 +14,7 @@ ${PASSWORD_INP}  Frontier999
 
     Select the Sign In link
 
-    Enter User name and Password and Select Sign In button  ${USERNAME_INP}  ${PASSWORD_INP}
+    Enter User name and Password and Select Sign In button
 
     Select Sign Out from righ corner of the screen
 

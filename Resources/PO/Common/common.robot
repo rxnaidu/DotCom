@@ -9,8 +9,8 @@ ${BROWSER}  Chrome
 *** Keywords ***
 Begin Web Test from Excel
     [Arguments]  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    ${BROWSER_EXCEL}  read_cell_data_by_Header_name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${BROWSER_NAME}
-    ${URL_EXCEL}   read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${DOTCOM_URL}
+    ${BROWSER_EXCEL}  read_excel_data_by_cell_name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${BROWSER_NAME}
+    ${URL_EXCEL}   read_excel_data_by_cell_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${DOTCOM_URL}
 
     open browser  ${URL_EXCEL}  ${BROWSER_EXCEL}
 

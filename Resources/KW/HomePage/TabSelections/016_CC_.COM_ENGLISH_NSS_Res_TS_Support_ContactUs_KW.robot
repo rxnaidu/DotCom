@@ -4,20 +4,26 @@ Library  String
 Resource  ../../../PO/Login/loginPage.robot
 Resource  ../../../PO/RES/Landing/homePage.robot
 Resource  ../../../PO/RES/Support/support.robot
+Resource  ../../../PO/Common/common.robot
+Resource  ../../../Properties/tabSelections_PR.robot
+
+*** Variables ***
+${TESTCASE_NO}  TC16
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    loginPage.Load
+    common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
+    loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Click on the Tab selections as follows: Support> Contact Us
     support.Mouse over on Support Tab
     support.Select Contact Us option
 
-Verify URL changes to
-    [Arguments]  ${CONTACT_US_URL}
+Verify URL changes to Contact Us
+    ${Contact_Us_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${CONTACT_US_URL}
 
-    log  ${CONTACT_US_URL}
+    Encode String To Bytes  ${Contact_Us_Url}  ASCII
 
-    Encode String To Bytes  ${CONTACT_US_URL}  ASCII
+    wait until page contains  Chat Live
 
-    location should be  ${CONTACT_US_URL}
+    location should be  ${Contact_Us_Url}

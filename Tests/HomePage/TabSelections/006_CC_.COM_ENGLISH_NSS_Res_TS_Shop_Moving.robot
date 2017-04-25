@@ -5,18 +5,14 @@ Library  Selenium2Library  30
 Resource  ../../../Resources/KW/HomePage/TabSelections/006_CC_.COM_ENGLISH_NSS_Res_TS_Shop_Moving_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
-Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
-
-*** Variables ***
-${SHOP_MOVING_URL}  https://qat01.frontier.com/corporate/movers
 
 *** Test Cases ***
 
-001_CC_.COM_ENGLISH_NSS_Res_TS_Shop_Bundles
+006_CC_.COM_ENGLISH_NSS_Res_TS_Shop_Moving
 
     User launch Ftr.com application using URL
 
-    Click on the Tab selections as follows: Shop > Bundles
+    Click on the Tab selections as follows: Shop > Moving
 
-    Verify URL changes to  ${SHOP_MOVING_URL}
+    Verify URL changes to Moving page

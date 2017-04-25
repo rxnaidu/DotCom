@@ -25,11 +25,10 @@ ${MOVING_SPA}  link=Mudanzas
 Mouse over on Shop Tab
     wait until page contains  Shop
     wait until element is enabled  ${SHOP_TAB}
-    sleep  2s
     focus  ${SHOP_TAB}
-    sleep  2s
-    wait until element is enabled  ${SHOP_TAB}
+    sleep  1s
     mouse over  ${SHOP_TAB}
+    sleep  1s
 
 Verify Shop sub tabs are displayed
     wait until element is enabled  ${BUNDLE}
@@ -43,22 +42,18 @@ Verify Shop sub tabs are displayed
     page should contain  Moving
 
 Select Bundle option
-#    sleep  3s
     wait until element is enabled  ${BUNDLE}
     click link  ${BUNDLE}
 
 Select Internet option
-    sleep  3s
     wait until element is enabled  ${INTERNET}
     click link  ${INTERNET}
 
 Select Phone option
-#    sleep  3s
     wait until element is enabled  ${PHONE}
     click link  ${PHONE}
 
 Select Video/TV option
-#    sleep  3s
     wait until element is enabled  ${VIDEO/TV}
     click link  ${VIDEO/TV}
 
@@ -74,38 +69,32 @@ Select Moving option
 Mouse over on Shop Tab-Spanish
     wait until page contains  Comprar
     wait until element is enabled  ${SHOP_TAB_SPA}
-    sleep  2s
+    sleep  1s
     focus  ${SHOP_TAB_SPA}
-    sleep  2s
+    sleep  1s
     mouse over  ${SHOP_TAB_SPA}
 
 Select Bundle option-Spanish
-    sleep  3s
     wait until element is enabled  ${BUNDLE_SPA}
     click link  ${BUNDLE_SPA}
 
 Select Internet option-Spanish
-    sleep  3s
     wait until element is enabled  ${INTERNET_SPA}
     click link  ${INTERNET_SPA}
 
 Select Phone option-Spanish
-    sleep  3s
     wait until element is enabled  ${PHONE_SPA}
     click link  ${PHONE_SPA}
 
 Select Video/TV option-Spanish
-    sleep  3s
     wait until element is enabled  ${VIDEO/TV_SPA}
     click link  ${VIDEO/TV_SPA}
 
 Select Digital Essentials option-Spanish
-    sleep  3s
     wait until element is enabled  ${DIGITAL_ESSENTIALS_SPA}
     click link  ${DIGITAL_ESSENTIALS_SPA}
 
 Select Moving option-Spanish
-    sleep  3s
     wait until element is enabled  ${MOVING_SPA}
     click link  ${MOVING_SPA}
 

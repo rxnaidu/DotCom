@@ -16,7 +16,7 @@ Load from Excel
     wait until page contains element  ${SIGNIN_BTN}
     wait until element is enabled  ${SIGNIN_BTN}
 
-    ${Url_Password_Inp}  read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${URL_PASSWORD_DATA_EX}
+    ${Url_Password_Inp}  read_excel_data_by_cell_name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${URL_PASSWORD_DATA_EX}
 
     input password  ${URL_PASSWORD}  ${Url_Password_Inp}
     click button  ${SIGNIN_BTN}

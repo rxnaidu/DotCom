@@ -18,5 +18,5 @@ Navigate to bottom of the Footer home page and click: Privacy Policy
     homePage.Select Privacy Policy option from Footer
 
 Verify URL changes to Privacy Policy Page
-    ${EXPECTED_URL}  read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PRIVACY_POLICY_URL}
+    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PRIVACY_POLICY_URL}
     Verify currnt URL  ${EXPECTED_URL}

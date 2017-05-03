@@ -3,7 +3,7 @@ Library  Selenium2Library  60
 Resource  ../../../PO/Login/loginPage.robot
 Resource  ../../../PO/RES/Landing/homePage.robot
 Resource  ../../../PO/Common/common.robot
-Resource  ../../../Properties/Headers_PR.robot
+Resource  ../../../Properties/headers_PR.robot
 
 *** Variables ***
 ${INTERNET}  //h5[text()='Internet']
@@ -18,8 +18,8 @@ Select the Sign In link
     homePage.Sign In link
 
 Enter User name and Password and Select Sign In button
-    ${Username_Inp}  read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${USERNAME_INP}
-    ${Password_Inp}  read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PASSWORD_INP}
+    ${Username_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${USERNAME_INP}
+    ${Password_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PASSWORD_INP}
 
     homePage.User Sign In  ${Username_Inp}  ${Password_Inp}
 
@@ -27,6 +27,8 @@ Enter User name and Password and Select Sign In button
 
 Select Sign Out from righ corner of the screen
     wait until element is enabled  ${INTERNET}
+    wait until element is enabled  id=btnClose
+    click element  id=btnClose
     homePage.Sign Out
 
 Verify User launch back to Hopme page defaulting to Residential Tab

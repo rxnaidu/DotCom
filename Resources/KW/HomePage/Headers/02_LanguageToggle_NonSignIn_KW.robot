@@ -6,7 +6,7 @@ Resource  ../../../PO/RES/MyAccount/myAccount.robot
 Resource  ../../../PO/RES/Support/support.robot
 Resource  ../../../PO/RES/Landing/homePage.robot
 Resource  ../../../PO/Common/common.robot
-Resource  ../../../Properties/Headers_PR.robot
+Resource  ../../../Properties/headers_PR.robot
 
 *** Variables ***
 ${TESTCASE_NO}  TC02

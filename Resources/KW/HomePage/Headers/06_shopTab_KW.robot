@@ -3,7 +3,7 @@ Library  Selenium2Library  60
 Resource  ../../../PO/Login/loginPage.robot
 Resource  ../../../PO/RES/Shop/shop.robot
 Resource  ../../../PO/Common/common.robot
-Resource  ../../../Properties/Headers_PR.robot
+Resource  ../../../Properties/headers_PR.robot
 
 *** Variables ***
 ${TESTCASE_NO}  TC06

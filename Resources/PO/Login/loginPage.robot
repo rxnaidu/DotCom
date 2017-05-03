@@ -12,7 +12,8 @@ ${URL_PASSWORD}  name=password
 
 Load from Excel
     [Arguments]  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${URL_PASSWORD_DATA_EX}
-    maximize browser window
+#    maximize browser window
+    set window size  1040  784
     wait until page contains element  ${SIGNIN_BTN}
     wait until element is enabled  ${SIGNIN_BTN}
 

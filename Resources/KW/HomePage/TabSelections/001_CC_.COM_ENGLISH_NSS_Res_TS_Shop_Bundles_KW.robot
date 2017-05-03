@@ -19,7 +19,7 @@ Click on the Tab selections as follows: Shop > Bundles
     shop.Select Bundle option
 
 Verify URL changes to Bundles
-    ${Shop_Bundle_url}  read_excel_data_by_cell_name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_BUNDLE_URL}
+    ${Shop_Bundle_url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_BUNDLE_URL}
 
     Encode String To Bytes  ${Shop_Bundle_url}  ASCII
 

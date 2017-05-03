@@ -4,7 +4,7 @@ Resource  ../../../PO/Login/loginPage.robot
 Resource  ../../../PO/RES/Landing/homePage.robot
 Resource  ../../../PO/BUS/Landing/homeBus.robot
 Resource  ../../../PO/Common/common.robot
-Resource  ../../../Properties/Headers_PR.robot
+Resource  ../../../Properties/headers_PR.robot
 
 *** Variables ***
 ${TESTCASE_NO}  TC04

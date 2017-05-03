@@ -18,5 +18,5 @@ Navigate to bottom of the Footer home page and click: Terms & Conditions
     homePage.Select Terms & Conditions option from Footer
 
 Verify URL changes to Terms & Conditions Page
-    ${EXPECTED_URL}  read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${TERMS_CONDITIONS_URL}
+    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${TERMS_CONDITIONS_URL}
     Verify currnt URL  ${EXPECTED_URL}

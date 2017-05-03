@@ -24,5 +24,5 @@ Move to Google+ window Tab
     select window  ${GOOGLE+_TAB_TITLE}
 
 Verify URL changes to Google+ Page
-    ${EXPECTED_URL}  read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${GOOGLE+_URL}
+    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${GOOGLE+_URL}
     Verify currnt URL  ${EXPECTED_URL}

@@ -18,5 +18,5 @@ Navigate to bottom of the Footer home page and click: Policies & Notifications
     homePage.Select Policies & Notifications option from Footer
 
 Verify URL changes to Policies & Notifications Page
-    ${EXPECTED_URL}  read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${POLICIES_NOTIFICATIONS}
+    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${POLICIES_NOTIFICATIONS}
     Verify currnt URL  ${EXPECTED_URL}

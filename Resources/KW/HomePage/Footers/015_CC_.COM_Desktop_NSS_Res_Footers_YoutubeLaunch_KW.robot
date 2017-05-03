@@ -23,5 +23,5 @@ Move to YouTube window Tab
     select window  ${YOUTUBE_TAB_TITLE}
 
 Verify URL changes to YouTube Page
-    ${EXPECTED_URL}  read_cell_data_by_Header_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${YOUTUBE_URL}
+    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${YOUTUBE_URL}
     Verify currnt URL  ${EXPECTED_URL}

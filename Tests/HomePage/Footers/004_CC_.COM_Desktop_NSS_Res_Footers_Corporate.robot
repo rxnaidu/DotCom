@@ -5,7 +5,6 @@ Library  Selenium2Library  30
 Resource  ../../../Resources/KW/HomePage/Footers/004_CC_.COM_Desktop_NSS_Res_Footers_Corporate_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
-#Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***
@@ -46,6 +45,12 @@ Test Teardown  Common.End Web Test
     Navigate to bottom of the Footer home page and click: Corporate > Pressroom
 
     Verify URL changes to Pressroom Page
+
+    Go back to Home Page
+
+    Navigate to bottom of the Footer home page and click: Corporate > Making a Difference
+
+    Verify URL changes to Making a Difference
 
     Go back to Home Page
 

@@ -9,6 +9,7 @@ Resource  ../../../Selectors/homePage_SL.robot
 Sign In link
     wait until element is enabled  ${SIGNIN_DROPDOWN}
     click link  ${SIGNIN_DROPDOWN}
+    sleep  3s
 
 Sign Out
     wait until element is enabled  ${SIGN_OUT}
@@ -214,6 +215,10 @@ Select Pressroom option from Footer
     wait until element is enabled  ${FOOTER_PRESSROOM}
     click element  ${FOOTER_PRESSROOM}
 
+Select Making a Difference option from Footer
+    wait until element is enabled  ${FOOTER_MAKING_A_DIFFERENCE}
+    click element  ${FOOTER_MAKING_A_DIFFERENCE}
+
 Select Public Inspection Files option from Footer
     wait until element is enabled  ${FOOTER_PUBLIC_INSPECTION_FILES}
     click element  ${FOOTER_PUBLIC_INSPECTION_FILES}
@@ -227,7 +232,7 @@ Select Frontier Secure option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_SECURE}
     click element  ${FOOTER_FRONTIER_SECURE}
 
-Select Frontier BusinessEdge option from Footer
+Select Frontier Business option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_BUSINESSEDGE}
     click element  ${FOOTER_FRONTIER_BUSINESSEDGE}
 
@@ -251,42 +256,42 @@ Select Referral Program option from Footer
     wait until element is enabled  ${FOOTER_REFERRAL_PROGRAM}
     click element  ${FOOTER_REFERRAL_PROGRAM}
 
-Select BusinessEdge Partner Program option from Footer
-    wait until element is enabled  ${FOOTER_BUSINESSEDGE_PARTNER_PROGRAM}
-    click element  ${FOOTER_BUSINESSEDGE_PARTNER_PROGRAM}
+Select Frontier Business Partner option from Footer
+    wait until element is enabled  ${FOOTER_FRONTIER_BUSINESS_PARTNER}
+    click element  ${FOOTER_FRONTIER_BUSINESS_PARTNER}
 
 #FRONTIER SITES
-Select Central option from Footer
-    wait until element is enabled  ${FOOTER_CENTRAL}
-    click element  ${FOOTER_CENTRAL}
+Select Frontier Internet option from Footer
+    wait until element is enabled  ${FOOTER_FRONTIER_INTERNET}
+    click element  ${FOOTER_FRONTIER_INTERNET}
 
-Select East option from Footer
-    wait until element is enabled  ${FOOTER_EAST}
-    click element  ${FOOTER_EAST}
+Select Local Internet option from Footer
+    wait until element is enabled  ${FOOTER_LOCAL_INTERNET}
+    click element  ${FOOTER_LOCAL_INTERNET}
 
-Select Mid-South option from Footer
-    wait until element is enabled  ${FOOTER_MID-SOUTH}
-    click element  ${FOOTER_MID-SOUTH}
+Select Frontier FiOS option from Footer
+    wait until element is enabled  ${FOOTER_FRONTIER_FIOS}
+    click element  ${FOOTER_FRONTIER_FIOS}
 
-Select National-IL,IA,MN,NE,UT option from Footer
-    wait until element is enabled  ${FOOTER_NATIONAL-IL-IA-MN-NE-UT}
-    click element  ${FOOTER_NATIONAL-IL-IA-MN-NE-UT}
+Select Frontier Plans option from Footer
+    wait until element is enabled  ${FOOTER_FRONTIER_PLANS}
+    click element  ${FOOTER_FRONTIER_PLANS}
 
-Select National-ID,MT option from Footer
-    wait until element is enabled  ${FOOTER_NATIONAL-ID-MT}
-    click element  ${FOOTER_NATIONAL-ID-MT}
+Select Frontier Broadband option from Footer
+    wait until element is enabled  ${FOOTER_FRONTIER_BROADBAND}
+    click element  ${FOOTER_FRONTIER_BROADBAND}
 
-Select South option from Footer
-    wait until element is enabled  ${FOOTER_SOUTH}
-    click element  ${FOOTER_SOUTH}
+Select Frontier Internet Plans option from Footer
+    wait until element is enabled  ${FOOTER_FRONTIER_INTERNET_PLANS}
+    click element  ${FOOTER_FRONTIER_INTERNET_PLANS}
 
-Select Southeast option from Footer
-    wait until element is enabled  ${FOOTER_SOUTHEAST}
-    click element  ${FOOTER_SOUTHEAST}
+Select Frontier Bundles option from Footer
+    wait until element is enabled  ${FOOTER_FRONTIER_BUNDLES}
+    click element  ${FOOTER_FRONTIER_BUNDLES}
 
-Select West option from Footer
-    wait until element is enabled  ${FOOTER_WEST}
-    click element  ${FOOTER_WEST}
+Select Frontier West option from Footer
+    wait until element is enabled  ${FOOTER_FRONTIER_WEST}
+    click element  ${FOOTER_FRONTIER_WEST}
 
 #FTR
 Select Policies & Notifications option from Footer

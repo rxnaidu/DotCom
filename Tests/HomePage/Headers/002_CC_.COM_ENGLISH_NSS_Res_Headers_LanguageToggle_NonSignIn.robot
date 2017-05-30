@@ -1,10 +1,10 @@
 *** Settings ***
 Documentation  Ftr.com Automation
-Library  Selenium2Library  60
+Library  Selenium2Library  30
 Resource  ../../../Resources/KW/HomePage/Headers/02_LanguageToggle_NonSignIn_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 02_LanguageToggle_NonSignIn

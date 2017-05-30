@@ -28,11 +28,11 @@ Verify URL changes to Frontier Secure Page
     ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${FRONTIER_SECURE_URL}
     Verify currnt URL  ${EXPECTED_URL}
 
-Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier BusinessEdge
-    homePage.Select Frontier BusinessEdge option from Footer
+Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business
+    homePage.Select Frontier Business option from Footer
 
-Verify URL changes to Frontier BusinessEdge Page
-    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${FRONTIER_BUSINESSEDGE_URL}
+Verify URL changes to Frontier Business Page
+    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${FRONTIER_BUSINESS_URL}
     Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Games
@@ -70,10 +70,10 @@ Verify URL changes to Referral Program Page
     ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${REFERRAL_PROGRAM_URL}
     Verify currnt URL  ${EXPECTED_URL}
 
-Navigate to bottom of the Footer home page and click: Frontier Sites > BusinessEdge Partner Program
-    homePage.Select BusinessEdge Partner Program option from Footer
+Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business Partner
+    homePage.Select Frontier Business Partner option from Footer
 
-Verify URL changes to BusinessEdge Partner Program Page
-    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${BUSINESSEDGE_PARTNER_PROGRAM_URL}
+Verify URL changes to Frontier Business Partner Page
+    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${FRONTIER_BUSINESS_PARTNER_URL}
     Verify currnt URL  ${EXPECTED_URL}
 

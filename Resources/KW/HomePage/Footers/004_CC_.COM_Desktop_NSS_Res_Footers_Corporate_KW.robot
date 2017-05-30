@@ -56,6 +56,13 @@ Verify URL changes to Pressroom Page
     ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PRESSROOM_URL}
     Verify currnt URL  ${EXPECTED_URL}
 
+Navigate to bottom of the Footer home page and click: Corporate > Making a Difference
+    homePage.Select Making a Difference option from Footer
+
+Verify URL changes to Making a Difference
+    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${MAKING_A_DIFFERENCE}
+    Verify currnt URL  ${EXPECTED_URL}
+
 Navigate to bottom of the Footer home page and click: Corporate > Public Inspection Files
     homePage.Select Public Inspection Files option from Footer
 

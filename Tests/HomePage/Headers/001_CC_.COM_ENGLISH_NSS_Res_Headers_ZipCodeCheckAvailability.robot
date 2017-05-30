@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Ftr.com Automation
-Library  Selenium2Library  60
+Library  Selenium2Library  30
 
 Resource  ../../../Resources/KW/HomePage/Headers/01_ZipCode_CheckAvailability_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot

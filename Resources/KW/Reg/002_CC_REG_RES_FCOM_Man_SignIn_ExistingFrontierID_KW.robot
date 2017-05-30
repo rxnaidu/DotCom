@@ -3,17 +3,10 @@ Library  Selenium2Library  30
 Resource  ../../PO/Common/common.robot
 Resource  ../../PO/Login/loginPage.robot
 Resource  ../../PO/RES/Landing/homePage.robot
+Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***
-#Excel details for reading data
-${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/Resisdential.xlsx
-${SHEET_NAME}  REG
-${TESTCASE_NO}  TC01
-${USERNAME_SIGNIN}  SignIn_Username
-${PASSWORD_SIGNIN}  SignIn_Password
-${BROWSER_NAME}  Browser
-${DOTCOM_URL}  DotCom_Url
-${DOTCOM_URL_PASSWORD}  DotCom_Url_Password
+${TESTCASE_NO}  TC02
 
 *** Keywords ***
 User launch Ftr.com application using URL

@@ -38,28 +38,29 @@ ${NEWS_URL}  News_Url
 ${CAREERS_URL}  Careers_Url
 ${SUPPLIERS_URL}  Suppliers_Url
 ${PRESSROOM_URL}  Pressroom_Url
+${MAKING_A_DIFFERENCE}  Making_A_Difference_Url
 ${PUBLIC_INSPECTION_FILES_URL}  Public_Inspection_Files_Url
 
 #TC05
 ${GET_VANTAGE_URL}  Get_Vantage_Url
 ${FRONTIER_SECURE_URL}  Frontier_secure_Url
-${FRONTIER_BUSINESSEDGE_URL}  Frontier_BusinessEdge_Url
+${FRONTIER_BUSINESS_URL}  Frontier_Business_Url
 ${FRONTIER_GAMES_URL}  Frontier_Games_Url
 ${FRONTIER_WIFI_URL}  Frontier_Wifi_Url
 ${WHOLESALE_URL}  Wholesale_Url
 ${FRONTIER_YAHOO_PORTAL_URL}  Frontier_Yahoo_Portal_Url
 ${REFERRAL_PROGRAM_URL}  Referral_Program_Url
-${BUSINESSEDGE_PARTNER_PROGRAM_URL}  Business_Partner_Program_Url
+${FRONTIER_BUSINESS_PARTNER_URL}  Frontier_Business_partner_Url
 
 #TC06
-${CENTRAL_URL}  Central_Url
-${EAST_URL}  East_Url
-${MID-SOUTH_URL}  Mid_South_Url
-${NATIONAL-IL-IA-MN-NE-UT_URL}  National-IL-LA-MN-NE-UT_Url
-${NATIONAL-ID-MT_URL}  National-ID-MT_Url
-${SOUTH_URL}  South_Url
-${SOUTHEAST_URL}  SouthEast_Url
-${WEST_URL}  West_Url
+${FRONTIER_INTERNET_URL}  Frontier_Internet_Url
+${LOCAL_INTERNET_URL}  Frontier_Local_Internet_Url
+${FRONTIER_FIOS_URL}  Frontier_Fios_Url
+${FRONTIER_PLANS_URL}  Frontier_Plans_Url
+${FRONTIER_BROADBAND_URL}  Frontier_Broadband_Url
+${FRONTIER_INTERNET_PLANS_URL}  Frontier_Internet_plans_Url
+${FRONTIER_BUNDLES_URL}  Frontier_Bundles_Url
+${FRONTIER_WEST_URL}  Frontier_West_Url
 
 #TC07
 ${POLICIES_NOTIFICATIONS}  Policies_Notifications

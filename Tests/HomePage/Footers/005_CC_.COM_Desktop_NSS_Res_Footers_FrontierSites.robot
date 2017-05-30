@@ -5,7 +5,6 @@ Library  Selenium2Library  30
 Resource  ../../../Resources/KW/HomePage/Footers/005_CC_.COM_Desktop_NSS_Res_Footers_FrontierSites_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
-#Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***
@@ -25,9 +24,9 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier BusinessEdge
+    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business
 
-    Verify URL changes to Frontier BusinessEdge Page
+    Verify URL changes to Frontier Business Page
 
     Go back to Home Page
 
@@ -61,8 +60,8 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Frontier Sites > BusinessEdge Partner Program
+    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business Partner
 
-    Verify URL changes to BusinessEdge Partner Program Page
+    Verify URL changes to Frontier Business Partner Page
 
 

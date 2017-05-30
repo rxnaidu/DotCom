@@ -27,8 +27,7 @@ Enter User name and Password and Select Sign In button
 
 Select Sign Out from righ corner of the screen
     wait until element is enabled  ${INTERNET}
-    wait until element is enabled  id=btnClose
-    click element  id=btnClose
+    sleep  2s
     homePage.Sign Out
 
 Verify User launch back to Hopme page defaulting to Residential Tab

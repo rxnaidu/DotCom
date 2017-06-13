@@ -4,7 +4,7 @@ Library  Selenium2Library  30
 Resource  ../../Resources/KW/Reg/003_CC_REG_RES_FCOM_Man_MyStatements-CurrentBillingStatement_KW.robot
 Resource  ../../Resources/PO/Common/common.robot
 
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 
@@ -15,6 +15,8 @@ Test Teardown  Common.End Web Test
     Select the Sign In link
 
     Enter User name and Password and Select Sign In button
+
+    Select close on auto payment popup
 
     Verify 17 digit Account Number displayed on Account Summary page
 

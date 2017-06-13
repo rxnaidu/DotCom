@@ -4,17 +4,19 @@ Library  Selenium2Library  30
 Resource  ../../Resources/KW/Reg/004_CC_REG_RES_FCOM_Man_ManagePaymentMethodsPage-AddandDelete_KW.robot
 Resource  ../../Resources/PO/Common/common.robot
 
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 
-003_CC_REG_RES_FCOM_Man_MyStatements-Current BillingStatement
+004_CC_REG_RES_FCOM_Man_ManagePaymentMethodsPage-AddandDelete
 
     User launch Ftr.com application using URL
 
     Select the Sign In link
 
     Enter User name and Password and Select Sign In button
+
+    Select close on auto payment popup
 
     Verify 17 digit Account Number displayed on Account Summary page
 

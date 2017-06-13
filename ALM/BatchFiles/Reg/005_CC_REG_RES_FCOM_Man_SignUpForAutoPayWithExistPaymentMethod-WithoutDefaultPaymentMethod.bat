@@ -1,0 +1,5 @@
+@echo off
+
+cd c:\Development\Robot\DotCom
+
+call robot -d ALM\TestResults\Reg\005_CC_REG_RES_FCOM_Man_SignUpForAutoPayWithExistPaymentMethod-WithoutDefaultPaymentMethod Tests\Reg\005_CC_REG_RES_FCOM_Man_SignUpForAutoPayWithExistPaymentMethod-WithoutDefaultPaymentMethod.robot

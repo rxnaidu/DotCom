@@ -4,12 +4,13 @@ Library  readExcel
 Resource  ../../../Selectors/homePage_SL.robot
 
 *** Variables ***
+${INTERNET}  xpath=//h5[text()='Internet']
 *** Keywords ***
 
 Sign In link
     wait until element is enabled  ${SIGNIN_DROPDOWN}
     click link  ${SIGNIN_DROPDOWN}
-    sleep  3s
+    sleep  1s
 
 Sign Out
     wait until element is enabled  ${SIGN_OUT}
@@ -30,7 +31,8 @@ User Sign In from Excel
 
     wait until element is enabled  ${USER_SIGNIN_BTN}
     click button  ${USER_SIGNIN_BTN}
-    sleep  3s
+    sleep  4s
+    wait until element is enabled  ${INTERNET}
 
 User Sign In
     [Arguments]  ${Username_Inp}  ${Password_Inp}

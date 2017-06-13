@@ -8,7 +8,7 @@ Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***
 ${TESTCASE_NO}  TC13
-${FACEBOOK_TAB_TITLE}  Security Check Required
+${FACEBOOK_TAB_TITLE}  Frontier Communications - Home | Facebook
 
 *** Keywords ***
 User launch Ftr.com application using URL

@@ -29,4 +29,5 @@ ${PASSWORD_INP}  SignIn_Password
 
 #TC09
 
-
+#TC11
+${CPNI_URL}  CPNI_Url

@@ -17,6 +17,7 @@ ${CONTINUE_BTN}  id=btnForContSignUpID
 ${CANCEL_BTN}  xpath=//button[@id='btnForContSignUpID']/following-sibling::a
 ${CONFIRM_BTN}  XPATH=//button[text()='CONFIRM']
 ${MANAGE_PAYMENT_METHODS}  xpath=//a[text()='Manage Payment Methods ']
+${MANAGE_SUTO_PAY}  xpath=//a[text()='Manage Auto Pay ']
 
 *** Keywords ***
 User launch Ftr.com application using URL
@@ -28,6 +29,9 @@ Select the Sign In link
 
 Enter User name and Password and Select Sign In button
     homePage.User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
+
+Select close on auto payment popup
+    Close Auto Pay popup
 
 Verify 17 digit Account Number displayed on Account Summary page
     accountSummary.Verify page elements
@@ -142,14 +146,25 @@ Validate page elements on Confirmation screen
 
 
 Validate in the side tool bar a link that says Manage Auto Pay and when clicked user is navigated to the Manage Auto Pay screen
-    page should contain  Manage Payment Methods
+    wait until element is visible  ${MANAGE_SUTO_PAY}
     sleep  4s
-    wait until element is enabled  ${MANAGE_PAYMENT_METHODS}
-    click element  ${MANAGE_PAYMENT_METHODS}
-    wait until page contains  Manage Payment Methods
+    click element  ${MANAGE_SUTO_PAY}
+    wait until page contains  Here are your current settings for Auto Pay
+    page should contain  Manage Auto Pay
 
-    page should contain  Add or manage the payment methods associated with your account below
-    page should contain  Account
+
+#==========================
+
+#Select Manage Payment Methods link from side tool bar
+#    page should contain  Manage Payment Methods
+#    sleep  4s
+#    wait until element is visible  ${MANAGE_PAYMENT_METHODS}
+#    wait until element is enabled  ${MANAGE_PAYMENT_METHODS}
+#    click element  ${MANAGE_PAYMENT_METHODS}
+#    wait until page contains  Manage Payment Methods
+#
+#    page should contain  Add or manage the payment methods associated with your account below
+#    page should contain  Account
 
 
 

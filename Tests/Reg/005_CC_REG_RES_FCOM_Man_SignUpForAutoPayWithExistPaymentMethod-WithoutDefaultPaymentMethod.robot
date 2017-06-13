@@ -16,6 +16,8 @@ Resource  ../../Resources/PO/Common/common.robot
 
     Enter User name and Password and Select Sign In button
 
+    Select close on auto payment popup
+
     Verify 17 digit Account Number displayed on Account Summary page
 
     Mouse over on My Payments Tab and verify displayed options

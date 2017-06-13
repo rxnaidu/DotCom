@@ -35,6 +35,9 @@ Select the Sign In link
 Enter User name and Password and Select Sign In button
     homePage.User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
+Select close on auto payment popup
+    Close Auto Pay popup
+
 Verify 17 digit Account Number displayed on Account Summary page
     accountSummary.Verify page elements
 

@@ -20,3 +20,7 @@ ${NAME_BUTTON_TEXT}  Name_Button_Text
 ${ROUTING_NUMBER}  Routing_Number
 ${BANK_ACCOUNT_NUMBER}  Bank_Accounting_Number
 ${RE_ENTER_BANK_ACCOUNT_NUMBER}  Re_Enter_Bank_Account_Number
+
+#TC06
+${LINK_BILLING_ACT_NUM}  Billing_Act_Num
+${LINK_BILLING_ACT_PIN}  Billing_Act_Pin

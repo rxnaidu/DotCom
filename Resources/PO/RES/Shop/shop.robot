@@ -13,12 +13,12 @@ ${MOVING}  link=Moving
 
 #----------spanish---------------#
 ${SHOP_TAB_SPA}  link=Comprar
-${BUNDLE_SPA}  link=Paquetes
-${INTERNET_SPA}  link=Internet
-${PHONE_SPA}  link=Teléfono
-${VIDEO/TV_SPA}  link=Video/TV
-${DIGITAL_ESSENTIALS_SPA}  link=Artículos digitales esenciales
-${MOVING_SPA}  link=Mudanzas
+${BUNDLE_SPA}  id=ecomm-rv-anchor-Paquetes
+${INTERNET_SPA}  id=ecomm-rv-anchor-Internet
+${PHONE_SPA}  id=ecomm-rv-anchor-Tel&#233;fono
+${VIDEO/TV_SPA}  id=ecomm-rv-anchor-Video/TV
+${DIGITAL_ESSENTIALS_SPA}  id=ecomm-rv-anchor-DigitalEssentials
+${MOVING_SPA}  id=ecomm-rv-anchor-Moving
 
 *** Keywords ***
 

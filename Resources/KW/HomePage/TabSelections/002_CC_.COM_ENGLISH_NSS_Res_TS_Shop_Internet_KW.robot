@@ -16,6 +16,7 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Click on the Tab selections as follows: Shop > Internet
+    sleep  2s
     shop.Mouse over on Shop Tab
     shop.Select Internet option
 

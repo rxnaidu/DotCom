@@ -24,6 +24,6 @@ Verify URL changes to Digital Essentials
 
     Encode String To Bytes  ${SHOP_DEGITAL_ESSENTIALS_URL}  ASCII
 
-    wait until page contains  Frontier Secure is the smart decision
+    wait until page contains  Frontier Secure
 
     location should be  ${SHOP_DEGITAL_ESSENTIALS_URL}

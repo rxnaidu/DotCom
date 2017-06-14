@@ -5,7 +5,7 @@ Library  Selenium2Library  60
 ${SHOP_TAB}  link=Shop
 ${MY_ACCOUNT_TAB}  link=My Account
 ${BUNDLE}  link=Bundles
-${INTERNET}  link=Internet
+${INTERNET_OPA}  link=Internet
 ${PHONE}  link=Phone
 ${VIDEO/TV}  link=Video/TV
 ${DIGITAL_ESSENTIALS}  link=Digital Essentials
@@ -46,8 +46,8 @@ Select Bundle option
     click link  ${BUNDLE}
 
 Select Internet option
-    wait until element is enabled  ${INTERNET}
-    click link  ${INTERNET}
+    wait until element is enabled  ${INTERNET_OPA}
+    click link  ${INTERNET_OPA}
 
 Select Phone option
     wait until element is enabled  ${PHONE}

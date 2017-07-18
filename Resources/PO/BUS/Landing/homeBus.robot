@@ -13,4 +13,4 @@ Verify Business home Page
     page should contain  Solutions
     page should contain  Resources
     page should contain  Support
-    page should contain  Availability
+

@@ -17,8 +17,9 @@ ${BUNDLE_SPA}  id=ecomm-rv-anchor-Paquetes
 ${INTERNET_SPA}  id=ecomm-rv-anchor-Internet
 ${PHONE_SPA}  id=ecomm-rv-anchor-Tel&#233;fono
 ${VIDEO/TV_SPA}  id=ecomm-rv-anchor-Video/TV
-${DIGITAL_ESSENTIALS_SPA}  id=ecomm-rv-anchor-DigitalEssentials
-${MOVING_SPA}  id=ecomm-rv-anchor-Moving
+${DIGITAL_ESSENTIALS_SPA}  id=ecomm-rv-anchor-Art&#237;culosdigitalesesenciales
+${MOVING_SPA}  id=ecomm-rv-anchor-Mudanzas
+
 
 *** Keywords ***
 

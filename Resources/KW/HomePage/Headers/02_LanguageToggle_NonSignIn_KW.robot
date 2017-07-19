@@ -15,7 +15,7 @@ ${TESTCASE_NO}  TC02
 User launch Ftr.com application using URL
     common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
-
+    maximize browser window
 Select the new Multi-Language Toggle on the Residential Home page
     homePage.Select Multi-Language Toggle for Spanish Language
 

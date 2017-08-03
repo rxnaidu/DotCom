@@ -25,7 +25,7 @@ Close Auto Pay popup
     wait until element is enabled  ${PHONE}
     wait until element is enabled  ${VIDEO}
 #    wait until page contains  One-time set up, no more late fees.
-    sleep  2s
+    sleep  4s
 #    wait until element is enabled  ${AUTOPAY_POPUP}
 #    focus  ${AUTOPAY_POPUP}
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}

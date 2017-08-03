@@ -25,12 +25,7 @@ Resource  ../../Resources/PO/Common/common.robot
     Validate Frontier ID, Password & Email Notifications Section data
 
     Click Unlink for an account number
-#
-#    Select Billing Account Number option and enter account number
-#
-#    Select Frontier Billing Account PIN and continue
 
-#    validate linked account number
 
 
 

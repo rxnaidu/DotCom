@@ -23,6 +23,9 @@ ${LINK_AN_ACCOUNT}  xpath=//a[text()='Link an Account ']
 ${LINK_ANOTHER_ACCOUNT}  xpath=//a[text()='Link another Account']
 ${BILLING_ACCT_NUM}  xpath=//span[text()='Billing Account Number']
 ${BILLING_ACCT_NUM_TEXT}   css=[placeholder="12345678901234567"]
+${FTR_BLG_ACT_PIN_RADIO}  xpath=//span[text()='Frontier Billing Account PIN']
+${FTR_BLG_ACT_PIN__INP}  xpath=//div[@id="link-account-input-2"]//input[@id='link-account-id']
+${LINK_CONTINUE}  xpath=//span[text()='Continue']
 *** Keywords ***
 User launch Ftr.com application using URL
     common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
@@ -67,6 +70,8 @@ Validate Acct no, Address in My Profile page
 Click Link An Account
     wait until page contains  Link an Account
     wait until element is enabled  ${LINK_AN_ACCOUNT}
+    wait until element is visible  ${LINK_AN_ACCOUNT}
+    sleep  6s
     click element  ${LINK_AN_ACCOUNT}
     wait until page contains  Select a method to identify your Account
 
@@ -77,20 +82,23 @@ Select Billing Account Number option and enter account number
     ${Enter_Your_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${LINK_BILLING_ACT_NUM}
     input text  ${BILLING_ACCT_NUM_TEXT}  ${Enter_Your_Acct_Num}
 
-    click element  xpath=//span[text()='Continue']
+    click element  ${LINK_CONTINUE}
 
 Select Frontier Billing Account PIN and continue
     wait until page contains  For your security
     wait until page contains  Last 4 digits of Credit Card or Bank Account Number
-    click element  xpath=//span[text()='Last 4 digits of Credit Card or Bank Account Number']
+    click element  ${FTR_BLG_ACT_PIN_RADIO}
 
     sleep  2s
-     ${Enter_Your_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${LINK_BILLING_ACT_NUM}
-    input text  ${BILLING_ACCT_NUM_TEXT}  ${Enter_Your_Acct_Num}
-    input text  css=[placeholder="1234"]  3812
-    click element  xpath=//span[text()='Continue']
+    wait until element is enabled  ${FTR_BLG_ACT_PIN_INP}
 
-validate linked account number
+#    scroll to locator view  ${webdriver}  xpath=//span[text()='Frontier Billing Account PIN']
+
+    ${Enter_Your_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${LINK_BILLING_ACT_PIN}
+    input text  ${FTR_BLG_ACT_PIN_INP}  ${Enter_Your_Acct_Num}
+    click element  ${LINK_CONTINUE}
+    wait until page contains  Your Frontier ID has been linked to this Account
+
 
 
 

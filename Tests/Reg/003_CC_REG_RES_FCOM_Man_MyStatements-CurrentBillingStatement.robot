@@ -1,10 +1,10 @@
 *** Settings ***
-Library  Selenium2Library  30
+Library  Selenium2Library  45
 
 Resource  ../../Resources/KW/Reg/003_CC_REG_RES_FCOM_Man_MyStatements-CurrentBillingStatement_KW.robot
 Resource  ../../Resources/PO/Common/common.robot
 
-#Test Teardown  Common.End Web Test
+Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 

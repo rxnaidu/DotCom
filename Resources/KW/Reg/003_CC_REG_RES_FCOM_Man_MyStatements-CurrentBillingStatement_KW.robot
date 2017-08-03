@@ -60,11 +60,11 @@ Validate Current Bill dates
     ${Current_Bill_Dates}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${CURRENT_BILL_DATE}
     page should contain  ${Current_Bill_Dates}
 
-Select + to expand Frontier Monthly Service Charges
-    click element  xpath=//h4[contains(text(),'OTHER CHARGES AND CREDITS FROM PRIOR')]/i
-    sleep  2s
+#Select + to expand Frontier Monthly Service Charges
+#    click element  xpath=//h4[contains(text(),'OTHER CHARGES AND CREDITS FROM PRIOR')]/i
+#    sleep  2s
 
-Select + to expant Monthly Service Charges
+Select + to expand Frontier Monthly Service Charges
     click element  xpath=//h4[contains(text(),'FRONTIER MONTHLY SERVICE CHARGES')]/i
     sleep  2s
 

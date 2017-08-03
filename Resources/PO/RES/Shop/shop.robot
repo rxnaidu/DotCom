@@ -126,5 +126,4 @@ Verify Spanish Text is displayed on Degital Essentials page
 
 Verify Spanish Text is displayed on Moving page
     wait until page contains  Llama al
-    page should contain  Preguntas frecuentes
     page should contain  Llama al

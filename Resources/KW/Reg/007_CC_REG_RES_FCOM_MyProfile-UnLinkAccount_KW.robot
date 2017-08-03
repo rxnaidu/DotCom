@@ -60,6 +60,10 @@ Click Unlink for an account number
 
     wait until page contains  You're about to unlink this Account.
     click element  ${POPUP_UNLINK}
+    sleep  4s
+    wait until page contains  This Account has been unlinked
+
+    page should contain  This Account has been unlinked from your Frontier ID
 
 
 

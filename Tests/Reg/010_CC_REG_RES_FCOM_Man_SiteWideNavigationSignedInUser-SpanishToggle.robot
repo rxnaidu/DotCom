@@ -4,7 +4,7 @@ Library  Selenium2Library  45
 Resource  ../../Resources/KW/Reg/010_CC_REG_RES_FCOM_Man_SiteWideNavigationSignedInUser-SpanishToggle_KW.robot
 Resource  ../../Resources/PO/Common/common.robot
 
-#Test Teardown  Common.End Web Test
+Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 010_CC_REG_RES_FCOM_Man_SiteWideNavigationSignedInUser-SpanishToggle

@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Ftr.com Automation
-Library  Selenium2Library  30
+Library  Selenium2Library  45
 Resource  ../../../Resources/KW/HomePage/Headers/03_SignInWindow_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 

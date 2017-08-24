@@ -24,6 +24,6 @@ Verify URL changes to Moving page
 
     Encode String To Bytes  ${Shop_Moving_Url}  ASCII
 
-    wait until page contains  Whether you’re moving in from out of town
+    wait until page contains  Chat
 
     location should be  ${Shop_Moving_Url}

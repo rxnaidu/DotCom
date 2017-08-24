@@ -19,6 +19,7 @@ Navigate to bottom of the Footer home page and click: Facebook
     homePage.Select Facebook option from Footer
 
 Move to Facebook window Tab
+    wait until page contains  facebook
     sleep  4s
     @{titles}  get window titles
     select window  ${FACEBOOK_TAB_TITLE}

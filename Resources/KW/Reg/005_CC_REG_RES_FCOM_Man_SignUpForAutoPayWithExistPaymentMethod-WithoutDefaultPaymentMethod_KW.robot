@@ -17,7 +17,7 @@ ${CONTINUE_BTN}  id=btnForContSignUpID
 ${CANCEL_BTN}  xpath=//button[@id='btnForContSignUpID']/following-sibling::a
 ${CONFIRM_BTN}  XPATH=//button[text()='CONFIRM']
 ${MANAGE_PAYMENT_METHODS}  xpath=//a[text()='Manage Payment Methods ']
-${MANAGE_SUTO_PAY}  xpath=//a[text()='Manage Auto Pay ']
+${MANAGE_AUTO_PAY}  xpath=//a[text()='Manage Auto Pay ']
 
 *** Keywords ***
 User launch Ftr.com application using URL
@@ -146,11 +146,21 @@ Validate page elements on Confirmation screen
 
 
 Validate in the side tool bar a link that says Manage Auto Pay and when clicked user is navigated to the Manage Auto Pay screen
-    wait until element is visible  ${MANAGE_SUTO_PAY}
+    wait until element is visible  ${MANAGE_AUTO_PAY}
     sleep  4s
-    click element  ${MANAGE_SUTO_PAY}
+    click element  ${MANAGE_AUTO_PAY}
     wait until page contains  Here are your current settings for Auto Pay
     page should contain  Manage Auto Pay
+    sleep  2s
+
+Cancel Auto Pay option
+    wait until page contains  Cancel Auto Pay
+    click link  link=Cancel Auto Pay
+    sleep  2s
+    click link  link=Yes, Please Cancel
+
+    wait until page contains  Auto Pay payments have been cancelled
+    sleep  2s
 
 
 #==========================

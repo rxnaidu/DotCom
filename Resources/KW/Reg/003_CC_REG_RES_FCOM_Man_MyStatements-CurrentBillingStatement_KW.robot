@@ -99,6 +99,7 @@ Validate Pay Bill button
     click link  link=Pay Bill
     wait until page contains  Make A Payment
     wait until page contains  Summary of Charges
+    sleep  2s
 
     page should contain  Make A Payment
     page should contain  Summary of Charges
@@ -108,6 +109,7 @@ Validate Pay Bill button
 
 
 Validate Sign up for Auto Pay link
+    wait until element is enabled  link=Sign up for Auto Pay
     click link  link=Sign up for Auto Pay
 
     wait until page contains  Sign up for Auto Pay

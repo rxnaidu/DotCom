@@ -5,7 +5,7 @@ Library  Selenium2Library  45
 Resource  ../../../Resources/KW/HomePage/Headers/01_ZipCode_CheckAvailability_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 

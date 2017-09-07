@@ -13,9 +13,13 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
     wait until page contains  Shop
     wait until page contains  My Account
-    go to  https://qat02.frontier.com/resources/cpni
+
+    ${URL_EXCEL_AGAIN}   read_excel_data_by_cell_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${DOTCOM_URL}
+
+    go to  ${URL_EXCEL_AGAIN}
 
 Verify CPNI page details
-    page should contain  optout-title
+    wait until page contains  Frontier CPNI
+    page should contain  Frontier CPNI Opt Out
     page should contain  Customer Type
     page should contain  First Name

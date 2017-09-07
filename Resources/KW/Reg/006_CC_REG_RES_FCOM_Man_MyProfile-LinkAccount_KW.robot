@@ -76,7 +76,9 @@ Click Link An Account
     wait until page contains  Select a method to identify your Account
 
 Select Billing Account Number option and enter account number
+    wait until page contains  Billing Account Number
     wait until element is visible  ${BILLING_ACCT_NUM}
+    sleep  2s
     click element  ${BILLING_ACCT_NUM}
     sleep  2s
     ${Enter_Your_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${LINK_BILLING_ACT_NUM}

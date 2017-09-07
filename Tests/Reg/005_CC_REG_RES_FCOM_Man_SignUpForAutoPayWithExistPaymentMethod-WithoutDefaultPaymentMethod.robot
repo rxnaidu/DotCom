@@ -50,4 +50,12 @@ Test Teardown  Common.End Web Test
 
     Validate in the side tool bar a link that says Manage Auto Pay and when clicked user is navigated to the Manage Auto Pay screen
 
+    # Removing added Auto Payment method for re-executing this test case next time.
+
+    Cancel Auto Pay option
+
+
+
+
+
 

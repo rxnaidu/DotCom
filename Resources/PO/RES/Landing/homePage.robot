@@ -1,6 +1,7 @@
 *** Settings ***
 Library  Selenium2Library
 Library  readExcel
+Library  SigmaUtil
 Resource  ../../../Selectors/homePage_SL.robot
 
 *** Variables ***
@@ -112,6 +113,7 @@ Go back to Home Page
 #SHOP
 Select Bundle option from Footer
     wait until element is enabled  ${FOOTER_BUNDLE}
+    scroll to locator view  ${webdriver}  ${FOOTER_BUNDLE}
     click element  ${FOOTER_BUNDLE}
 
 Select Internet option from Footer
@@ -141,60 +143,74 @@ Select Discount programes option from Footer
 #MY ACCOUNT
 Select Pay Bill option from Footer
     wait until element is enabled  ${FOOTER_PAY_BILL}
+    scroll to locator view  ${webdriver}  ${FOOTER_PAY_BILL}
     click element  ${FOOTER_PAY_BILL}
 
 Select Check EMail option from Footer
     wait until element is enabled  ${FOOTER_CHECK_EMAIL}
+    scroll to locator view  ${webdriver}  ${FOOTER_CHECK_EMAIL}
     click element  ${FOOTER_CHECK_EMAIL}
 
 Select Manage Account option from Footer
     wait until element is enabled  ${FOOTER_MANAGE_ACCOUNT}
+    scroll to locator view  ${webdriver}  ${FOOTER_MANAGE_ACCOUNT}
     click element  ${FOOTER_MANAGE_ACCOUNT}
 
 Select MyFrontier App option from Footer
     wait until element is enabled  ${FOOTER_MYFRONTIER_APP}
+    scroll to locator view  ${webdriver}  ${FOOTER_MYFRONTIER_APP}
     click element  ${FOOTER_MYFRONTIER_APP}
 
 Select Watch TV option from Footer
     wait until element is enabled  ${FOOTER_WATCH_TV}
+    scroll to locator view  ${webdriver}  ${FOOTER_WATCH_TV}
     click element  ${FOOTER_WATCH_TV}
 
 Select Enterprise Accounts option from Footer
     wait until element is enabled  ${FOOTER_ENTERPRISE_ACCOUNTS}
+    scroll to locator view  ${webdriver}  ${FOOTER_ENTERPRISE_ACCOUNTS}
     click element  ${FOOTER_ENTERPRISE_ACCOUNTS}
 
 #SUPPORT
 Select Contact Us option from Footer
     wait until element is enabled  ${FOOTER_CONTACT_US}
+    scroll to locator view  ${webdriver}  ${FOOTER_CONTACT_US}
     click element  ${FOOTER_CONTACT_US}
 
 Select Help Center option from Footer
     wait until element is enabled  ${FOOTER_HELP_CENTER}
+    scroll to locator view  ${webdriver}  ${FOOTER_HELP_CENTER}
     click element  ${FOOTER_HELP_CENTER}
 
 Select Order Status option from Footer
     wait until element is enabled  ${FOOTER_ORDER_STATUS}
+    scroll to locator view  ${webdriver}  ${FOOTER_ORDER_STATUS}
     click element  ${FOOTER_ORDER_STATUS}
 
 Select Trouble Ticket Status option from Footer
     wait until element is enabled  ${FOOTER_TROUBLE_TICKET_STATUS}
+    scroll to locator view  ${webdriver}  ${FOOTER_TROUBLE_TICKET_STATUS}
     click element  ${FOOTER_TROUBLE_TICKET_STATUS}
 
 Select Support Wizard option from Footer
     wait until element is enabled  ${FOOTER_SUPPORT_WIZARD}
+    scroll to locator view  ${webdriver}  ${FOOTER_SUPPORT_WIZARD}
     click element  ${FOOTER_SUPPORT_WIZARD}
 
 Select Test Your Speed option from Footer
     wait until element is enabled  ${FOOTER_TEST_YOUR_SPEED}
+    scroll to locator view  ${webdriver}  ${FOOTER_TEST_YOUR_SPEED}
     click element  ${FOOTER_TEST_YOUR_SPEED}
 
 Select Video Gallery option from Footer
     wait until element is enabled  ${FOOTER_VIDEO_GALLERY}
+    scroll to locator view  ${webdriver}  ${FOOTER_VIDEO_GALLERY}
     click element  ${FOOTER_VIDEO_GALLERY}
 
 #CORPORATE
 Select About Us option from Footer
     wait until element is enabled  ${FOOTER_ABOUT_US}
+    scroll to locator view  ${webdriver}  ${FOOTER_ABOUT_US}
     click element  ${FOOTER_ABOUT_US}
 
 Select Investor Relations option from Footer
@@ -228,6 +244,8 @@ Select Public Inspection Files option from Footer
 #FRONTIER SITES
 Select Get Vantage option from Footer
     wait until element is enabled  ${FOOTER_GET_VANTAGE}
+    #sleep  2s
+    scroll to locator view  ${webdriver}  ${FOOTER_GET_VANTAGE}
     click element  ${FOOTER_GET_VANTAGE}
 
 Select Frontier Secure option from Footer
@@ -298,42 +316,52 @@ Select Frontier West option from Footer
 #FTR
 Select Policies & Notifications option from Footer
     wait until element is enabled  ${FOOTER_POLICIES_NOTIFICATIONS}
+    scroll to locator view  ${webdriver}  ${FOOTER_POLICIES_NOTIFICATIONS}
     click element  ${FOOTER_POLICIES_NOTIFICATIONS}
 
 Select Terms & Conditions option from Footer
     wait until element is enabled  ${FOOTER_TERMS_CONDITIONS}
+    scroll to locator view  ${webdriver}  ${FOOTER_TERMS_CONDITIONS}
     click element  ${FOOTER_TERMS_CONDITIONS}
 
 Select Privacy Policy option from Footer
     wait until element is enabled  ${FOOTER_PRIVACY_POLICY}
+    scroll to locator view  ${webdriver}  ${FOOTER_PRIVACY_POLICY}
     click element  ${FOOTER_PRIVACY_POLICY}
 
 Select Store Locator option from Footer
     wait until element is enabled  ${FOOTER_STORE_LOCATOR}
+    scroll to locator view  ${webdriver}  ${FOOTER_STORE_LOCATOR}
     click element  ${FOOTER_STORE_LOCATOR}
 
 Select Site Map option from Footer
     wait until element is enabled  ${FOOTER_SITE_MAP}
+    scroll to locator view  ${webdriver}  ${FOOTER_SITE_MAP}
     click element  ${FOOTER_SITE_MAP}
 
 Select Twitter option from Footer
     wait until element is enabled  ${FOOTER_TWITTER}
+    scroll to locator view  ${webdriver}  ${FOOTER_TWITTER}
     click element  ${FOOTER_TWITTER}
 
 Select Facebook option from Footer
     wait until element is enabled  ${FOOTER_FACEBOOK}
+    scroll to locator view  ${webdriver}  ${FOOTER_FACEBOOK}
     click element  ${FOOTER_FACEBOOK}
 
 Select Linkedin option from Footer
     wait until element is enabled  ${FOOTER_LINKEDIN}
+    scroll to locator view  ${webdriver}  ${FOOTER_LINKEDIN}
     click element  ${FOOTER_LINKEDIN}
 
 Select YouTube option from Footer
     wait until element is enabled  ${FOOTER_YOUTUBE}
+    scroll to locator view  ${webdriver}  ${FOOTER_YOUTUBE}
     click element  ${FOOTER_YOUTUBE}
 
 Select Google+ option from Footer
     wait until element is enabled  ${FOOTER_GOOGLE+}
+    scroll to locator view  ${webdriver}  ${FOOTER_GOOGLE+}
     click element  ${FOOTER_GOOGLE+}
 
 

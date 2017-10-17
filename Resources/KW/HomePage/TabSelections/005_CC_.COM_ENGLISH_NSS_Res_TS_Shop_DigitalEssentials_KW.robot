@@ -26,4 +26,5 @@ Verify URL changes to Digital Essentials
 
     wait until page contains  Frontier Secure
 
-    location should be  ${SHOP_DEGITAL_ESSENTIALS_URL}
+    location should be  ${SHOP_DEGITAL_EScSENTIALS_URL}
+

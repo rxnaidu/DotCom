@@ -50,7 +50,8 @@ ${FOOTER_MAKING_A_DIFFERENCE}  xpath=//footer[@id='footer']//a[contains(text(),'
 ${FOOTER_PUBLIC_INSPECTION_FILES}  xpath=//footer[@id='footer']//a[contains(text(),'Public Inspection Files')]
 
 #FRONTIER SITES
-${FOOTER_GET_VANTAGE}  xpath=//footer[@id='footer']//a[contains(text(),'Get Vantage')]
+#${FOOTER_GET_VANTAGE}  xpath=//footer[@id='footer']//a[contains(text(),'Get Vantage')]
+${FOOTER_GET_VANTAGE}  xpath=//a[contains(text(),'Get Vantage')]
 ${FOOTER_FRONTIER_SECURE}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Secure')]
 ${FOOTER_FRONTIER_BUSINESSEDGE}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Business')]
 ${FOOTER_FRONTIER_GAMES}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Games')]

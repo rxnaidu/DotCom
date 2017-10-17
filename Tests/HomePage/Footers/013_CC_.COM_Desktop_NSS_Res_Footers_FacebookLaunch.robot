@@ -5,7 +5,7 @@ Library  Selenium2Library  30
 Resource  ../../../Resources/KW/HomePage/Footers/013_CC_.COM_Desktop_NSS_Res_Footers_FacebookLaunch_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
-#Test Teardown  Common.End Web Test
+Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 013_CC_.COM_Desktop_NSS_Res_Footers_FacebookLaunch

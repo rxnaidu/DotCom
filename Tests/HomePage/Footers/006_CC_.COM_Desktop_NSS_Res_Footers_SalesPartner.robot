@@ -54,9 +54,9 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier West
-
-    Verify URL changes to Frontier West Page
+#    Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier West
+#
+#    Verify URL changes to Frontier West Page
 
 
 

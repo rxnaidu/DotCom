@@ -283,6 +283,7 @@ Select Frontier Business Partner option from Footer
 #FRONTIER SITES
 Select Frontier Internet option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_INTERNET}
+    scroll to locator view  ${webdriver}  ${FOOTER_FRONTIER_INTERNET}
     click element  ${FOOTER_FRONTIER_INTERNET}
 
 Select Local Internet option from Footer
@@ -346,6 +347,7 @@ Select Twitter option from Footer
 
 Select Facebook option from Footer
     wait until element is enabled  ${FOOTER_FACEBOOK}
+    sleep  3s
     scroll to locator view  ${webdriver}  ${FOOTER_FACEBOOK}
     click element  ${FOOTER_FACEBOOK}
 

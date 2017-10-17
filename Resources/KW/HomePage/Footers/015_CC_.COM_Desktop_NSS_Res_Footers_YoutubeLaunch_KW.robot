@@ -8,7 +8,7 @@ Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***
 ${TESTCASE_NO}  TC15
-${YOUTUBE_TAB_TITLE}  Frontier Communications - YouTube
+${YOUTUBE_TAB_TITLE}   Frontier Communications - YouTube - YouTube
 *** Keywords ***
 User launch Ftr.com application using URL
     common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}

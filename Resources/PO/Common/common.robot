@@ -49,4 +49,5 @@ Begin Old Web Test
 
 End Web Test
     #Close the current browser
-    close browser
+    delete all cookies
+    close all browsers

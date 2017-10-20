@@ -7,6 +7,7 @@ Resource  ../../../Properties/headers_PR.robot
 
 *** Variables ***
 ${INTERNET}  //h5[text()='Internet']
+${AUTOPAY_POPUP}  id=btnClose
 ${TESTCASE_NO}  TC03
 
 *** Keywords ***
@@ -27,6 +28,8 @@ Enter User name and Password and Select Sign In button
 
 Select Sign Out from righ corner of the screen
     wait until element is enabled  ${INTERNET}
+    sleep  5s
+    run keyword and ignore error  click element  ${AUTOPAY_POPUP}
     sleep  2s
     homePage.Sign Out
 

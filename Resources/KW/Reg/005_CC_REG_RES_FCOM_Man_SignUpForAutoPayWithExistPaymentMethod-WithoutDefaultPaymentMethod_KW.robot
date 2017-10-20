@@ -1,5 +1,6 @@
 *** Settings ***
 Library  Selenium2Library  30
+Library  SigmaUtil
 Resource  ../../PO/Common/common.robot
 Resource  ../../PO/Login/loginPage.robot
 Resource  ../../PO/RES/Landing/homePage.robot
@@ -101,6 +102,8 @@ Below the Amount field is a Continue button and a Cancel link
     page should contain  Cancel
 
 Validate when the Continue button is selected the user is navigated to the Review & Confirm Auto Pay Settings screen
+#    scroll to locator view  ${webdriver}  ${CONTINUE_BTN}
+    SCROLL_DOWN_PAGE_HALF
     click element  ${CONTINUE_BTN}
     wait until page contains  Please Review your Auto Pay settings then Click CONFIRM to continue.
 
@@ -155,6 +158,8 @@ Validate in the side tool bar a link that says Manage Auto Pay and when clicked 
 
 Cancel Auto Pay option
     wait until page contains  Cancel Auto Pay
+    wait until element is enabled  link=Cancel Auto Pay
+    sleep  2s
     click link  link=Cancel Auto Pay
     sleep  2s
     click link  link=Yes, Please Cancel

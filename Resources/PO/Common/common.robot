@@ -51,3 +51,20 @@ End Web Test
     #Close the current browser
     delete all cookies
     close all browsers
+
+SCROLL_DOWN_PAGE_HALF
+    ${width}	${height}=	Get Window Size
+    execute javascript  window.scrollTo(${width}/2, ${height}/2)
+    sleep  2s
+
+SCROLL_DOWN_PAGE_BOTTOM
+    ${x}  ${y}  get window position
+    ${width}	${height}=	Get Window Size
+    execute javascript  window.scrollTo(${width}, ${height})
+    sleep  2s
+
+SCROLL_UP
+#    ${width}	${height}=	Get Window Size
+    execute javascript  window.scrollTo(0, 0)
+#    execute javascript  window.scrollTo(${width}, 0)
+    sleep  2s

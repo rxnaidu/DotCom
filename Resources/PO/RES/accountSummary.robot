@@ -16,13 +16,13 @@ Verify Page Elements
     wait until page contains  Summary
     wait until page contains  Account Number
     wait until page contains  Internet
-    wait until page contains  Phone
+#    wait until page contains  Phone
     wait until page contains  Video
 
 
 Close Auto Pay popup
     wait until element is enabled  ${INTERNET}
-    wait until element is enabled  ${PHONE}
+#    wait until element is enabled  ${PHONE}
     wait until element is enabled  ${VIDEO}
 #    wait until page contains  One-time set up, no more late fees.
     sleep  4s

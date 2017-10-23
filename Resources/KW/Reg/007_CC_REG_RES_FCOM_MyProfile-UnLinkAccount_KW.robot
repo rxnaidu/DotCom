@@ -10,7 +10,7 @@ Resource  ../../Properties/reg_PR.robot
 ${TESTCASE_NO}  TC07
 
 ${MY_PROFILE_TAB}  id=lnkProfile
-${ACCT_NUM_UNLINK}  xpath=//*[contains(text(),'5039259450')]//following-sibling::td[4]/a
+${ACCT_NUM_UNLINK}  xpath=//*[contains(text(),'7278494301')]//following-sibling::td[4]/a
 ${POPUP_UNLINK}  xpath=//button[text()='Unlink']
 
 *** Keywords ***
@@ -55,6 +55,8 @@ Validate Frontier ID, Password & Email Notifications Section data
 Click Unlink for an account number
     wait until page contains  Unlink
     sleep  4s
+#    Scroll To Locator View  $(webdriver)  xpath=//th[contains(text(),'Account Number')]
+    scroll_down_page_half
     wait until element is enabled  ${ACCT_NUM_UNLINK}
     click element  ${ACCT_NUM_UNLINK}
 

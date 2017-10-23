@@ -97,30 +97,30 @@ Validate New Charges Due Date
     ${New_Charges_Due Date}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${NEW_CHARGES_DUE_DATE}
     page should contain  ${New_Charges_Due Date}
 
-Validate Pay Bill button
-    page should contain  Pay Bill
-    SCROLL_UP
-    sleep  2s
-    click link  link=Pay Bill
-    wait until page contains  Make A Payment
-    wait until page contains  Summary of Charges
-    sleep  2s
-
-    page should contain  Make A Payment
-    page should contain  Summary of Charges
-    page should contain  Payment Amount
-    page should contain  Payment Method
-    page should contain  Payment Date
-
-
-Validate Sign up for Auto Pay link
-    wait until element is enabled  link=Sign up for Auto Pay
-    click link  link=Sign up for Auto Pay
-
-    wait until page contains  Sign up for Auto Pay
-    wait until page contains  Payment to be applied
-
-    page should contain  Account
-    page should contain  Payment Method
-    page should contain  Payment to be applied
-    page should contain  Amount
+#Validate Pay Bill button
+#    SCROLL_UP
+#    page should contain  Pay Bill
+#    sleep  2s
+#    click link  link=Pay Bill
+#    wait until page contains  Make A Payment
+#    wait until page contains  Summary of Charges
+#    sleep  2s
+#
+#    page should contain  Make A Payment
+#    page should contain  Summary of Charges
+#    page should contain  Payment Amount
+#    page should contain  Payment Method
+#    page should contain  Payment Date
+#
+#
+#Validate Sign up for Auto Pay link
+#    wait until element is enabled  link=Sign up for Auto Pay
+#    click link  link=Sign up for Auto Pay
+#
+#    wait until page contains  Sign up for Auto Pay
+#    wait until page contains  Payment to be applied
+#
+#    page should contain  Account
+#    page should contain  Payment Method
+#    page should contain  Payment to be applied
+#    page should contain  Amount

@@ -4,7 +4,7 @@ Library  Selenium2Library  45
 Resource  ../../Resources/KW/Reg/003_CC_REG_RES_FCOM_Man_MyStatements-CurrentBillingStatement_KW.robot
 Resource  ../../Resources/PO/Common/common.robot
 
-#Test Teardown  Common.End Web Test
+Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 
@@ -40,6 +40,6 @@ Resource  ../../Resources/PO/Common/common.robot
 
     Validate New Charges Due Date
 
-    Validate Pay Bill button
-
-    Validate Sign up for Auto Pay link
+#    Validate Pay Bill button
+#
+#    Validate Sign up for Auto Pay link

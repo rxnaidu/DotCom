@@ -19,7 +19,7 @@ ${CANCEL_BTN}  xpath=//button[@id='btnForContSignUpID']/following-sibling::a
 ${CONFIRM_BTN}  XPATH=//button[text()='CONFIRM']
 ${MANAGE_PAYMENT_METHODS}  xpath=//a[text()='Manage Payment Methods ']
 ${MANAGE_AUTO_PAY}  xpath=//a[text()='Manage Auto Pay ']
-
+${MANAGE_AUTO_PAY_FROM_MYPAYMENTS_TAB}  id=mnuAuto
 *** Keywords ***
 User launch Ftr.com application using URL
     common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
@@ -52,10 +52,10 @@ Mouse over on My Payments Tab and verify displayed options
     page should contain  Payment History
 
 Mouse over on My Payments Tab and select Sign up for Auto Pay option
-#    wait until element is enabled  ${MY_PAYMENTS_TAB}
-#    focus  ${MY_PAYMENTS_TAB}
-#    sleep  1s
-#    mouse over  ${MY_PAYMENTS_TAB}
+    wait until element is enabled  ${MY_PAYMENTS_TAB}
+    focus  ${MY_PAYMENTS_TAB}
+    sleep  1s
+    mouse over  ${MY_PAYMENTS_TAB}
 
     sleep  1s
     wait until element is enabled  ${SIGNUP_FOR_AUTO_PAY}
@@ -104,6 +104,9 @@ Below the Amount field is a Continue button and a Cancel link
 Validate when the Continue button is selected the user is navigated to the Review & Confirm Auto Pay Settings screen
 #    scroll to locator view  ${webdriver}  ${CONTINUE_BTN}
     SCROLL_DOWN_PAGE_HALF
+    wait until element is enabled  ${CONTINUE_BTN}
+    wait until element is visible  ${CONTINUE_BTN}
+    sleep  15s
     click element  ${CONTINUE_BTN}
     wait until page contains  Please Review your Auto Pay settings then Click CONFIRM to continue.
 
@@ -159,13 +162,27 @@ Validate in the side tool bar a link that says Manage Auto Pay and when clicked 
 Cancel Auto Pay option
     wait until page contains  Cancel Auto Pay
     wait until element is enabled  link=Cancel Auto Pay
-    sleep  2s
+    wait until element is visible  link=Cancel Auto Pay
+    sleep  6s
+    SCROLL_DOWN_PAGE_HALF
     click link  link=Cancel Auto Pay
+    wait until element is enabled  link=Yes, Please Cancel
     sleep  2s
     click link  link=Yes, Please Cancel
-
     wait until page contains  Auto Pay payments have been cancelled
     sleep  2s
+
+Cancel Auto Pay from My Payments Tab
+    wait until element is enabled  ${MY_PAYMENTS_TAB}
+    focus  ${MY_PAYMENTS_TAB}
+    sleep  1s
+    mouse over  ${MY_PAYMENTS_TAB}
+    sleep  1s
+    wait until element is enabled  ${MANAGE_AUTO_PAY_FROM_MYPAYMENTS_TAB}
+    click element  ${MANAGE_AUTO_PAY_FROM_MYPAYMENTS_TAB}
+
+    cancel auto pay option
+    SCROLL_UP
 
 
 #==========================

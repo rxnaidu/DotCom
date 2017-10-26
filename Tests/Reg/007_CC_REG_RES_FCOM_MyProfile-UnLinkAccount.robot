@@ -1,5 +1,5 @@
 *** Settings ***
-Library  Selenium2Library  45
+Library  Selenium2Library  60
 
 Resource  ../../Resources/KW/Reg/007_CC_REG_RES_FCOM_MyProfile-UnLinkAccount_KW.robot
 Resource  ../../Resources/PO/Common/common.robot

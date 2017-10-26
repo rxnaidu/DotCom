@@ -4,7 +4,7 @@ Library  Selenium2Library  45
 Resource  ../../Resources/KW/Reg/005_CC_REG_RES_FCOM_Man_SignUpForAutoPayWithExistPaymentMethod-WithoutDefaultPaymentMethod_KW.robot
 Resource  ../../Resources/PO/Common/common.robot
 
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 
@@ -21,6 +21,8 @@ Test Teardown  Common.End Web Test
     Verify 17 digit Account Number displayed on Account Summary page
 
     Mouse over on My Payments Tab and verify displayed options
+
+    Cancel Auto Pay from My Payments Tab
 
     Mouse over on My Payments Tab and select Sign up for Auto Pay option
 
@@ -49,10 +51,10 @@ Test Teardown  Common.End Web Test
     Validate page elements on Confirmation screen
 
     Validate in the side tool bar a link that says Manage Auto Pay and when clicked user is navigated to the Manage Auto Pay screen
-
-    # Removing added Auto Payment method for re-executing this test case next time.
-
-    Cancel Auto Pay option
+#
+#    # Removing added Auto Payment method for re-executing this test case next time.
+#
+#    Cancel Auto Pay option
 
 
 

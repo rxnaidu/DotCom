@@ -10,7 +10,7 @@ Resource  ../../Properties/reg_PR.robot
 ${TESTCASE_NO}  TC07
 
 ${MY_PROFILE_TAB}  id=lnkProfile
-${ACCT_NUM_UNLINK}  xpath=//*[contains(text(),'7278494301')]//following-sibling::td[4]/a
+${ACCT_NUM_UNLINK}  xpath=//*[contains(text(),'8139864707110714')]//following-sibling::td[4]/a
 ${POPUP_UNLINK}  xpath=//button[text()='Unlink']
 
 *** Keywords ***

@@ -40,23 +40,37 @@ Verify 17 digit Account Number displayed on Account Summary page
     ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
     page should contain  ${Expected_Account_Num}
 
-Mouse over on My Payments Tab and verify displayed options
+Verify Sign Up for Auto Pay option is present
     wait until element is enabled  ${MY_PAYMENTS_TAB}
     focus  ${MY_PAYMENTS_TAB}
     sleep  1s
     mouse over  ${MY_PAYMENTS_TAB}
+    sleep  1s
+    ${Auto_Pay_Status}  run keyword and return status  click link  ${SIGNUP_FOR_AUTO_PAY}
 
-    page should contain  Make A Payment
-    page should contain  Manage Payment Methods
-    page should contain  Sign up for Auto Pay
-    page should contain  Payment History
+    Run Keyword If  ${Auto_Pay_Status} == False  Cancel Auto Pay from My Payments Tab
+    ...    ELSE  Contine_Auto_Pay_Option
+
+Contine_Auto_Pay_Option
+    wait until page contains  Sign up for Auto Pay
+    wait until page contains  The total due for billing cycle
+
+#Mouse over on My Payments Tab and verify displayed options
+#    wait until element is enabled  ${MY_PAYMENTS_TAB}
+#    focus  ${MY_PAYMENTS_TAB}
+#    sleep  1s
+#    mouse over  ${MY_PAYMENTS_TAB}
+#
+#    page should contain  Make A Payment
+#    page should contain  Manage Payment Methods
+#    page should contain  Sign up for Auto Pay
+#    page should contain  Payment History
 
 Mouse over on My Payments Tab and select Sign up for Auto Pay option
     wait until element is enabled  ${MY_PAYMENTS_TAB}
     focus  ${MY_PAYMENTS_TAB}
     sleep  1s
     mouse over  ${MY_PAYMENTS_TAB}
-
     sleep  1s
     wait until element is enabled  ${SIGNUP_FOR_AUTO_PAY}
     click link  ${SIGNUP_FOR_AUTO_PAY}
@@ -183,6 +197,7 @@ Cancel Auto Pay from My Payments Tab
 
     cancel auto pay option
     SCROLL_UP
+    Mouse over on My Payments Tab and select Sign up for Auto Pay option
 
 
 #==========================

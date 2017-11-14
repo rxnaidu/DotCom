@@ -32,8 +32,11 @@ User Sign In from Excel
 
     wait until element is enabled  ${USER_SIGNIN_BTN}
     click button  ${USER_SIGNIN_BTN}
-    sleep  4s
-    wait until element is enabled  ${INTERNET}
+
+#    wait until element is enabled  ${INTERNET}
+    wait until page contains  Summary
+    wait until page contains  Key Account Info
+    sleep  6s
 
 User Sign In
     [Arguments]  ${Username_Inp}  ${Password_Inp}

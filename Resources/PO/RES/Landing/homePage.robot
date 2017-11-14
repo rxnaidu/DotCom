@@ -135,6 +135,10 @@ Select Degital Essentials option from Footer
     wait until element is enabled  ${FOOTER_DIGITAL_ESSENTIALS}
     click element  ${FOOTER_DIGITAL_ESSENTIALS}
 
+Select Frontier Secure option from Shop Footer
+    wait until element is enabled  ${FOOTER_SHOP_FRONTIER_SECURE}
+    click element  ${FOOTER_SHOP_FRONTIER_SECURE}
+
 Select Moving option from Footer
     wait until element is enabled  ${FOOTER_MOVING}
     click element  ${FOOTER_MOVING}

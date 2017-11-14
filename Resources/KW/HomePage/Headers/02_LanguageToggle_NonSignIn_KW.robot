@@ -45,10 +45,10 @@ Navigate to Video/TV and verify Spanish text is displayed
     shop.Select Video/TV option-Spanish
     shop.Verify Spanish Text is displayed on Video/TV page
 
-Navigate to Digital Essentials and verify Spanish text is displayed
+Navigate to Frontier Secure and verify Spanish text is displayed
     shop.Mouse over on Shop Tab-Spanish
-    shop.Select Digital Essentials option-Spanish
-    shop.Verify Spanish Text is displayed on Degital Essentials page
+    shop.Select Frontier Secure option-Spanish
+    shop.Verify Spanish Text is displayed on Frontier Secure page
 
 Navigate to Moving and verify Spanish text is displayed
     shop.Mouse over on Shop Tab-Spanish

@@ -19,7 +19,7 @@ ${PHONE_SPA}  id=ecomm-rv-anchor-Tel&#233;fono
 ${VIDEO/TV_SPA}  id=ecomm-rv-anchor-Video/TV
 ${DIGITAL_ESSENTIALS_SPA}  id=ecomm-rv-anchor-Art&#237;culosdigitalesesenciales
 ${MOVING_SPA}  id=ecomm-rv-anchor-Mudanzas
-
+${FRONTIER_SECURE_SPA}  id=ecomm-rv-anchor-FrontierSecure
 
 *** Keywords ***
 
@@ -95,18 +95,22 @@ Select Digital Essentials option-Spanish
     wait until element is enabled  ${DIGITAL_ESSENTIALS_SPA}
     click link  ${DIGITAL_ESSENTIALS_SPA}
 
+Select Frontier Secure option-Spanish
+    wait until element is enabled  ${FRONTIER_SECURE_SPA}
+    click link  ${FRONTIER_SECURE_SPA}
+
 Select Moving option-Spanish
     wait until element is enabled  ${MOVING_SPA}
     click link  ${MOVING_SPA}
 
 Verify Spanish Text is displayed on Bundle page
-    wait until page contains  Combina internet
-    page should contain  Servicio de Internet de Alta Velocidad de Frontier
+    wait until page contains  Llama al
+#    page should contain  Servicio de Internet de Alta Velocidad de Frontier
     page should contain  Llama al
 
 Verify Spanish Text is displayed on Internet page
-    wait until page contains  Servicios de Internet de Alta
-    page should contain  Servicios de Internet de Alta Velocidad de Frontier
+    wait until page contains  Llama al
+#    page should contain  Servicios de Internet de Alta Velocidad de Frontier
     page should contain  Llama al
 
 Verify Spanish Text is displayed on Phone page
@@ -119,10 +123,14 @@ Verify Spanish Text is displayed on Video/TV page
     page should contain  Servicios Frontier Video
     page should contain  Llama al
 
-Verify Spanish Text is displayed on Degital Essentials page
+Verify Spanish Text is displayed on Frontier Secure page
     wait until page contains  Frontier Secure
-    page should contain  Frontier Secure es la decisión inteligente para tu hogar y tu vida
     page should contain  Llama al
+
+#Verify Spanish Text is displayed on Degital Essentials page
+#    wait until page contains  Frontier Secure
+#    page should contain  Frontier Secure es la decisión inteligente para tu hogar y tu vida
+#    page should contain  Llama al
 
 Verify Spanish Text is displayed on Moving page
     wait until page contains  Llama al

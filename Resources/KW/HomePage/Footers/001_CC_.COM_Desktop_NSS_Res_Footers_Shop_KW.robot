@@ -42,10 +42,10 @@ Verify URL changes to Video/Tv Page
     ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${VIDEO_TV_URL}
     Verify currnt URL  ${EXPECTED_URL}
 
-Navigate to bottom of the Footer home page and click: Shop > Degital Essentials
-    homePage.Select Degital Essentials option from Footer
+Navigate to bottom of the Footer home page and click: Shop > Frontier Secure
+    homePage.Select Frontier Secure option from Shop Footer
 
-Verify URL changes to Degital Essentials Page
+Verify URL changes to Frontier Secure Page
     ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${DEGITAL_ESSENTIAL_URL}
     Verify currnt URL  ${EXPECTED_URL}
 

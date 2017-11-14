@@ -21,7 +21,7 @@ ${FOOTER_VIDEO/TV}  xpath=//footer[@id='footer']//a[text()='Video/TV']
 ${FOOTER_DIGITAL_ESSENTIALS}  xpath=//footer[@id='footer']//a[text()='Digital Essentials']
 ${FOOTER_MOVING}  xpath=//footer[@id='footer']//a[text()='Moving']
 ${DISCOUNT_PROGRAMS}  xpath=//footer[@id='footer']//a[text()='Discount Programs']
-
+${FOOTER_SHOP_FRONTIER_SECURE}  xpath=//footer[@id='footer']//h3[text()='Shop']/following-sibling::ul//a[contains(text(),'Frontier Secure')]
 #MY ACCOUNT
 ${FOOTER_PAY_BILL}  xpath=//footer[@id='footer']//a[text()='Pay Bill']
 ${FOOTER_CHECK_EMAIL}  xpath=//footer[@id='footer']//a[text()='Check EMail']
@@ -52,7 +52,7 @@ ${FOOTER_PUBLIC_INSPECTION_FILES}  xpath=//footer[@id='footer']//a[contains(text
 #FRONTIER SITES
 #${FOOTER_GET_VANTAGE}  xpath=//footer[@id='footer']//a[contains(text(),'Get Vantage')]
 ${FOOTER_GET_VANTAGE}  xpath=//a[contains(text(),'Get Vantage')]
-${FOOTER_FRONTIER_SECURE}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Secure')]
+${FOOTER_FRONTIER_SECURE}  xpath=//footer[@id='footer']//h3[text()='FRONTIER SITES']/following-sibling::ul//a[contains(text(),'Frontier Secure')]
 ${FOOTER_FRONTIER_BUSINESSEDGE}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Business')]
 ${FOOTER_FRONTIER_GAMES}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Games')]
 ${FOOTER_FRONTIER_WIFI}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier WI-FI')]

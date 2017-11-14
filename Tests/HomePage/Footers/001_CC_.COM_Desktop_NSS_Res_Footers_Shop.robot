@@ -38,9 +38,9 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Shop > Degital Essentials
+    Navigate to bottom of the Footer home page and click: Shop > Frontier Secure
 
-    Verify URL changes to Degital Essentials Page
+    Verify URL changes to Frontier Secure Page
 
     Go back to Home Page
 

@@ -23,7 +23,5 @@ Verify URL changes to Video/TV
     ${SHOP_VIDEO_URL}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_VIDEO_URL}
 
     Encode String To Bytes  ${SHOP_VIDEO_URL}  ASCII
-
-    wait until page contains  Frontier TV & Video Services
-
+    sleep  3s
     location should be  ${SHOP_VIDEO_URL}

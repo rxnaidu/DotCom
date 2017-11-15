@@ -15,11 +15,11 @@ User launch Ftr.com application using URL
     common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
-Click on the Tab selections as follows: Shop > Digital Essentials
+Click on the Tab selections as follows: Shop > Frontier Secure
     shop.Mouse over on Shop Tab
-    shop.Select Digital Essentials option
+    shop.Select Frontier Secure option
 
-Verify URL changes to Digital Essentials
+Verify URL changes to Frontier Secure
     ${SHOP_DEGITAL_ESSENTIALS_URL}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_DEGITAL_ESSENTIAL_URL}
 
     Encode String To Bytes  ${SHOP_DEGITAL_ESSENTIALS_URL}  ASCII

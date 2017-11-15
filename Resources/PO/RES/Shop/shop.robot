@@ -9,6 +9,7 @@ ${INTERNET_OPA}  link=Internet
 ${PHONE}  link=Phone
 ${VIDEO/TV}  link=Video/TV
 ${DIGITAL_ESSENTIALS}  link=Digital Essentials
+${FRONTIER_SECURE}  link=Frontier Secure
 ${MOVING}  link=Moving
 
 #----------spanish---------------#
@@ -39,7 +40,7 @@ Verify Shop sub tabs are displayed
     page should contain  Internet
     page should contain  Phone
     page should contain  Video/TV
-    page should contain  Digital Essentials
+    page should contain  Frontier Secure
     page should contain  Moving
 
 Select Bundle option
@@ -62,8 +63,12 @@ Select Digital Essentials option
     wait until element is enabled  ${DIGITAL_ESSENTIALS}
     click link  ${DIGITAL_ESSENTIALS}
 
+Select Frontier Secure option
+    wait until element is enabled  ${FRONTIER_SECURE}
+    click link  ${FRONTIER_SECURE}
+
 Select Moving option
-    wait until element is enabled  ${DIGITAL_ESSENTIALS}
+    wait until element is enabled  ${MOVING}
     click link  ${MOVING}
 
 #----------------SPANISH  LANGUAGE--------------------------#

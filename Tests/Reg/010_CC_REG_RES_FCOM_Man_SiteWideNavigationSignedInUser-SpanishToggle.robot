@@ -25,7 +25,7 @@ Test Teardown  Common.End Web Test
 
     Navigate to Video/TV and verify Spanish text is displayed
 
-    Navigate to Digital Essentials and verify Spanish text is displayed
+    Navigate to Frontier Secure and verify Spanish text is displayed
 
     Navigate to Moving and verify Spanish text is displayed
 

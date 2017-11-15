@@ -27,7 +27,7 @@ Enter User name and Password and Select Sign In button
     wait until page contains  welcome to Frontier!
 
 Select Sign Out from righ corner of the screen
-    wait until element is enabled  ${INTERNET}
+#    wait until element is enabled  ${INTERNET}
     sleep  5s
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}
     sleep  2s

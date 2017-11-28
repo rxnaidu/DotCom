@@ -17,9 +17,9 @@ Test Teardown  Common.End Web Test
 
     Enter Zip Code and select Check Availability Button
 
-    Verify black header now changes to "Plano,TX"
+    Verify header now changes to "Plano,TX"
 
-    Select Change link again and enter zip code and select Check Availability Button
-
-    Verify black header now changes to 'Fairport NY'
+#    Select Change link again and enter zip code and select Check Availability Button
+#
+#    Verify black header now changes to 'Fairport NY'
 

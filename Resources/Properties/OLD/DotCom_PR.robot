@@ -3,6 +3,7 @@
 ${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat02.xlsx
 #${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat03.xlsx
 
+#-------------------------Footers Properties---------------------------#
 ${SHEET_NAME}  Footers
 ${BROWSER_NAME}  Browser
 ${DOTCOM_URL}  DotCom_Url
@@ -95,3 +96,112 @@ ${YOUTUBE_URL}  Youtube_Url
 #TC16
 ${GOOGLE+_URL}  Google+_Url
 
+#-------------------------Headers---------------------------#
+
+${SHEET_NAME}  Headers
+${BROWSER_NAME}  Browser
+${DOTCOM_URL}  DotCom_Url
+${DOTCOM_URL_PASSWORD}  DotCom_Url_Password
+
+#TC01
+${ZIP_CODE1}  Zipcode1
+${ZIP_CODE1_TEXT}  Zipcode1_Text
+${ZIP_CODE2}  Zipcode2
+${ZIP_CODE2_TEXT}  Zipcode2_Text
+
+#TC02
+
+#TC03
+${USERNAME_INP}  SignIn_Username
+${PASSWORD_INP}  SignIn_Password
+
+#TC04
+
+#TC05
+
+#TC06
+
+#TC07
+
+#TC08
+
+#TC09
+
+#TC11
+${CPNI_URL}  CPNI_Url
+
+#-----------------------------------Tab Selection ------------------------------------#
+${SHEET_NAME}  TabSelections
+${BROWSER_NAME}  Browser
+${DOTCOM_URL}  DotCom_Url
+${DOTCOM_URL_PASSWORD}  DotCom_Url_Password
+
+#TC01
+${SHOP_BUNDLE_URL}  Shop_Bundle_Url
+
+#TC02
+${SHOP_INTERNET_URL}  Shop_Internet_Url
+
+#TC03
+${SHOP_PHONE_URL}  Shop_Phone_Url
+
+#TC04
+${SHOP_VIDEO_URL}  Shop_Video_Url
+
+#TC05
+${SHOP_DEGITAL_ESSENTIAL_URL}  Shop_Digital_Essentials_Url
+
+#TC06
+${SHOP_MOVING_URL}  Shop_Moving_Url
+#TC07
+
+#TC08
+
+#TC09
+
+#TC10
+${MY_PROFILE_URL}  MyAccount_MyProfile_Url
+
+#TC11
+${MOBILE_APP_URL}  MyAccount_Mobile_App_Url
+
+#TC12
+${HELP_CENTER_URL}  Support_Help_Center_Url
+
+#TC13
+${SUPPORT_WIZARD_URL}  Support_Wizard_Url
+
+#TC14
+${TROUBLE_TICKET_STATUS_URL}  Support_Trouble_Ticket_Status_Url
+
+#TC15
+${ORDER_STATUS_URL}  Support_Order_Status_Url
+
+#TC16
+${CONTACT_US_URL}  Support_Contact_Us_Url
+
+#-----------------------------------Regression ------------------------------------#
+${SHEET_NAME}  REG
+${USERNAME_SIGNIN}  SignIn_Username
+${PASSWORD_SIGNIN}  SignIn_Password
+${BROWSER_NAME}  Browser
+${DOTCOM_URL}  DotCom_Url
+${DOTCOM_URL_PASSWORD}  DotCom_Url_Password
+
+#TC03
+${ACT_NUM}  Act_Num
+${BILLING_DATE}  Billing_Date
+${CURRENT_BILL_DATE}  Current_Bill_Date
+${CURRENT_BALANCE}  Current_Balance
+${TOTAL_BILL_AMOUNT}  Total_Bill_Amount
+${NEW_CHARGES_DUE_DATE}  New_Charges_Due_Date
+
+#TC04
+${NAME_BUTTON_TEXT}  Name_Button_Text
+${ROUTING_NUMBER}  Routing_Number
+${BANK_ACCOUNT_NUMBER}  Bank_Accounting_Number
+${RE_ENTER_BANK_ACCOUNT_NUMBER}  Re_Enter_Bank_Account_Number
+
+#TC06
+${LINK_BILLING_ACT_NUM}  Billing_Act_Num
+${LINK_BILLING_ACT_PIN}  Billing_Act_Pin

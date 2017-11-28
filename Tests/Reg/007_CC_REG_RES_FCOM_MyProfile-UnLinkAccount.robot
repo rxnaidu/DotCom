@@ -18,7 +18,7 @@ Test Teardown  Common.End Web Test
 
     Select close on auto payment popup
 
-    Verify 17 digit Account Number displayed on Account Summary page
+#    Verify 17 digit Account Number displayed on Account Summary page
 
     Select My Profile from the 2nd Tier Nav Tab
 

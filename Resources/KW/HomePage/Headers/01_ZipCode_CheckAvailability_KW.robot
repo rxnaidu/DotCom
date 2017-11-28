@@ -33,7 +33,7 @@ Enter Zip Code and select Check Availability Button
     wait until element is enabled  ${CHEK_AVAILABILITY_BTN}
     click link  ${CHEK_AVAILABILITY_BTN}
 
-Verify black header now changes to "Plano,TX"
+Verify header now changes to "Plano,TX"
     ${Expected_Location_Text}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ZIP_CODE1_TEXT}
 
     wait until element is enabled  ${ZIP_CODE_LOCATION}

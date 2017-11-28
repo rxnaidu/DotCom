@@ -1,5 +1,8 @@
 *** Variables ***
-${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/Resisdential.xlsx
+#${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat01.xlsx
+${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat02.xlsx
+#${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat03.xlsx
+
 ${SHEET_NAME}  REG
 ${USERNAME_SIGNIN}  SignIn_Username
 ${PASSWORD_SIGNIN}  SignIn_Password
@@ -22,5 +25,5 @@ ${BANK_ACCOUNT_NUMBER}  Bank_Accounting_Number
 ${RE_ENTER_BANK_ACCOUNT_NUMBER}  Re_Enter_Bank_Account_Number
 
 #TC06
-${LINK_BILLING_ACT_NUM}  Billing_Act_Num
-${LINK_BILLING_ACT_PIN}  Billing_Act_Pin
+${LINK_BILLING_ACT_NUM}  Link_Act_Num
+${LINK_BILLING_ACT_PIN}  Link_Act_Pin

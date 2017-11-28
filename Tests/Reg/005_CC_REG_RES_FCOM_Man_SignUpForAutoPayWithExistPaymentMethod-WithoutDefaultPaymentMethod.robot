@@ -18,7 +18,7 @@ Test Teardown  Common.End Web Test
 
     Select close on auto payment popup
 
-    Verify 17 digit Account Number displayed on Account Summary page
+#    Verify 17 digit Account Number displayed on Account Summary page
 
 #    Mouse over on My Payments Tab and verify displayed options
 
@@ -28,7 +28,7 @@ Test Teardown  Common.End Web Test
 
 #    Mouse over on My Payments Tab and select Sign up for Auto Pay option
 
-    Validate the display of the Account Field Sign Up for Auto Pay screen
+#    Validate the display of the Account Field Sign Up for Auto Pay screen
 
 #    Validate the system defaults to "Choose a payment method"  #--Not displaying on the screen now.
 

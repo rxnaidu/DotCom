@@ -18,7 +18,7 @@ Test Teardown  Common.End Web Test
 
     Select close on auto payment popup
 
-    Verify 17 digit Account Number displayed on Account Summary page
+#    Verify 17 digit Account Number displayed on Account Summary page
 
     Mouse over on My My Payments Tab and select Manage Payment Methods option
 

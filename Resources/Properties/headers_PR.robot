@@ -1,5 +1,8 @@
 *** Variables ***
-${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/Resisdential.xlsx
+#${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat01.xlsx
+${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat02.xlsx
+#${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat03.xlsx
+
 ${SHEET_NAME}  Headers
 ${BROWSER_NAME}  Browser
 ${DOTCOM_URL}  DotCom_Url

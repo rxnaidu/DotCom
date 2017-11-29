@@ -12,8 +12,8 @@ ${SHOP_DROPDOWN}   link=Shop
 ${BUNDLE_OPTION}  link=Bundles
 ${LANGUAGE_TOGGLE}  css=.lang-selector.hidden-xs>a
 ${LANGUAGE_TOGGLE_IMAGE}  css=.lang-selector.hidden-xs>a>i
-${ZIP_CODE_LOCATION}  xpath=//a[@id='locationDropdown']/span
-
+#${ZIP_CODE_LOCATION}  xpath=//a[@id='locationDropdown']/span
+${ZIP_CODE_LOCATION}  xpath=//span[contains(text(),'Plano')]
 ${TESTCASE_NO}  TC01
 
 *** Keywords ***

@@ -43,9 +43,9 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: My Account > Enterprise Accounts
-
-    Verify URL changes to Moving Page
+#    Navigate to bottom of the Footer home page and click: My Account > Enterprise Accounts
+#
+#    Verify URL changes to Moving Page
 
 
 

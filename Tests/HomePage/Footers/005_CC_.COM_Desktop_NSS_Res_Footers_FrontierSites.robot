@@ -30,11 +30,11 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Games
-
-    Verify URL changes to Frontier Games Page
-
-    Go back to Home Page
+#    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Games
+#
+#    Verify URL changes to Frontier Games Page
+#
+#    Go back to Home Page
 
     Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier WI-FI
 

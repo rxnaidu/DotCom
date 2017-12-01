@@ -48,11 +48,11 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Corporate > Making a Difference
-
-    Verify URL changes to Making a Difference
-
-    Go back to Home Page
+#    Navigate to bottom of the Footer home page and click: Corporate > Making a Difference
+#
+#    Verify URL changes to Making a Difference
+#
+#    Go back to Home Page
 
     Navigate to bottom of the Footer home page and click: Corporate > Public Inspection Files
 

@@ -22,7 +22,7 @@ Test Teardown  Common.End Web Test
 
     Mouse over on My My Payments Tab and select Manage Payment Methods option
 
-    Validate Account number under Manage Payment Methods description
+#    Validate Account number under Manage Payment Methods description
 
     Verify displayed button text under Account number
 

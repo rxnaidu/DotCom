@@ -54,17 +54,23 @@ Validate Frontier ID, Password & Email Notifications Section data
 
 Click Unlink for an account number
     wait until page contains  Unlink
-    sleep  4s
-#    Scroll To Locator View  $(webdriver)  xpath=//th[contains(text(),'Account Number')]
+    sleep  6s
     scroll_down_page_half
-    wait until element is enabled  ${ACCT_NUM_UNLINK}
+
+    ${Remove_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${UNLINK_ACT_NUM}
+    ${hh_Remove_Acct_Num}  set variable  '${Remove_Acct_Num}'
+    ${hh_ACCT_NUM_UNLINK}  set variable  xpath=//*[contains(text(), ${hh_Remove_Acct_Num})]//following-sibling::td[4]/a
+
+    wait until element is enabled  ${hh_ACCT_NUM_UNLINK}
+    run keyword and ignore error  click element  ${AUTOPAY_POPUP}
+    sleep  2s
     click element  ${ACCT_NUM_UNLINK}
 
     wait until page contains  You're about to unlink this Account.
     click element  ${POPUP_UNLINK}
-    sleep  4s
-    wait until page contains  This Account has been unlinked
 
+    wait until page contains  This Account has been unlinked
+    sleep  4s
     page should contain  This Account has been unlinked from your Frontier ID
 
 

@@ -36,7 +36,7 @@ User Sign In from Excel
 #    wait until element is enabled  ${INTERNET}
     wait until page contains  Summary
     wait until page contains  Key Account Info
-    sleep  6s
+    sleep  10s
 
 User Sign In
     [Arguments]  ${Username_Inp}  ${Password_Inp}

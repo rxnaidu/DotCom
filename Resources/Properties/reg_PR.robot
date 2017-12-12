@@ -27,3 +27,6 @@ ${RE_ENTER_BANK_ACCOUNT_NUMBER}  Re_Enter_Bank_Account_Number
 #TC06
 ${LINK_BILLING_ACT_NUM}  Link_Act_Num
 ${LINK_BILLING_ACT_PIN}  Link_Act_Pin
+
+#TC07
+${UNLINK_ACT_NUM}  UnLink_Act_Num

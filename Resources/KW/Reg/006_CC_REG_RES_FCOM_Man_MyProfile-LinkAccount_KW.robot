@@ -72,13 +72,15 @@ Click Link An Account
     wait until element is enabled  ${LINK_AN_ACCOUNT}
     wait until element is visible  ${LINK_AN_ACCOUNT}
     sleep  6s
+    run keyword and ignore error  click element  ${AUTOPAY_POPUP}
+    sleep  2s
     click element  ${LINK_AN_ACCOUNT}
     wait until page contains  Select a method to identify your Account
 
 Select Billing Account Number option and enter account number
     wait until page contains  Billing Account Number
     wait until element is visible  ${BILLING_ACCT_NUM}
-    sleep  2s
+    sleep  4s
     click element  ${BILLING_ACCT_NUM}
     sleep  2s
     ${Enter_Your_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${LINK_BILLING_ACT_NUM}
@@ -100,7 +102,7 @@ Select Frontier Billing Account PIN and continue
     input text  ${FTR_BLG_ACT_PIN_INP}  ${Enter_Your_Acct_Num}
     click element  ${LINK_CONTINUE}
     wait until page contains  Your Frontier ID has been linked to this Account
-    sleep  3s
+    sleep  4s
 
 
 

@@ -96,7 +96,7 @@ Select Frontier Billing Account PIN and continue
     sleep  2s
     wait until element is enabled  ${FTR_BLG_ACT_PIN_INP}
 
-    scroll to locator view  ${webdriver}  xpath=//span[text()='Frontier Billing Account PIN']
+    Scroll Page To Locator View  xpath=//span[text()='Frontier Billing Account PIN']
 
     ${Enter_Your_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${LINK_BILLING_ACT_PIN}
     input text  ${FTR_BLG_ACT_PIN_INP}  ${Enter_Your_Acct_Num}

@@ -1,6 +1,6 @@
 *** Settings ***
 Library  Selenium2Library  30
-Library  readExcel
+Library  FTRutil
 
 *** Variables ***
 ${SIGNIN_BTN}  css=html>body>form>button

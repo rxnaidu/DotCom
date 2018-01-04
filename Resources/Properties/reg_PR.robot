@@ -1,7 +1,7 @@
 *** Variables ***
-#${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat01.xlsx
+${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat01.xlsx
 #${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat02.xlsx
-${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat03.xlsx
+#${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat03.xlsx
 
 ${SHEET_NAME}  REG
 ${USERNAME_SIGNIN}  SignIn_Username
@@ -9,6 +9,7 @@ ${PASSWORD_SIGNIN}  SignIn_Password
 ${BROWSER_NAME}  Browser
 ${DOTCOM_URL}  DotCom_Url
 ${DOTCOM_URL_PASSWORD}  DotCom_Url_Password
+${ORDER_ID}  Order_Id
 
 #TC03
 ${ACT_NUM}  Act_Num

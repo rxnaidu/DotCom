@@ -68,7 +68,7 @@ Select + to expand Frontier Monthly Service Charges
     wait until element is enabled  xpath=//h4[contains(text(),'FRONTIER MONTHLY SERVICE CHARGES')]/i
     wait until element is visible  xpath=//h4[contains(text(),'FRONTIER MONTHLY SERVICE CHARGES')]/i
     sleep  10s
-    scroll to locator view  ${webdriver}  xpath=//h4[contains(text(),'FRONTIER MONTHLY SERVICE CHARGES')]/i
+    Scroll Page To Locator View  xpath=//h4[contains(text(),'FRONTIER MONTHLY SERVICE CHARGES')]/i
     click element  xpath=//h4[contains(text(),'FRONTIER MONTHLY SERVICE CHARGES')]/i
     sleep  2s
 

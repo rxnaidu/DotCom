@@ -1,7 +1,6 @@
 *** Settings ***
 Library  Selenium2Library
-Library  readExcel
-Library  SigmaUtil.py
+Library  FTRutil
 
 *** Variables ***
 ${URL}  https://qat01.frontier.com/
@@ -14,9 +13,6 @@ Begin Web Test from Excel
     ${URL_EXCEL}   read_excel_data_by_cell_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${DOTCOM_URL}
 
     open browser  ${URL_EXCEL}  ${BROWSER_EXCEL}
-
-    ${webdriver}=  Get webdriver instance  Selenium2Library
-    set global variable  ${webdriver}
 
 Begin Web Test
     open browser  ${URL}  ${BROWSER}

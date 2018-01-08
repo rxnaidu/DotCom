@@ -1,6 +1,6 @@
 *** Settings ***
 Library  Selenium2Library  30
-Library  SigmaUtil
+Library  FTRutil
 Resource  ../../PO/Common/common.robot
 Resource  ../../PO/Login/loginPage.robot
 Resource  ../../PO/RES/Landing/homePage.robot
@@ -132,8 +132,8 @@ Validate the display of: You're almost done!,Please Review your Auto Pay setting
 
 Validate correct data appears in the following fields: Account, Pay from, Amoun The total due for billing cycle
     page should contain  Account
-    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
-    page should contain  ${Expected_Account_Num}
+#    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+#    page should contain  ${Expected_Account_Num}
 
     page should contain  Pay from
     page should contain  account ending in 0002
@@ -157,8 +157,8 @@ Click Confirm button and validate user is navigating to Auto Pay Confirmation Sc
 Validate page elements on Confirmation screen
 
     page should contain  You have successfully signed up for Auto Pay.
-    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
-    page should contain  ${Expected_Account_Num}
+#    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+#    page should contain  ${Expected_Account_Num}
     page should contain  Print
  #   page should not contain  Sign up for Auto Pay
 

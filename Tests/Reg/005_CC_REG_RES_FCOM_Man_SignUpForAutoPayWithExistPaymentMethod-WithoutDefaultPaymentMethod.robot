@@ -52,7 +52,7 @@ Test Teardown  Common.End Web Test
 
     Validate page elements on Confirmation screen
 
-    Validate in the side tool bar a link that says Manage Auto Pay and when clicked user is navigated to the Manage Auto Pay screen
+#    Validate in the side tool bar a link that says Manage Auto Pay and when clicked user is navigated to the Manage Auto Pay screen
 #
 #    # Removing added Auto Payment method for re-executing this test case next time.
 #

@@ -41,7 +41,7 @@ Mouse over on My Bills page and select Curren Bill option
 
 Validate Current Bill Page
     wait until page contains  Click the plus sign (+) to expand each section
-    wait until page contains  OTHER CHARGES
+#    wait until page contains  OTHER CHARGES
 
     page should contain  Here is a detailed view of your current Frontier bill. Click the plus sign (+) to expand each section and reveal line item charges.
 

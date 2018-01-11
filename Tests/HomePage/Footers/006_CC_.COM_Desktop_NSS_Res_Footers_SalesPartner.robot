@@ -30,11 +30,11 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Plans
-
-    Verify URL changes to Frontier Plans Page
-
-    Go back to Home Page
+#    Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Plans
+#
+#    Verify URL changes to Frontier Plans Page
+#
+#    Go back to Home Page
 
     Navigate to bottom of the Footer home page and click: SALES PARTNERS> Frontier Broadband
 
@@ -48,11 +48,11 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Bundles
-
-    Verify URL changes to Frontier Bundles Page
-
-    Go back to Home Page
+#    Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Bundles
+#
+#    Verify URL changes to Frontier Bundles Page
+#
+#    Go back to Home Page
 
 #    Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier West
 #

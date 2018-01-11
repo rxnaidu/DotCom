@@ -12,17 +12,17 @@ Test Teardown  Common.End Web Test
 
     User launch Ftr.com application using URL
 
-    Navigate to bottom of the Footer home page and click: Corporate > About Us
+#    Navigate to bottom of the Footer home page and click: Corporate > About Us
+#
+#    Verify URL changes to About Us Page
+#
+#    Go back to Home Page
 
-    Verify URL changes to About Us Page
-
-    Go back to Home Page
-
-    Navigate to bottom of the Footer home page and click: Corporate > Investor Relations
-
-    Verify URL changes to Investor Relations Page
-
-    Go back to Home Page
+#    Navigate to bottom of the Footer home page and click: Corporate > Investor Relations
+#
+#    Verify URL changes to Investor Relations Page
+#
+#    Go back to Home Page
 
     Navigate to bottom of the Footer home page and click: Corporate > News
 
@@ -42,11 +42,11 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Corporate > Pressroom
-
-    Verify URL changes to Pressroom Page
-
-    Go back to Home Page
+#    Navigate to bottom of the Footer home page and click: Corporate > Pressroom
+#
+#    Verify URL changes to Pressroom Page
+#
+#    Go back to Home Page
 
 #    Navigate to bottom of the Footer home page and click: Corporate > Making a Difference
 #

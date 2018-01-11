@@ -18,11 +18,11 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Secure
-
-    Verify URL changes to Frontier Secure Page
-
-    Go back to Home Page
+#    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Secure
+#
+#    Verify URL changes to Frontier Secure Page
+#
+#    Go back to Home Page
 
     Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business
 
@@ -54,14 +54,14 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Frontier Sites > Referral Program
+#    Navigate to bottom of the Footer home page and click: Frontier Sites > Referral Program
+#
+#    Verify URL changes to Referral Program Page
+#
+#    Go back to Home Page
 
-    Verify URL changes to Referral Program Page
-
-    Go back to Home Page
-
-    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business Partner
-
-    Verify URL changes to Frontier Business Partner Page
+#    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business Partner
+#
+#    Verify URL changes to Frontier Business Partner Page
 
 

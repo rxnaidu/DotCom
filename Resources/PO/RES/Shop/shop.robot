@@ -119,13 +119,13 @@ Verify Spanish Text is displayed on Internet page
     page should contain  Llama al
 
 Verify Spanish Text is displayed on Phone page
-    wait until page contains  Servicios Frontier Phone
-    page should contain  Frontier Phone y Frontier TV
+    wait until page contains  Llama al
+#    page should contain  Frontier Phone y Frontier TV
     page should contain  Llama al
 
 Verify Spanish Text is displayed on Video/TV page
-    wait until page contains  Servicios Frontier Video
-    page should contain  Servicios Frontier Video
+    wait until page contains  Llama al
+#    page should contain  Servicios Frontier Video
     page should contain  Llama al
 
 Verify Spanish Text is displayed on Frontier Secure page

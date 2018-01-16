@@ -24,7 +24,7 @@ Test Teardown  Common.End Web Test
 
     Validate Current Bill Page
 
-    Validate Billing Date is displayed
+#    Validate Billing Date is displayed
 
     Validate Current Bill dates
 

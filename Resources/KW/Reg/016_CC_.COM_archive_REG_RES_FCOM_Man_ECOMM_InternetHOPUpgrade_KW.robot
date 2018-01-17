@@ -9,7 +9,7 @@ Resource  ../../Properties/reg_PR.robot
 *** Variables ***
 ${TESTCASE_NO}  TC12
 ${REGION}  FT
-${ORD_ID_DATA}  22224444
+${ORD_ID_DATA}  1
 *** Keywords ***
 User launch Ftr.com application using URL
     common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}

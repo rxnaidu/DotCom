@@ -44,6 +44,6 @@ Test Teardown  Common.End Web Test
 
     Verify Saved payment methods displayed details
 
-    Click On the Trash can icon or the word Delete and validate modal window is displayed
-
-    Verify Delete Payment Method modal window options
+#    Click On the Trash can icon or the word Delete and validate modal window is displayed
+#
+#    Verify Delete Payment Method modal window options

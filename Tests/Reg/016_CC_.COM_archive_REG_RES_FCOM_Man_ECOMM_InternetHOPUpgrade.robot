@@ -18,6 +18,8 @@ Hop Updrade
 
     Verify user launches into Self Service Portal successfully
 
+    Select close on auto payment popup
+
     Click on Upgrade button for Internet
 
     Click on [Upgrade] button for the package that the user wants to Hop on

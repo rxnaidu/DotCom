@@ -24,8 +24,12 @@ Enter User name and Password and Select Sign In button
 
     homePage.User Sign In  ${Username_Inp}  ${Password_Inp}
 
+Verify Login page
     wait until page contains  welcome to Frontier!
-    sleep  10s
+    sleep  15s
+    page should contain  My Account
+    page should contain  My Services
+    page should contain  Summary
 
 Select Sign Out from righ corner of the screen
 #    wait until element is enabled  ${INTERNET}

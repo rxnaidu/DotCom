@@ -18,7 +18,7 @@ Verify Page Elements
     page should contain  Account Summary
 
 Close Auto Pay popup
-    sleep  15s
+    sleep  10s
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}
     sleep  2s
 

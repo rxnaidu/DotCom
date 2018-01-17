@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Ftr.com Automation
-Library  Selenium2Library  45
+Library  Selenium2Library  60
 Resource  ../../../Resources/KW/HomePage/Headers/03_SignInWindow_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
@@ -16,6 +16,8 @@ Test Teardown  Common.End Web Test
 
     Enter User name and Password and Select Sign In button
 
-    Select Sign Out from righ corner of the screen
+    Verify Login page
 
-    Verify User launch back to Hopme page defaulting to Residential Tab
+#    Select Sign Out from righ corner of the screen
+#
+#    Verify User launch back to Hopme page defaulting to Residential Tab

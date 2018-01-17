@@ -21,7 +21,7 @@ ${CHECK_IMG}  xpath=//div[@id='routingNumberHelp']/img
 ${CONTINUE_BTN}  id=btnAchAddVerifySubmit
 ${CANCEL_BTN}  xpath=//a[@id="btnAchAddVerifySubmit"]/following-sibling::a[1]
 ${SAVE_PAYMENT_METHOD_BTN}  xpath=//span[text()='Save Payment Method']
-${DELETE_TRASH_BTN}  xpath=//span[text()='Checking account ending in 0002']/../i
+${DELETE_TRASH_BTN}  xpath=//span[contains(text(),'account ending in 0002')]/../i
 ${DO_NOT_DELETE_BTN}  xpath=//button[text()='No, Do Not Delete']
 
 *** Keywords ***
@@ -36,6 +36,7 @@ Enter User name and Password and Select Sign In button
     homePage.User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
+    sleep  30s
     Close Auto Pay popup
 
 Verify 17 digit Account Number displayed on Account Summary page
@@ -144,11 +145,11 @@ Click Save Payment Methods button and validate screen is navigated back to the M
     click element  ${SAVE_PAYMENT_METHOD_BTN}
 
 Verify Saved payment methods displayed details
-    wait until page contains  Checking account ending in 0002
+    wait until page contains  account ending in 0002
     wait until page contains  Saved Payment Methods
 
     page should contain  Saved Payment Methods
-    page should contain  Checking account ending in 0002
+#    page should contain  Checking account ending in 0002
 
 Click On the Trash can icon or the word Delete and validate modal window is displayed
     #Checking account ending in 0002 is having Delete option

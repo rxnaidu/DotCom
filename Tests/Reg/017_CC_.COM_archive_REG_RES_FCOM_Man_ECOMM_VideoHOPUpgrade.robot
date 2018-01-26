@@ -4,7 +4,7 @@ Library  Selenium2Library  90
 Resource  ../../Resources/KW/Reg/017_CC_.COM_archive_REG_RES_FCOM_Man_ECOMM_VideoHOPUpgrade_KW.robot
 Resource  ../../Resources/PO/Common/common.robot
 
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 
@@ -22,13 +22,13 @@ Hop Updrade
 
     Click on Upgrade button for Internet
 
-    Click on [Upgrade] button for the package that the user wants to Hop on
-
-#    Click on Yes
-
-    Enter [Can be Reached] number and click [Update]
-
-    Enter initial and click Complete order
+#    Click on [Upgrade] button for the package that the user wants to Hop on
+#
+##    Click on Yes
+#
+#    Enter [Can be Reached] number and click [Update]
+#
+#    Enter initial and click Complete order
 
 
 

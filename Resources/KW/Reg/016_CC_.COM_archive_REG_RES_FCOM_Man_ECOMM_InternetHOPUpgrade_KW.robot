@@ -7,7 +7,7 @@ Resource  ../../PO/RES/accountSummary.robot
 Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC12
+${TESTCASE_NO}  TC09
 ${REGION}  FT
 ${ORD_ID_DATA}  1
 *** Keywords ***

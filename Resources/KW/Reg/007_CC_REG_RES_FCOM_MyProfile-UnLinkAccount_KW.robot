@@ -7,7 +7,7 @@ Resource  ../../PO/RES/accountSummary.robot
 Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC07
+${TESTCASE_NO}  TC06
 
 ${MY_PROFILE_TAB}  id=lnkProfile
 #${ACCT_NUM_UNLINK}  xpath=//*[contains(text(),'8139864707110714')]//following-sibling::td[4]/a

@@ -1,6 +1,6 @@
 *** Variables ***
-${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat01.xlsx
-#${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat02.xlsx
+#${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat01.xlsx
+${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat02.xlsx
 #${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat03.xlsx
 
 ${SHEET_NAME}  Footers

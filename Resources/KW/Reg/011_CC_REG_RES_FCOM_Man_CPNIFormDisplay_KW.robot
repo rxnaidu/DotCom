@@ -5,7 +5,7 @@ Resource  ../../PO/Login/loginPage.robot
 Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC11
+${TESTCASE_NO}  TC08
 
 *** Keywords ***
 User launch Ftr.com application using URL

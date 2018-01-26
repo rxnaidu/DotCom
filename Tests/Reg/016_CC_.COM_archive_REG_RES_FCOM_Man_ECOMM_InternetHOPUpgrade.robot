@@ -4,7 +4,7 @@ Library  Selenium2Library  90
 Resource  ../../Resources/KW/Reg/016_CC_.COM_archive_REG_RES_FCOM_Man_ECOMM_InternetHOPUpgrade_KW.robot
 Resource  ../../Resources/PO/Common/common.robot
 
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 
@@ -28,9 +28,9 @@ Hop Updrade
 
     Enter [Can be Reached] number and click [Update]
 
-    Enter initial and click Complete order
-
-    Update orderid in Access Database Table for deactivation
+#    Enter initial and click Complete order
+#
+#    Update orderid in Access Database Table for deactivation
 
 
 

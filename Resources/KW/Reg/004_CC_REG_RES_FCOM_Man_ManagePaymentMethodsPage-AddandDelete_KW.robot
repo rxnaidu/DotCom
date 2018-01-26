@@ -7,7 +7,7 @@ Resource  ../../PO/RES/accountSummary.robot
 Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC04
+${TESTCASE_NO}  TC03
 
 ${ADD_PAYMENT_METHOD_BTN}  id=btnAddMethod
 ${MY_PAYMENTS_TAB}  id=lnkPayments
@@ -36,7 +36,7 @@ Enter User name and Password and Select Sign In button
     homePage.User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
-    sleep  30s
+    sleep  20s
     Close Auto Pay popup
 
 Verify 17 digit Account Number displayed on Account Summary page

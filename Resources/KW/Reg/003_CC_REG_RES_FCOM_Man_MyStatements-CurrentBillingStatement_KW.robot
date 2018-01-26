@@ -7,7 +7,7 @@ Resource  ../../PO/RES/accountSummary.robot
 Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC03
+${TESTCASE_NO}  TC02
 
 *** Keywords ***
 User launch Ftr.com application using URL

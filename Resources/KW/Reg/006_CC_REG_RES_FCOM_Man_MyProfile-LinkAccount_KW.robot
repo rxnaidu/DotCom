@@ -7,7 +7,7 @@ Resource  ../../PO/RES/accountSummary.robot
 Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC06
+${TESTCASE_NO}  TC05
 
 ${ADD_PAYMENT_METHOD_BTN}  id=btnAddMethod
 ${MY_PAYMENTS_TAB}  id=lnkPayments

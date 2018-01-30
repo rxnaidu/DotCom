@@ -20,16 +20,18 @@ Select the Sign In link
 Enter User name and Password and Select Sign In button
     homePage.User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
-Select close on auto payment popup
-    accountSummary.Verify page elements
-    Close Auto Pay popup
-
 Verify user launches into Self Service Portal successfully
     wait until page contains  Video
     sleep  10s
     wait until page contains  Upgrade
+    wait until element is visible  id=upgrade-video-button
+    sleep  2s
 
-Click on Upgrade button for Internet
+Select close on auto payment popup
+    accountSummary.Verify page elements
+    Close Auto Pay popup
+
+Click on Upgrade button for Video
 #    #Close popup window
 #    wait until element is enabled  xpath=//a[@class="boltupgx"]
 #    click element  xpath=//a[@class="boltupgx"]

@@ -24,9 +24,12 @@ Select close on auto payment popup
     accountSummary.Verify page elements
     Close Auto Pay popup
 
-Verify 17 digit Account Number displayed on Account Summary page
+Select Account from drop down on Account Summary Page
+    Select Account Number
 
+Verify 17 digit Account Number displayed on Account Summary page
     ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+    sleep  2s
     page should contain  ${Expected_Account_Num}
 
 Mouse over on My Bills page and select Curren Bill option

@@ -8,7 +8,7 @@ Resource  ../../Resources/PO/Common/common.robot
 
 *** Test Cases ***
 
-Hop Updrade
+Internet Hop Updrade
 
     User launch Ftr.com application using URL
 
@@ -22,15 +22,15 @@ Hop Updrade
 
     Click on Upgrade button for Internet
 
-    Click on [Upgrade] button for the package that the user wants to Hop on
+    Click on [Upgrade] button for Internet 50/50 Mbps package
 
     Click on Yes
 
     Enter [Can be Reached] number and click [Update]
 
-#    Enter initial and click Complete order
-#
-#    Update orderid in Access Database Table for deactivation
+    Enter initial and click Complete order
+
+    Update orderid in Access Database Table for deactivation
 
 
 

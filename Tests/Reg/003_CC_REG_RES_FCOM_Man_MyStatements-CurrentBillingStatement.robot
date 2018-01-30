@@ -18,6 +18,8 @@ Test Teardown  Common.End Web Test
 
     Select close on auto payment popup
 
+#    Select Account from drop down on Account Summary Page
+
     Verify 17 digit Account Number displayed on Account Summary page
 
     Mouse over on My Bills page and select Curren Bill option
@@ -26,7 +28,7 @@ Test Teardown  Common.End Web Test
 
 #    Validate Billing Date is displayed
 
-    Validate Current Bill dates
+#    Validate Current Bill dates
 
     Select + to expand Frontier Monthly Service Charges
 

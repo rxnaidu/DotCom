@@ -1,9 +1,11 @@
 *** Settings ***
 Library  Selenium2Library  60
+Library  String
 Resource  ../../PO/Common/common.robot
 Resource  ../../PO/Login/loginPage.robot
 Resource  ../../PO/RES/Landing/homePage.robot
 Resource  ../../PO/RES/accountSummary.robot
+Resource  ../../PO/RES/AddInternetPackage.robot
 Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***
@@ -21,26 +23,26 @@ Select the Sign In link
 Enter User name and Password and Select Sign In button
     homePage.User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
-Select close on auto payment popup
-    accountSummary.Verify page elements
-    Close Auto Pay popup
-
 Verify user launches into Self Service Portal successfully
     wait until page contains  Internet
     sleep  10s
     wait until page contains  Upgrade
+    wait until element is visible  id=upgrade-internet-button  100
+    sleep  3s
+Select close on auto payment popup
+    accountSummary.Verify page elements
+    Close Auto Pay popup
 
 Click on Upgrade button for Internet
-    wait until element is enabled  xpath=//a[@class="boltupgx"]
-    click element  xpath=//a[@class="boltupgx"]
+#    wait until element is enabled  xpath=//a[@class="boltupgx"]
+#    click element  xpath=//a[@class="boltupgx"]
     sleep  2s
+    wait until element is enabled  id=upgrade-internet-button
     click button  id=upgrade-internet-button
     wait until page contains  Upgrade Your Current Internet Speed
 
-Click on [Upgrade] button for the package that the user wants to Hop on
-    wait until element is enabled  xpath=//fecomm-price[@price="10"]/../following-sibling::div/button
-    click button  xpath=//fecomm-price[@price="10"]/../following-sibling::div/button
-    wait until page contains  Select an Equipment Option
+Click on [Upgrade] button for Internet 50/50 Mbps package
+    Add Fios Internet 50/50 Mbps Product
 
 Click on Yes
     #Yes.I have one of the above routers option
@@ -63,14 +65,15 @@ Enter [Can be Reached] number and click [Update]
     wait until page contains  Activation
 
 Enter initial and click Complete order
+    wait until element is enabled  xpath=//input[@ng-model="userInitials.initials"]
     input text  xpath=//input[@ng-model="userInitials.initials"]  hj
-
     click button  id=provisioning-conform-order-btn
     sleep  60
     wait until page contains  Order #
 
     ${order_num_data}  get text  id=provisioning-order-id
     log  ${order_num_data}
+#--    set global variable  ${order_num_data}  Order #070479286
 
     @{orderid}  Split String  ${order_num_data}  '#'
     ${ORD_ID_DATA}  set variable  @{orderid}[1]

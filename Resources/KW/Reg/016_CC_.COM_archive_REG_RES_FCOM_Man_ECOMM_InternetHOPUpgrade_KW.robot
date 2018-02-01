@@ -23,11 +23,15 @@ Select the Sign In link
 Enter User name and Password and Select Sign In button
     homePage.User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
+Select Account Number from dropdown
+#    sleep  20s
+    Select Account Number
+
 Verify user launches into Self Service Portal successfully
     wait until page contains  Internet
     sleep  10s
-    wait until page contains  Upgrade
-    wait until element is visible  id=upgrade-internet-button  100
+    wait until page contains  Upgrade  120
+    wait until element is visible  id=upgrade-internet-button  120
     sleep  3s
 Select close on auto payment popup
     accountSummary.Verify page elements
@@ -69,7 +73,7 @@ Enter initial and click Complete order
     input text  xpath=//input[@ng-model="userInitials.initials"]  hj
     click button  id=provisioning-conform-order-btn
     sleep  60
-    wait until page contains  Order #
+    wait until page contains  Order #  150
 
     ${order_num_data}  get text  id=provisioning-order-id
     log  ${order_num_data}

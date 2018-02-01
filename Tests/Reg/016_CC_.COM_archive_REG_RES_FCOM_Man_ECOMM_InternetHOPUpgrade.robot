@@ -4,7 +4,7 @@ Library  Selenium2Library  90
 Resource  ../../Resources/KW/Reg/016_CC_.COM_archive_REG_RES_FCOM_Man_ECOMM_InternetHOPUpgrade_KW.robot
 Resource  ../../Resources/PO/Common/common.robot
 
-#Test Teardown  Common.End Web Test
+Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 
@@ -15,6 +15,8 @@ Internet Hop Updrade
     Select the Sign In link
 
     Enter User name and Password and Select Sign In button
+
+    Select Account Number from dropdown
 
     Verify user launches into Self Service Portal successfully
 

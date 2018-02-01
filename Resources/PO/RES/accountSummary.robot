@@ -35,8 +35,8 @@ Select Account Number
     wait until page contains  My Services
     wait until page contains  Account Summary
     wait until element is visible  ${ACCOUNT}
-    sleep  2s
-    select from list by label  ${ACCOUNT}  219-462-4063-033100-5 MARK R.
+    sleep  3s
+    select from list by label  ${ACCOUNT}  813-689-5758-092074-5 JOYCE T.
     wait until page contains  My Services
     wait until page contains  Account Summary
     sleep  20s

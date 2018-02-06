@@ -20,10 +20,9 @@ Click on the Tab selections as follows: Support> Trouble Ticket Status
     support.Select Trouble Ticket Status option
 
 Verify URL changes to Trouble Ticket Status
-    ${Trouble_Ticket_Status_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${TROUBLE_TICKET_STATUS_URL}
-
-    Encode String To Bytes  ${TROUBLE_TICKET_STATUS_URL}  ASCII
-
     wait until page contains  Ticket Status
-
-    location should be  ${TROUBLE_TICKET_STATUS_URL}
+    page should contain  Ticket Status
+#    ${Trouble_Ticket_Status_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${TROUBLE_TICKET_STATUS_URL}
+#    Encode String To Bytes  ${TROUBLE_TICKET_STATUS_URL}  ASCII
+#    wait until page contains  Ticket Status
+#    location should be  ${TROUBLE_TICKET_STATUS_URL}

@@ -20,10 +20,9 @@ Click on the Tab selections as follows: Shop > Moving
     shop.Select Moving option
 
 Verify URL changes to Moving page
-    ${Shop_Moving_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_MOVING_URL}
-
-    Encode String To Bytes  ${Shop_Moving_Url}  ASCII
-
-    wait until page contains  Chat
-
-    location should be  ${Shop_Moving_Url}
+    wait until page contains  home
+    page should contain  New home
+#    ${Shop_Moving_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_MOVING_URL}
+#    Encode String To Bytes  ${Shop_Moving_Url}  ASCII
+#    wait until page contains  Chat
+#    location should be  ${Shop_Moving_Url}

@@ -20,10 +20,10 @@ Click on the Tab selections as follows: Support> Help Center
     support.Select Help Center option
 
 Verify URL changes to Help Center
-    ${Help_Center_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${HELP_CENTER_URL}
+    wait until page contains  Support Topics
+    page should contain  Support Topics
 
-    Encode String To Bytes  ${Help_Center_Url}  ASCII
-
-    wait until page contains  Help Center
-
-    location should be  ${Help_Center_Url}
+#    ${Help_Center_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${HELP_CENTER_URL}
+#    Encode String To Bytes  ${Help_Center_Url}  ASCII
+#    wait until page contains  Help Center
+#    location should be  ${Help_Center_Url}

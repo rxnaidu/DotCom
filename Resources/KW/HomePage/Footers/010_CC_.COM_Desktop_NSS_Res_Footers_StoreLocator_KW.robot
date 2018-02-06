@@ -18,5 +18,7 @@ Navigate to bottom of the Footer home page and click: Store Locator
     homePage.Select Store Locator option from Footer
 
 Verify URL changes to Store Locator Page
-    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${STORE_LOCATOR_URL}
-    Verify currnt URL  ${EXPECTED_URL}
+    wait until page contains  Stores
+    page should contain  Stores
+#    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${STORE_LOCATOR_URL}
+#    Verify currnt URL  ${EXPECTED_URL}

@@ -86,9 +86,8 @@ Select Contact Us option-Spanish
     click link  ${CONTACT_US_SPA}
 
 Verify Spanish Text is displayed on Help Center page
-    wait until page contains  Centro de ayuda
-    page should contain  Caja de herramientas
-    page should contain  Cuenta
+    wait until page contains  soporte
+    page should contain  soporte
 
 Verify Spanish Text is displayed on Support Wizard page
     wait until page contains  Asistente de soporte

@@ -23,5 +23,7 @@ Move to YouTube window Tab
     select window  ${YOUTUBE_TAB_TITLE}
 
 Verify URL changes to YouTube Page
-    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${YOUTUBE_URL}
-    Verify currnt URL  ${EXPECTED_URL}
+    wait until page contains  Frontier Communications
+    page should contain  Frontier Communications
+#    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${YOUTUBE_URL}
+#    Verify currnt URL  ${EXPECTED_URL}

@@ -19,8 +19,8 @@ Click on the Tab selections as follows: Shop > Bundles
     shop.Select Bundle option
 
 Verify URL changes to Bundles
-    ${Shop_Bundle_url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_BUNDLE_URL}
-
-    Encode String To Bytes  ${Shop_Bundle_url}  ASCII
-
-    location should be  ${Shop_Bundle_url}
+    wait until page contains  bundle
+    page should contain  bundle
+#    ${Shop_Bundle_url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_BUNDLE_URL}
+#    Encode String To Bytes  ${Shop_Bundle_url}  ASCII
+#    location should be  ${Shop_Bundle_url}

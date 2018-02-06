@@ -20,8 +20,8 @@ Click on the Tab selections as follows: Shop > Phone
     shop.Select Phone option
 
 Verify URL changes to Phone
-    ${SHOP_PHONE_URL}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_PHONE_URL}
-
-    Encode String To Bytes  ${SHOP_PHONE_URL}  ASCII
-
-    location should be  ${SHOP_PHONE_URL}
+    wait until page contains  Phone
+    page should contain  Home Phone
+#    ${SHOP_PHONE_URL}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_PHONE_URL}
+#    Encode String To Bytes  ${SHOP_PHONE_URL}  ASCII
+#    location should be  ${SHOP_PHONE_URL}

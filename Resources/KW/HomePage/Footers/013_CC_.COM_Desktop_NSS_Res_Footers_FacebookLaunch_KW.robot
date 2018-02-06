@@ -25,5 +25,7 @@ Move to Facebook window Tab
     select window  ${FACEBOOK_TAB_TITLE}
 
 Verify URL changes to Facebook Page
-    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${FACEBOOK_URL}
-    Verify currnt URL  ${EXPECTED_URL}
+    wait until page contains  facebook
+    page should contain  facebook
+#    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${FACEBOOK_URL}
+#    Verify currnt URL  ${EXPECTED_URL}

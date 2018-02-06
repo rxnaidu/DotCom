@@ -25,5 +25,8 @@ Move to LinkedIn window Tab
     select window  ${LINKEDIN_TAB_TITLE}
 
 Verify URL changes to LinkedIn Page
-    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${LINKEDIN_URL}
-    Verify currnt URL  ${EXPECTED_URL}
+    wait until page contains  Frontier Communications
+    page should contain  Frontier Communications
+
+#    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${LINKEDIN_URL}
+#    Verify currnt URL  ${EXPECTED_URL}

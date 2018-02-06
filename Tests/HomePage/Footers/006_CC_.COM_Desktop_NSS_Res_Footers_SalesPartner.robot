@@ -36,17 +36,17 @@ Test Teardown  Common.End Web Test
 #
 #    Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: SALES PARTNERS> Frontier Broadband
+#    Navigate to bottom of the Footer home page and click: SALES PARTNERS> Frontier Broadband
+#
+#    Verify URL changes to Frontier Broadband Page
+#
+#    Go back to Home Page
 
-    Verify URL changes to Frontier Broadband Page
-
-    Go back to Home Page
-
-    Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Internet Plans
-
-    Verify URL changes to Frontier Internet Plans Page
-
-    Go back to Home Page
+#    Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Internet Plans
+#
+#    Verify URL changes to Frontier Internet Plans Page
+#
+#    Go back to Home Page
 
 #    Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Bundles
 #

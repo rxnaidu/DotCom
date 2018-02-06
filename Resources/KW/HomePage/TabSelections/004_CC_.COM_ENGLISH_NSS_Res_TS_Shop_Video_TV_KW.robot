@@ -20,8 +20,9 @@ Click on the Tab selections as follows: Shop > Video/TV
     shop.Select Video/TV option
 
 Verify URL changes to Video/TV
-    ${SHOP_VIDEO_URL}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_VIDEO_URL}
-
-    Encode String To Bytes  ${SHOP_VIDEO_URL}  ASCII
-    sleep  3s
-    location should be  ${SHOP_VIDEO_URL}
+    wait until page contains  TV
+    page should contain  Frontier TV
+#    ${SHOP_VIDEO_URL}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_VIDEO_URL}
+#    Encode String To Bytes  ${SHOP_VIDEO_URL}  ASCII
+#    sleep  3s
+#    location should be  ${SHOP_VIDEO_URL}

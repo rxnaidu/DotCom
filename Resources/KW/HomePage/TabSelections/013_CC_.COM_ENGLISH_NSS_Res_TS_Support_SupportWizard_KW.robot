@@ -20,10 +20,9 @@ Click on the Tab selections as follows: Support> Support Wizard
     support.Select Support Wizard option
 
 Verify URL changes to Support Wizard
-    ${Support_Wizard_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SUPPORT_WIZARD_URL}
-
-    Encode String To Bytes  ${Support_Wizard_Url}  ASCII
-
-    WAIT UNTIL PAGE CONTAINS  Support Wizard
-
-    location should be  ${Support_Wizard_Url}
+    wait until page contains  Support Wizard
+    page should contain  Support Wizard
+#    ${Support_Wizard_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SUPPORT_WIZARD_URL}
+#    Encode String To Bytes  ${Support_Wizard_Url}  ASCII
+#    WAIT UNTIL PAGE CONTAINS  Support Wizard
+#    location should be  ${Support_Wizard_Url}

@@ -5,7 +5,7 @@ Library  Selenium2Library  30
 Resource  ../../../Resources/KW/HomePage/Footers/001_CC_.COM_Desktop_NSS_Res_Footers_Shop_KW.robot
 Resource  ../../../Resources/PO/Common/common.robot
 
-#Test Setup  Common.Begin Web Test
+Test Setup  Common.Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***
@@ -50,7 +50,7 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Shop > Discount Programes
-
-    Verify URL changes to Discount Programes Page
+#    Navigate to bottom of the Footer home page and click: Shop > Discount Programes
+#
+#    Verify URL changes to Discount Programes Page
 

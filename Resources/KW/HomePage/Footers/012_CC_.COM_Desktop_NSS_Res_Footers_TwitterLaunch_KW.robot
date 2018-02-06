@@ -24,5 +24,7 @@ Move to Twitter window Tab
     select window  ${TWITTER_TAB_TITLE}
 
 Verify URL changes to Twitter Page
-    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${TWITTER_URL}
-    Verify currnt URL  ${EXPECTED_URL}
+    wait until page contains  Twitter
+    page should contain  Twitter
+#    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${TWITTER_URL}
+#    Verify currnt URL  ${EXPECTED_URL}

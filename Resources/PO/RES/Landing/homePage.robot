@@ -109,6 +109,7 @@ Verify currnt URL
     location should be  ${EXPECTED_URL}
 
 Go back to Home Page
+    sleep  2s
     go back
     sleep  3s
 

@@ -21,10 +21,9 @@ Click on the Tab selections as follows: Shop > Internet
     shop.Select Internet option
 
 Verify URL changes to Internet
-    ${SHOP_INTERNET_URL}  read_excel_data_by_cell_name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_INTERNET_URL}
-
-    Encode String To Bytes  ${SHOP_INTERNET_URL}  ASCII
-
-    wait until page contains  Internet Services
-
-    location should be  ${SHOP_INTERNET_URL}
+    wait until page contains  Internet
+    page should contain   Internet speed
+#    ${SHOP_INTERNET_URL}  read_excel_data_by_cell_name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_INTERNET_URL}
+#    Encode String To Bytes  ${SHOP_INTERNET_URL}  ASCII
+#    wait until page contains  Internet Services
+#    location should be  ${SHOP_INTERNET_URL}

@@ -20,8 +20,8 @@ Click on the Tab selections as follows: Support> Order Status
     support.Select Order Status option
 
 Verify URL changes to Order Status
-    ${Order_Status_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ORDER_STATUS_URL}
-
-    Encode String To Bytes  ${Order_Status_Url}  ASCII
-
-    location should be  ${Order_Status_Url}
+    wait until page contains  Order Status
+    page should contain  Order Status
+#    ${Order_Status_Url}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ORDER_STATUS_URL}
+#    Encode String To Bytes  ${Order_Status_Url}  ASCII
+#    location should be  ${Order_Status_Url}

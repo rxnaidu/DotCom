@@ -20,11 +20,10 @@ Click on the Tab selections as follows: Shop > Frontier Secure
     shop.Select Frontier Secure option
 
 Verify URL changes to Frontier Secure
-    ${SHOP_DEGITAL_ESSENTIALS_URL}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_DEGITAL_ESSENTIAL_URL}
-
-    Encode String To Bytes  ${SHOP_DEGITAL_ESSENTIALS_URL}  ASCII
-
     wait until page contains  Frontier Secure
-
-    location should be  ${SHOP_DEGITAL_ESSENTIALS_URL}
+    page should contain  Frontier Secure
+#    ${SHOP_DEGITAL_ESSENTIALS_URL}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${SHOP_DEGITAL_ESSENTIAL_URL}
+#    Encode String To Bytes  ${SHOP_DEGITAL_ESSENTIALS_URL}  ASCII
+#    wait until page contains  Frontier Secure
+#    location should be  ${SHOP_DEGITAL_ESSENTIALS_URL}
 

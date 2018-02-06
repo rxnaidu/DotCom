@@ -24,5 +24,7 @@ Move to Google+ window Tab
     select window  ${GOOGLE+_TAB_TITLE}
 
 Verify URL changes to Google+ Page
-    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${GOOGLE+_URL}
-    Verify currnt URL  ${EXPECTED_URL}
+    wait until page contains  Frontier Communications
+    page should contain  Frontier Communications
+#    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${GOOGLE+_URL}
+#    Verify currnt URL  ${EXPECTED_URL}

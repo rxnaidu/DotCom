@@ -15,4 +15,4 @@ Test Teardown  Common.End Web Test
 
     Navigate to bottom of the Footer home page and click: Privacy Policy
 
-    Verify URL changes to Privacy Policy Page
+#    Verify URL changes to Privacy Policy Page

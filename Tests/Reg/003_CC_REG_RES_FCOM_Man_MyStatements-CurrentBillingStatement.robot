@@ -36,9 +36,9 @@ Test Teardown  Common.End Web Test
 
 #    Select + to expand Taxas and other services
 
-    Validate current charges
+#    Validate current charges
 
-    Validate Total Bill Amount
+#    Validate Total Bill Amount
 
 #    Validate New Charges Due Date
 

@@ -24,7 +24,7 @@ Internet Hop Updrade
 
     Click on Upgrade button for Internet
 
-    Click on [Upgrade] button for Internet 50/50 Mbps package
+    Click on [Upgrade] button for Internet
 
     Click on Yes
 
@@ -32,7 +32,7 @@ Internet Hop Updrade
 
     Enter initial and click Complete order
 
-    Update orderid in Access Database Table for deactivation
+#    Update orderid in Access Database Table for deactivation
 
 
 

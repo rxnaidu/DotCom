@@ -21,8 +21,10 @@ ${CHECK_IMG}  xpath=//div[@id='routingNumberHelp']/img
 ${CONTINUE_BTN}  id=btnAchAddVerifySubmit
 ${CANCEL_BTN}  xpath=//a[@id="btnAchAddVerifySubmit"]/following-sibling::a[1]
 ${SAVE_PAYMENT_METHOD_BTN}  xpath=//span[text()='Save Payment Method']
-${DELETE_TRASH_BTN}  xpath=//span[contains(text(),'account ending in 0002')]/../i
+${DELETE_TRASH_BTN}  xpath=//div[@id='manage-payment']//div[@class="panel-group"]/div[1]//h4/a/i/small
+#//span[contains(text(),'account ending in 0002')]/../i
 ${DO_NOT_DELETE_BTN}  xpath=//button[text()='No, Do Not Delete']
+${YES_PLEASE_DELETE_BTN}  xpath=//button[text()='Yes, Please Delete ']
 
 *** Keywords ***
 User launch Ftr.com application using URL
@@ -145,27 +147,25 @@ Click Save Payment Methods button and validate screen is navigated back to the M
     click element  ${SAVE_PAYMENT_METHOD_BTN}
 
 Verify Saved payment methods displayed details
-    wait until page contains  account ending in 0002
     wait until page contains  Saved Payment Methods
-
+    sleep  5s
     page should contain  Saved Payment Methods
-#    page should contain  Checking account ending in 0002
 
-Click On the Trash can icon or the word Delete and validate modal window is displayed
-    #Checking account ending in 0002 is having Delete option
-    page should contain element  ${DELETE_TRASH_BTN}
-
-Verify Delete Payment Method modal window options
-    #Delete trash button
+Click On the Trash can icon or the word Delete
+    wait until element is visible  ${DELETE_TRASH_BTN}
     wait until element is enabled  ${DELETE_TRASH_BTN}
-    sleep  6s
+    sleep  10s
     click element  ${DELETE_TRASH_BTN}
 
+Verify Delete Payment Method modal window options and click Delete option
     sleep  2s
-    page should contain  Delete Payment Method
+    wait until page contains  Delete Payment Method
     page should contain  Are you sure you wish to DELETE the payment method?
-    wait until element is enabled  ${DO_NOT_DELETE_BTN}
-    click element  ${DO_NOT_DELETE_BTN}
+    wait until element is enabled  ${YES_PLEASE_DELETE_BTN}
+    sleep  2s
+    click element  ${YES_PLEASE_DELETE_BTN}
+    wait until page contains  Saved Payment Methods
+    sleep  6s
 
 
 

@@ -7,7 +7,7 @@ ${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat02.xlsx
 #${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat03.xlsx
 
 #====================================================================================================================#
-#------Do not Touch---------Test Data from Excel sheet-------------------------#
+#------Do not Touch---------Configuration keywords for accessing Excel sheet Test Data-----------
 #====================================================================================================================#
 ${SHEET_NAME}  Footers
 ${BROWSER_NAME}  Browser

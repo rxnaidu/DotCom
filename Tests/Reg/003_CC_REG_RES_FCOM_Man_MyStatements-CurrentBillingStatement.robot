@@ -40,7 +40,7 @@ Test Teardown  Common.End Web Test
 
     Validate Total Bill Amount
 
-    Validate New Charges Due Date
+#    Validate New Charges Due Date
 
 #    Validate Pay Bill button
 #

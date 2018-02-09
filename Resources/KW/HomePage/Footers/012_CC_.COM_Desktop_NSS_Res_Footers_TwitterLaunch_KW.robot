@@ -19,7 +19,7 @@ Navigate to bottom of the Footer home page and click: Twitter
     homePage.Select Twitter option from Footer
 
 Move to Twitter window Tab
-    sleep  4s
+    sleep  6s
     @{titles}  get window titles
     select window  ${TWITTER_TAB_TITLE}
 

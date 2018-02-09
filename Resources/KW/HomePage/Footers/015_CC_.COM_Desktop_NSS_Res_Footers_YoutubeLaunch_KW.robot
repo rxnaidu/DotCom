@@ -18,7 +18,7 @@ Navigate to bottom of the Footer home page and click: YouTube
     homePage.Select YouTube option from Footer
 
 Move to YouTube window Tab
-    sleep  4s
+    sleep  6s
     @{titles}  get window titles
     select window  ${YOUTUBE_TAB_TITLE}
 

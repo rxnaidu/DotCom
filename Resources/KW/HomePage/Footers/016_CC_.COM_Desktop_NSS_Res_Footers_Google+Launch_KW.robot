@@ -19,7 +19,7 @@ Navigate to bottom of the Footer home page and click: Google+
     homePage.Select Google+ option from Footer
 
 Move to Google+ window Tab
-    sleep  4s
+    sleep  6s
     @{titles}  get window titles
     select window  ${GOOGLE+_TAB_TITLE}
 

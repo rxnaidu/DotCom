@@ -2,9 +2,9 @@
 Library  Selenium2Library  90
 
 Resource  ../../Resources/KW/Reg/016_CC_.COM_archive_REG_RES_FCOM_Man_ECOMM_InternetHOPUpgrade_KW.robot
-Resource  ../../Resources/PO/Common/common.robot
+Resource  ../../Resources/PO/Common.robot
 
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 
@@ -24,9 +24,9 @@ Internet Hop Updrade
 
     Click on Upgrade button for Internet
 
-    Click on [Upgrade] button for Internet
+    Click on [Upgrade] button for selecting Fios Internet 75/75 product
 
-    Click on Yes
+    Click on Yes for router selection
 
     Enter [Can be Reached] number and click [Update]
 

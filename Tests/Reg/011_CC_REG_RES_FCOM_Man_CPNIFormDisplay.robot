@@ -2,7 +2,7 @@
 Library  Selenium2Library  45
 
 Resource  ../../Resources/KW/REG/011_CC_REG_RES_FCOM_Man_CPNIFormDisplay_KW.robot
-Resource  ../../Resources/PO/Common/common.robot
+Resource  ../../Resources/PO/Common.robot
 
 Test Teardown  Common.End Web Test
 

@@ -1,8 +1,8 @@
 *** Settings ***
 Library  Selenium2Library  60
-Resource  ../../../PO/Login/loginPage.robot
-Resource  ../../../PO/RES/Landing/homePage.robot
-Resource  ../../../PO/Common/common.robot
+Resource  ../../../PO/Common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/HomeRes.robot
 Resource  ../../../Properties/headers_PR.robot
 
 *** Variables ***
@@ -16,13 +16,13 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Select the Sign In link
-    homePage.Sign In link
+    Sign In link
 
 Enter User name and Password and Select Sign In button
     ${Username_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${USERNAME_INP}
     ${Password_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PASSWORD_INP}
 
-    homePage.User Sign In  ${Username_Inp}  ${Password_Inp}
+    User Sign In  ${Username_Inp}  ${Password_Inp}
 
 Verify Login page
     wait until page contains  welcome to Frontier!
@@ -36,7 +36,7 @@ Select Sign Out from righ corner of the screen
     sleep  5s
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}
     sleep  2s
-    homePage.Sign Out
+    Sign Out
 
 Verify User launch back to Hopme page defaulting to Residential Tab
-    homePage.Verify Residential home page
+    Verify Residential home page

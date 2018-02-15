@@ -1,10 +1,10 @@
 *** Settings ***
 Library  Selenium2Library  30
 Library  FTRutil
-Resource  ../../PO/Common/common.robot
-Resource  ../../PO/Login/loginPage.robot
-Resource  ../../PO/RES/Landing/homePage.robot
-Resource  ../../PO/RES/accountSummary.robot
+Resource  ../../PO/Common.robot
+Resource  ../../PO/LoginPage.robot
+Resource  ../../PO/RES/HomeRes.robot
+Resource  ../../PO/RES/AccountSummary.robot
 Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***
@@ -22,14 +22,14 @@ ${MANAGE_AUTO_PAY}  xpath=//a[text()='Manage Auto Pay ']
 ${MANAGE_AUTO_PAY_FROM_MYPAYMENTS_TAB}  id=mnuAuto
 *** Keywords ***
 User launch Ftr.com application using URL
-    common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
+    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Select the Sign In link
-    homePage.Sign In link
+    Sign In link
 
 Enter User name and Password and Select Sign In button
-    homePage.User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
+    User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
     Close Auto Pay popup

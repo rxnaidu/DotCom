@@ -1,10 +1,10 @@
 *** Settings ***
 Library  Selenium2Library  60
 Library  String
-Resource  ../../../PO/Login/loginPage.robot
-Resource  ../../../PO/RES/Landing/homePage.robot
-Resource  ../../../PO/RES/MyAccount/myAccount.robot
-Resource  ../../../PO/Common/common.robot
+Resource  ../../../PO/Common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/MyAccount.robot
+Resource  ../../../PO/Common.robot
 Resource  ../../../Properties/tabSelections_PR.robot
 
 *** Variables ***

@@ -1,9 +1,9 @@
 *** Settings ***
 Library  Selenium2Library  30
 Library  String
-Resource  ../../../PO/Login/loginPage.robot
-Resource  ../../../PO/RES/Landing/homePage.robot
-Resource  ../../../PO/Common/common.robot
+Resource  ../../../PO/Common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/HomeRes.robot
 Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***
@@ -15,7 +15,7 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Navigate to bottom of the Footer home page and click: Shop > Bundles
-    homePage.Select Bundle option from Footer
+    Select Bundle option from Footer
 
 Verify URL changes to Bundles Page
     wait until page contains  bundle
@@ -24,7 +24,7 @@ Verify URL changes to Bundles Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Shop > Internet
-    homePage.Select Internet option from Footer
+    Select Internet option from Footer
 
 Verify URL changes to Internet Page
     wait until page contains  internet
@@ -33,7 +33,7 @@ Verify URL changes to Internet Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Shop > Phone
-    homePage.Select Phone option from Footer
+    Select Phone option from Footer
 
 Verify URL changes to Phone Page
     wait until page contains  Phone
@@ -42,7 +42,7 @@ Verify URL changes to Phone Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Shop > Video/Tv
-    homePage.Select Video/TV option from Footer
+    Select Video/TV option from Footer
 
 Verify URL changes to Video/Tv Page
     wait until page contains  Frontier TV
@@ -51,7 +51,7 @@ Verify URL changes to Video/Tv Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Shop > Frontier Secure
-    homePage.Select Frontier Secure option from Shop Footer
+    Select Frontier Secure option from Shop Footer
 
 Verify URL changes to Frontier Secure Page
     wait until page contains  Frontier Secure
@@ -60,7 +60,7 @@ Verify URL changes to Frontier Secure Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Shop > Moving
-    homePage.Select Moving option from Footer
+    Select Moving option from Footer
 
 Verify URL changes to Moving Page
     wait until page contains  New home

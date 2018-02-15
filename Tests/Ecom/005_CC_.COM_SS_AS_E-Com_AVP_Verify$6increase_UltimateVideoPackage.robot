@@ -2,7 +2,7 @@
 Library  Selenium2Library  90
 
 Resource  ../../Resources/KW/Ecom/005_CC_.COM_SS_AS_E-Com_AVP_Verify$6increase_UltimateVideoPackage_KW.robot
-Resource  ../../Resources/PO/Common/common.robot
+Resource  ../../Resources/PO/Common.robot
 
 Test Teardown  Common.End Web Test
 

@@ -1,9 +1,9 @@
 *** Settings ***
 Library  Selenium2Library  60
 Library  String
-Resource  ../../../PO/Login/loginPage.robot
-Resource  ../../../PO/RES/Landing/homePage.robot
-Resource  ../../../PO/Common/common.robot
+Resource  ../../../PO/Common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/HomeRes.robot
 Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***
@@ -15,7 +15,7 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Internet
-    homePage.Select Frontier Internet option from Footer
+    Select Frontier Internet option from Footer
 
 Verify URL changes to Frontier Internet Page
     wait until page contains  Internet
@@ -24,7 +24,7 @@ Verify URL changes to Frontier Internet Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: SALES PARTNERS > Local Internet
-    homePage.Select Local Internet option from Footer
+    Select Local Internet option from Footer
 
 Verify URL changes to Local Internet Page
     wait until page contains  Internet
@@ -33,7 +33,7 @@ Verify URL changes to Local Internet Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier FiOS
-    homePage.Select Frontier FiOS option from Footer
+    Select Frontier FiOS option from Footer
 
 Verify URL changes to Frontier FiOS Page
     wait until page contains  FiOS
@@ -42,7 +42,7 @@ Verify URL changes to Frontier FiOS Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Plans
-    homePage.Select Frontier Plans option from Footer
+    Select Frontier Plans option from Footer
 
 Verify URL changes to Frontier Plans Page
     wait until page contains
@@ -51,7 +51,7 @@ Verify URL changes to Frontier Plans Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: SALES PARTNERS> Frontier Broadband
-    homePage.Select Frontier Broadband option from Footer
+    Select Frontier Broadband option from Footer
 
 Verify URL changes to Frontier Broadband Page
     wait until page contains  AMAZON
@@ -60,7 +60,7 @@ Verify URL changes to Frontier Broadband Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Internet Plans
-    homePage.Select Frontier Internet Plans option from Footer
+    Select Frontier Internet Plans option from Footer
 
 Verify URL changes to Frontier Internet Plans Page
     wait until page contains  FRONTIER INTERNET
@@ -69,7 +69,7 @@ Verify URL changes to Frontier Internet Plans Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier Bundles
-    homePage.Select Frontier Bundles option from Footer
+    Select Frontier Bundles option from Footer
 
 Verify URL changes to Frontier Bundles Page
     wait until page contains
@@ -78,7 +78,7 @@ Verify URL changes to Frontier Bundles Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: SALES PARTNERS > Frontier West
-    homePage.Select Frontier West option from Footer
+    Select Frontier West option from Footer
 
 Verify URL changes to Frontier West Page
     wait until page contains

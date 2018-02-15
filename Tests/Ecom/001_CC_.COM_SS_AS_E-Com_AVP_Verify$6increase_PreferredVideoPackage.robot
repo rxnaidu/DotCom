@@ -2,7 +2,7 @@
 Library  Selenium2Library  90
 
 Resource  ../../Resources/KW/Ecom/001_CC_.COM_SS_AS_E-Com_AVP_Verify$6increase_PreferredVideoPackage_KW.robot
-Resource  ../../Resources/PO/Common/common.robot
+Resource  ../../Resources/PO/Common.robot
 
 #Test Teardown  Common.End Web Test
 
@@ -16,7 +16,7 @@ ECOM Regression
 
     Enter User name and Password and Select Sign In button
 
-    Select Account Number
+#    Select Account Number
 
 #    Verify Vido upgrage option is displayed under Account Summary
 

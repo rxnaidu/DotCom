@@ -1,9 +1,9 @@
 *** Settings ***
 Library  Selenium2Library  60
-Resource  ../../../PO/Login/loginPage.robot
-Resource  ../../../PO/RES/Landing/homePage.robot
-Resource  ../../../PO/WHOL/Landing/homeWhol.robot
-Resource  ../../../PO/Common/common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/HomeRes.robot
+Resource  ../../../PO/WHOL/HomeWhol.robot
+Resource  ../../../PO/Common.robot
 Resource  ../../../Properties/headers_PR.robot
 
 *** Variables ***
@@ -15,7 +15,7 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 User clicks Wholesale Tab
-    homePage.Select Wholesale Tab
+    Select Wholesale Tab
 
 Verify Wholesale home page is displayed
     homeWhol.Verify Wholesale home Page
@@ -24,4 +24,4 @@ User clicks back button
     go back
 
 Verify Residential Home Page is displayed
-    homePage.Verify Residential home page
+    Verify Residential home page

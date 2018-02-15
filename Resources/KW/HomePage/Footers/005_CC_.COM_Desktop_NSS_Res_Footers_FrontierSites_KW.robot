@@ -1,9 +1,9 @@
 *** Settings ***
 Library  Selenium2Library  60
 Library  String
-Resource  ../../../PO/Login/loginPage.robot
-Resource  ../../../PO/RES/Landing/homePage.robot
-Resource  ../../../PO/Common/common.robot
+Resource  ../../../PO/Common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/HomeRes.robot
 Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***
@@ -15,7 +15,7 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Navigate to bottom of the Footer home page and click: Frontier Sites > Get Vantage
-    homePage.Select Get Vantage option from Footer
+    Select Get Vantage option from Footer
 
 Verify URL changes to Get Vantage Page
     wait until page contains  Vantage
@@ -24,7 +24,7 @@ Verify URL changes to Get Vantage Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Secure
-    homePage.Select Frontier Secure option from Footer
+    Select Frontier Secure option from Footer
 
 Verify URL changes to Frontier Secure Page
     wait until page contains
@@ -33,7 +33,7 @@ Verify URL changes to Frontier Secure Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business
-    homePage.Select Frontier Business option from Footer
+    Select Frontier Business option from Footer
 
 Verify URL changes to Frontier Business Page
     wait until page contains  Business
@@ -42,7 +42,7 @@ Verify URL changes to Frontier Business Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Games
-    homePage.Select Frontier Games option from Footer
+    Select Frontier Games option from Footer
 
 Verify URL changes to Frontier Games Page
     wait until page contains
@@ -51,7 +51,7 @@ Verify URL changes to Frontier Games Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier WI-FI
-    homePage.Select Frontier WI-FI option from Footer
+    Select Frontier WI-FI option from Footer
 
 Verify URL changes to Frontier WI-FI Page
     wait until page contains  Wi-Fi
@@ -60,7 +60,7 @@ Verify URL changes to Frontier WI-FI Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Frontier Sites > Wholesale
-    homePage.Select Wholesale option from Footer
+    Select Wholesale option from Footer
 
 Verify URL changes to Wholesale Page
     wait until page contains  Wholesale
@@ -69,7 +69,7 @@ Verify URL changes to Wholesale Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Yahoo Portal
-    homePage.Select Frontier Yahoo Portal option from Footer
+    Select Frontier Yahoo Portal option from Footer
 
 Verify URL changes to Frontier Yahoo Portal Page
     wait until page contains  Frontier
@@ -78,7 +78,7 @@ Verify URL changes to Frontier Yahoo Portal Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Frontier Sites > Referral Program
-    homePage.Select Referral Program option from Footer
+    Select Referral Program option from Footer
 
 Verify URL changes to Referral Program Page
     wait until page contains
@@ -87,7 +87,7 @@ Verify URL changes to Referral Program Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business Partner
-    homePage.Select Frontier Business Partner option from Footer
+    Select Frontier Business Partner option from Footer
 
 Verify URL changes to Frontier Business Partner Page
     wait until page contains  Partner

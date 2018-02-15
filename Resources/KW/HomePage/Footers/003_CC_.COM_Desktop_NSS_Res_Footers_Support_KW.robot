@@ -1,9 +1,9 @@
 *** Settings ***
 Library  Selenium2Library  60
 Library  String
-Resource  ../../../PO/Login/loginPage.robot
-Resource  ../../../PO/RES/Landing/homePage.robot
-Resource  ../../../PO/Common/common.robot
+Resource  ../../../PO/Common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/HomeRes.robot
 Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***
@@ -15,7 +15,7 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Navigate to bottom of the Footer home page and click: Support> Contact Us
-    homePage.Select Contact Us option from Footer
+    Select Contact Us option from Footer
 
 Verify URL changes to Contact Us Page
     wait until page contains  Contact
@@ -24,7 +24,7 @@ Verify URL changes to Contact Us Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Support > Help Center
-    homePage.Select Help Center option from Footer
+    Select Help Center option from Footer
 
 Verify URL changes to Help Center Page
     wait until page contains  Help Center
@@ -33,7 +33,7 @@ Verify URL changes to Help Center Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Support > Order Status
-    homePage.Select Order Status option from Footer
+    Select Order Status option from Footer
 
 Verify URL changes to Order Status Page
     wait until page contains  Order Status
@@ -42,7 +42,7 @@ Verify URL changes to Order Status Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Support > Trouble Ticket Status
-    homePage.Select Trouble Ticket Status option from Footer
+    Select Trouble Ticket Status option from Footer
 
 Verify URL changes to Trouble Ticket Status Page
     wait until page contains  Ticket
@@ -51,7 +51,7 @@ Verify URL changes to Trouble Ticket Status Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Support > Support Wizard
-    homePage.Select Support Wizard option from Footer
+    Select Support Wizard option from Footer
 
 Verify URL changes to Support Wizard Page
     wait until page contains  Support
@@ -60,7 +60,7 @@ Verify URL changes to Support Wizard Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Support > Test Your Speed
-    homePage.Select Test Your Speed option from Footer
+    Select Test Your Speed option from Footer
 
 Verify URL changes to Test Your Speed Page
     wait until page contains  Test
@@ -69,7 +69,7 @@ Verify URL changes to Test Your Speed Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Support> Video Gallery
-    homePage.Select Video Gallery option from Footer
+    Select Video Gallery option from Footer
 
 Verify URL changes to Video Gallery Page
     wait until page contains  Video

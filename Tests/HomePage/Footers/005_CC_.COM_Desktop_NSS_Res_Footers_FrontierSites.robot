@@ -3,7 +3,7 @@ Documentation  Ftr.com Automation
 Library  Selenium2Library  30
 
 Resource  ../../../Resources/KW/HomePage/Footers/005_CC_.COM_Desktop_NSS_Res_Footers_FrontierSites_KW.robot
-Resource  ../../../Resources/PO/Common/common.robot
+Resource  ../../../Resources/PO/Common.robot
 
 Test Teardown  Common.End Web Test
 

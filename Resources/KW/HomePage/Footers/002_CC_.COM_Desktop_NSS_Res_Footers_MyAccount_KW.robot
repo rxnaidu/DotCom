@@ -1,9 +1,9 @@
 *** Settings ***
 Library  Selenium2Library  60
 Library  String
-Resource  ../../../PO/Login/loginPage.robot
-Resource  ../../../PO/RES/Landing/homePage.robot
-Resource  ../../../PO/Common/common.robot
+Resource  ../../../PO/Common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/HomeRes.robot
 Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***
@@ -15,7 +15,7 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Navigate to bottom of the Footer home page and click: My Account > Pay Bills
-    homePage.Select Pay Bill option from Footer
+    Select Pay Bill option from Footer
 
 Verify URL changes to Pay Bills Page
     wait until page contains  Sign In
@@ -24,7 +24,7 @@ Verify URL changes to Pay Bills Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: My Account > Check Email
-    homePage.Select Check Email option from Footer
+    Select Check Email option from Footer
 
 Verify URL changes to Check Email Page
     wait until page contains  Email Address
@@ -33,7 +33,7 @@ Verify URL changes to Check Email Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: My Account > Manage Account
-    homePage.Select Manage Account option from Footer
+    Select Manage Account option from Footer
 
 Verify URL changes to Manage Account Page
     wait until page contains  Sign In
@@ -42,7 +42,7 @@ Verify URL changes to Manage Account Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: My Account > MyFrontier App
-    homePage.Select MyFrontier App option from Footer
+    Select MyFrontier App option from Footer
 
 Verify URL changes to MyFrontier App Page
     wait until page contains  MyFrontier
@@ -51,7 +51,7 @@ Verify URL changes to MyFrontier App Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: My Account > Watch TV
-    homePage.Select Watch TV option from Footer
+    Select Watch TV option from Footer
 
 Verify URL changes to Watch TV Page
     wait until page contains  Watch TV

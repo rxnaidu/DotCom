@@ -3,7 +3,7 @@ Documentation  Ftr.com Automation
 Library  Selenium2Library  30
 
 Resource  ../../../Resources/KW/HomePage/TabSelections/004_CC_.COM_ENGLISH_NSS_Res_TS_Shop_Video_TV_KW.robot
-Resource  ../../../Resources/PO/Common/common.robot
+Resource  ../../../Resources/PO/Common.robot
 
 Test Teardown  Common.End Web Test
 

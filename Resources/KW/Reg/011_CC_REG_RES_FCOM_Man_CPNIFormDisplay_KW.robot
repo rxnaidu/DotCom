@@ -1,7 +1,7 @@
 *** Settings ***
 Library  Selenium2Library  30
-Resource  ../../PO/Common/common.robot
-Resource  ../../PO/Login/loginPage.robot
+Resource  ../../PO/Common.robot
+Resource  ../../PO/LoginPage.robot
 Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***

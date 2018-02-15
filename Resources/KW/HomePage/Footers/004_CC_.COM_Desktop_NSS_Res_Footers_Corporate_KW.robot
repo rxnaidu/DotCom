@@ -1,9 +1,9 @@
 *** Settings ***
 Library  Selenium2Library  60
 Library  String
-Resource  ../../../PO/Login/loginPage.robot
-Resource  ../../../PO/RES/Landing/homePage.robot
-Resource  ../../../PO/Common/common.robot
+Resource  ../../../PO/Common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/HomeRes.robot
 Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***
@@ -15,7 +15,7 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Navigate to bottom of the Footer home page and click: Corporate > About Us
-    homePage.Select About Us option from Footer
+    Select About Us option from Footer
 
 Verify URL changes to About Us Page
     wait until page contains
@@ -24,7 +24,7 @@ Verify URL changes to About Us Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Corporate > Investor Relations
-    homePage.Select Investor Relations option from Footer
+    Select Investor Relations option from Footer
 
 Verify URL changes to Investor Relations Page
     wait until page contains
@@ -33,7 +33,7 @@ Verify URL changes to Investor Relations Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Corporate > News
-    homePage.Select News option from Footer
+    Select News option from Footer
 
 Verify URL changes to News Page
     wait until page contains  News
@@ -42,7 +42,7 @@ Verify URL changes to News Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Corporate > Careers
-    homePage.Select Careers option from Footer
+    Select Careers option from Footer
 
 Verify URL changes to Careers Page
     wait until page contains  Current Openings
@@ -51,7 +51,7 @@ Verify URL changes to Careers Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Corporate > Suppliers
-    homePage.Select Suppliers option from Footer
+    Select Suppliers option from Footer
 
 Verify URL changes to Suppliers Page
     wait until page contains  supplier
@@ -60,7 +60,7 @@ Verify URL changes to Suppliers Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Corporate > Pressroom
-    homePage.Select Pressroom option from Footer
+    Select Pressroom option from Footer
 
 Verify URL changes to Pressroom Page
     wait until page contains
@@ -69,7 +69,7 @@ Verify URL changes to Pressroom Page
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Corporate > Making a Difference
-    homePage.Select Making a Difference option from Footer
+    Select Making a Difference option from Footer
 
 Verify URL changes to Making a Difference
     wait until page contains
@@ -78,7 +78,7 @@ Verify URL changes to Making a Difference
 #    Verify currnt URL  ${EXPECTED_URL}
 
 Navigate to bottom of the Footer home page and click: Corporate > Public Inspection Files
-    homePage.Select Public Inspection Files option from Footer
+    Select Public Inspection Files option from Footer
 
 Verify URL changes to Public Inspection Files Page
     wait until page contains  Inspection

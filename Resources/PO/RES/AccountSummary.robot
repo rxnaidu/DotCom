@@ -7,10 +7,10 @@ ${AUTOPAY_POPUP}  id=btnClose
 ${INTERNET}  xpath=//h5[text()='Internet']
 ${PHONE}  xpath=//h5[text()='Phone']
 ${VIDEO}  xpath=//h5[text()='Video']
-${VIDEO_SHOP}  id=add-video-button
 ${ACCOUNT}  xpath=//div[@id="summary-section"]//select[@id='ddAccts']
 ${INTERNET_UPGRADE_BTN}  id=upgrade-internet-button
 ${VIDEO_UPGRADE_BTN}  id=upgrade-video-button
+${ADD_VIDEO_SHOP_BTN}  id=add-video-button
 
 *** Keywords ***
 
@@ -47,18 +47,17 @@ Click Video Upgrade Button
     wait until page contains  Upgrade Your Current TV Package
 
 
-Close Auto Pay popup
-    run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  20
-    run keyword and ignore error  click element  ${AUTOPAY_POPUP}
-    sleep  2s
-
-Verify Video upgrage page elements
+Verify Add Video page elements
     wait until page contains  My Services
     wait until page contains  Shop
-    page should contain  Add New Services
+    page should contain  Current Balance
     page should contain  Account Summary
-    page should contain  My Account
-    page should contain  Summary
+    wait until element is enabled  ${ADD_VIDEO_SHOP_BTN}  3m
+
+Click Shop Button
+    wait until element is enabled  ${ADD_VIDEO_SHOP_BTN}  3m
+    click element  ${ADD_VIDEO_SHOP_BTN}
+    sleep  2s
 
 Select Account Number
     [Arguments]  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
@@ -73,6 +72,12 @@ Select Account Number
     wait until page contains  Account Summary
     sleep  20s
 
-Select Shop Button
-    wait until element is enabled  ${VIDEO_SHOP}  150s
-    click element  ${VIDEO_SHOP}
+Close Auto Pay popup
+    run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}
+    run keyword and ignore error  click element  ${AUTOPAY_POPUP}
+    sleep  2s
+
+Close Auto Pay popup for Ecom
+    run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  2m
+    run keyword and ignore error  click element  ${AUTOPAY_POPUP}
+    sleep  2s

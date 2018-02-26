@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Ftr.com Automation
-Library  Selenium2Library  45
+Library  Selenium2Library  60
 Resource  ../../Resources/KW/Reg/010_CC_REG_RES_FCOM_Man_SiteWideNavigationSignedInUser-SpanishToggle_KW.robot
 Resource  ../../Resources/PO/Common.robot
 

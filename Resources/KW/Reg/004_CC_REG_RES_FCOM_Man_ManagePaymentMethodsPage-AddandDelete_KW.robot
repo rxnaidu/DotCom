@@ -38,7 +38,6 @@ Enter User name and Password and Select Sign In button
     User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
-    sleep  20s
     Close Auto Pay popup
 
 Verify 17 digit Account Number displayed on Account Summary page
@@ -154,7 +153,7 @@ Verify Saved payment methods displayed details
 Click On the Trash can icon or the word Delete
     wait until element is visible  ${DELETE_TRASH_BTN}
     wait until element is enabled  ${DELETE_TRASH_BTN}
-    sleep  10s
+    sleep  20s
     click element  ${DELETE_TRASH_BTN}
 
 Verify Delete Payment Method modal window options and click Delete option

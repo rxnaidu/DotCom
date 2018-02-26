@@ -1,5 +1,5 @@
 *** Settings ***
-Library  Selenium2Library  45
+Library  Selenium2Library  60
 
 Resource  ../../Resources/KW/Reg/005_CC_REG_RES_FCOM_Man_SignUpForAutoPayWithExistPaymentMethod-WithoutDefaultPaymentMethod_KW.robot
 Resource  ../../Resources/PO/Common.robot

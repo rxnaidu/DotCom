@@ -73,7 +73,7 @@ Select Account Number
     sleep  20s
 
 Close Auto Pay popup
-    run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}
+    run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  90
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}
     sleep  2s
 

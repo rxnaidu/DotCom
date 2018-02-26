@@ -4,7 +4,7 @@ Library  Selenium2Library  90
 Resource  ../../Resources/KW/Reg/017_CC_.COM_archive_REG_RES_FCOM_Man_ECOMM_VideoHOPUpgrade_KW.robot
 Resource  ../../Resources/PO/Common.robot
 
-#Test Teardown  Common.End Web Test
+Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 

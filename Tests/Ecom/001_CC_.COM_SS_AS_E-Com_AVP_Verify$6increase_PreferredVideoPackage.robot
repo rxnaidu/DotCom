@@ -27,7 +27,3 @@ ECOM Regression
     Click Select button for adding Fios TV Preferred HD product
 
     Clear saved products from cart
-
-
-
-

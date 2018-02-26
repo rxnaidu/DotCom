@@ -24,7 +24,7 @@ ${LINK_ANOTHER_ACCOUNT}  xpath=//a[text()='Link another Account']
 ${BILLING_ACCT_NUM}  xpath=//span[text()='Billing Account Number']
 ${BILLING_ACCT_NUM_TEXT}   css=[placeholder="12345678901234567"]
 ${FTR_BLG_ACT_PIN_RADIO}  xpath=//span[text()='Frontier Billing Account PIN']
-${FTR_BLG_ACT_PIN__INP}  id=link-account-id
+${FTR_BLG_ACT_PIN__INP}  xpath=//div[@id='link-account-input-2']//input[@id='link-account-id']
 ${LINK_CONTINUE}  xpath=//span[text()='Continue']
 *** Keywords ***
 User launch Ftr.com application using URL
@@ -38,6 +38,7 @@ Enter User name and Password and Select Sign In button
     User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
+    sleep  20s
     Close Auto Pay popup
 
 Verify 17 digit Account Number displayed on Account Summary page

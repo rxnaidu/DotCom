@@ -25,6 +25,7 @@ Enter User name and Password and Select Sign In button
     User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
+    sleep  20s
     Close Auto Pay popup
 
 Verify 17 digit Account Number displayed on Account Summary page
@@ -70,7 +71,7 @@ Click Unlink for an account number
     click element  ${POPUP_UNLINK}
 
     wait until page contains  This Account has been unlinked
-    sleep  4s
+    sleep  10s
     page should contain  This Account has been unlinked from your Frontier ID
 
 

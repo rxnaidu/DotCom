@@ -32,6 +32,8 @@ Test Teardown  Common.End Web Test
 
 #    Validate the system defaults to "Choose a payment method"  #--Not displaying on the screen now.
 
+    Validate can select a saved payment method from the drop down menu
+
     Validate the system defaults to "Choose payment rule" in the Payment to be applied field
 
     The drop down menu displays 1 -10 day before in the Payment Date field

@@ -20,6 +20,8 @@ ${CONFIRM_BTN}  XPATH=//button[text()='CONFIRM']
 ${MANAGE_PAYMENT_METHODS}  xpath=//a[text()='Manage Payment Methods ']
 ${MANAGE_AUTO_PAY}  xpath=//a[text()='Manage Auto Pay ']
 ${MANAGE_AUTO_PAY_FROM_MYPAYMENTS_TAB}  id=mnuAuto
+${PAYMENT_METHOD_DROPDOWN}  xpath=//select[@ng-model="paymentMethod"]
+
 *** Keywords ***
 User launch Ftr.com application using URL
     Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
@@ -77,6 +79,7 @@ Mouse over on My Payments Tab and select Sign up for Auto Pay option
 
     wait until page contains  Sign up for Auto Pay
     wait until page contains  The total due for billing cycle
+    sleep  5s
 
 Validate the display of the Account Field Sign Up for Auto Pay screen
     page should contain  My Payments
@@ -86,9 +89,13 @@ Validate the display of the Account Field Sign Up for Auto Pay screen
     page should contain  ${Expected_Account_Num}
 
 Validate the system defaults to "Choose a payment method"
-    page should contain  Choose payment method
+    page should contain  Choose a payment method
 
 Validate can select a saved payment method from the drop down menu
+    wait until element is visible  ${PAYMENT_METHOD_DROPDOWN}
+    wait until element is enabled  ${PAYMENT_METHOD_DROPDOWN}
+    sleep  5s
+    select from list by index  ${PAYMENT_METHOD_DROPDOWN}  1
 
 Validate the system defaults to "Choose payment rule" in the Payment to be applied field
     page should contain  Choose payment rule
@@ -106,6 +113,7 @@ The drop down menu displays 1 -10 day before in the Payment Date field
     page should contain  10 days before
 
 Validate any amount of days can be selected from the drop down menu
+    wait until element is enabled  ${PAYMENT_TO_BE_APPLIET_DROPDOWN}
     select from list by label  ${PAYMENT_TO_BE_APPLIET_DROPDOWN}  1 day before
 
 Validate in the Amount field the following is displayed: "The total due for billing cycle"
@@ -120,7 +128,7 @@ Validate when the Continue button is selected the user is navigated to the Revie
     SCROLL_DOWN_PAGE_HALF
     wait until element is enabled  ${CONTINUE_BTN}
     wait until element is visible  ${CONTINUE_BTN}
-    sleep  15s
+    sleep  5s
     click element  ${CONTINUE_BTN}
     wait until page contains  Please Review your Auto Pay settings then Click CONFIRM to continue.
 

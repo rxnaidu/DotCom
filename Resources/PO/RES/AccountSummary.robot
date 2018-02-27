@@ -74,10 +74,12 @@ Select Account Number
 
 Close Auto Pay popup
     run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  90
+    sleep  2s
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}
     sleep  2s
 
 Close Auto Pay popup for Ecom
     run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  2m
+    sleep  2s
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}
     sleep  2s

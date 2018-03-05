@@ -28,8 +28,8 @@ ${YES_PLEASE_DELETE_BTN}  xpath=//button[text()='Yes, Please Delete ']
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
+    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Select the Sign In link
     Sign In link
@@ -151,9 +151,9 @@ Verify Saved payment methods displayed details
     page should contain  Saved Payment Methods
 
 Click On the Trash can icon or the word Delete
-    wait until element is visible  ${DELETE_TRASH_BTN}
+    wait until element is visible  ${DELETE_TRASH_BTN}  90
     wait until element is enabled  ${DELETE_TRASH_BTN}
-    sleep  20s
+    sleep  30s
     click element  ${DELETE_TRASH_BTN}
 
 Verify Delete Payment Method modal window options and click Delete option

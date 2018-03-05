@@ -116,7 +116,7 @@ User Sign In from Excel
     click button  ${USER_SIGNIN_BTN}
 
 #    wait until element is enabled  ${INTERNET}
-    wait until page contains  Summary
+    wait until page contains  Summary  100s
     wait until page contains  Key Account Info
     sleep  10s
 

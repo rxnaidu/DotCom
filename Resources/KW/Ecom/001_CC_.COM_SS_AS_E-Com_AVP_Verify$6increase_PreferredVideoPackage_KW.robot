@@ -14,7 +14,7 @@ ${ORD_ID_DATA}  1
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
+    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Select the Sign In link
@@ -28,6 +28,7 @@ Verify Video Add Shop option is displayed under Account Summary
 
 Select close on auto payment popup
     Close Auto Pay popup for Ecom
+    Close Upgrade popup
 
 Click Shop button for Video Upgrade
     Click Shop Button

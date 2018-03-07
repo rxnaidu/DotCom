@@ -22,7 +22,7 @@ Enter User name and Password and Select Sign In button
 
 Select close on auto payment popup
     accountSummary.Verify page elements
-    Close Auto Pay popup
+    Close Auto Pay popup for Ecom
 
 Select Account from drop down on Account Summary Page
     Select Account Number

@@ -11,6 +11,7 @@ ${ACCOUNT}  xpath=//div[@id="summary-section"]//select[@id='ddAccts']
 ${INTERNET_UPGRADE_BTN}  id=upgrade-internet-button
 ${VIDEO_UPGRADE_BTN}  id=upgrade-video-button
 ${ADD_VIDEO_SHOP_BTN}  id=add-video-button
+${UPGRADE_POP_UP}  xpath=//a[@ng-click="$dismiss();"]/span
 
 *** Keywords ***
 
@@ -79,7 +80,13 @@ Close Auto Pay popup
     sleep  2s
 
 Close Auto Pay popup for Ecom
-    run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  2m
+    run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  4m
     sleep  2s
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}
+    sleep  2s
+
+Close Upgrade popup
+    run keyword and ignore error  wait until element is enabled  ${UPGRADE_POPUP}  30
+    sleep  2s
+    run keyword and ignore error  click element  ${UPGRADE_POPUP}
     sleep  2s

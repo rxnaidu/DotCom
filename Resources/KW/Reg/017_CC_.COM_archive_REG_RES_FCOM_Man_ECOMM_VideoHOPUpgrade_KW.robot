@@ -30,6 +30,7 @@ Verify user launches into Self Service Portal successfully
 Select close on auto payment popup
     accountSummary.Verify page elements
     Close Auto Pay popup for Ecom
+    Close Upgrade popup
 
 Click on Upgrade button for Video
     Click Video Upgrade Button

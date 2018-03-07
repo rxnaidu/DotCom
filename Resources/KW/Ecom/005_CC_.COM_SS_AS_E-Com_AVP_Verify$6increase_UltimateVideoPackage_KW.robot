@@ -28,6 +28,7 @@ Verify Video Add Shop option is displayed under Account Summary
 
 Select close on auto payment popup
     Close Auto Pay popup for Ecom
+    Close Upgrade popup
 
 Click Shop button for Video Upgrade
     Click Shop Button

@@ -50,13 +50,13 @@ Click Video Upgrade Button
 
 Verify Add Video page elements
     wait until page contains  My Services
-    wait until page contains  Shop
+    wait until page contains  Shop  4m
     page should contain  Current Balance
     page should contain  Account Summary
-    wait until element is enabled  ${ADD_VIDEO_SHOP_BTN}  3m
+    wait until element is enabled  ${ADD_VIDEO_SHOP_BTN}  4m
 
 Click Shop Button
-    wait until element is enabled  ${ADD_VIDEO_SHOP_BTN}  3m
+    wait until element is enabled  ${ADD_VIDEO_SHOP_BTN}
     click element  ${ADD_VIDEO_SHOP_BTN}
     sleep  2s
 
@@ -80,13 +80,13 @@ Close Auto Pay popup
     sleep  2s
 
 Close Auto Pay popup for Ecom
-    run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  4m
+    run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  3m
     sleep  2s
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}
     sleep  2s
 
 Close Upgrade popup
-    run keyword and ignore error  wait until element is enabled  ${UPGRADE_POPUP}  30
+    run keyword and ignore error  wait until element is enabled  ${UPGRADE_POPUP}  10
     sleep  2s
     run keyword and ignore error  click element  ${UPGRADE_POPUP}
     sleep  2s

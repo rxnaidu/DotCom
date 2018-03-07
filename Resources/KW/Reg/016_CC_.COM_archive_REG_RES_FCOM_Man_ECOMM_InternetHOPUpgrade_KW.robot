@@ -29,7 +29,7 @@ Verify user launches into Self Service Portal successfully
     Validate Internet Upgrade button
 
 Select close on auto payment popup
-    accountSummary.Verify page elements
+    Verify page elements
     Close Auto Pay popup for Ecom
     Close Upgrade popup
 

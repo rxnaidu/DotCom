@@ -1,21 +1,21 @@
 *** Settings ***
 Library  Selenium2Library  60
-Resource  ../../PO/Common.robot
-Resource  ../../PO/LoginPage.robot
-Resource  ../../PO/RES/HomeRes.robot
-Resource  ../../PO/RES/AccountSummary.robot
-Resource  ../../PO/RES/AddPackage.robot
-Resource  ../../Properties/reg_PR.robot
+Resource  ../../../PO/Common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/HomeRes.robot
+Resource  ../../../PO/RES/AccountSummary.robot
+Resource  ../../../PO/RES/AddPackage.robot
+Resource  ../../../Properties/Ecom_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC16
+${TESTCASE_NO}  TC01
 ${REGION}  FT
 ${ORD_ID_DATA}  1
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
+    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Select the Sign In link
     Sign In link
@@ -33,14 +33,14 @@ Select close on auto payment popup
 Click Shop button for Video Upgrade
     Click Shop Button
 
-Click Select button for adding Fios TV Ultimate HD product
-    Add Fios TV Ultimate HD Product
+Click Select button for adding Fios TV Preferred HD product
+    Add Fios TV Preferred HD Product
 
 Clear saved products from cart
     Click Return to My Account
     Click Shop Button
     Click Clear Cart on popup
-    wait until element is enabled  ${FIOS_TV_ULTIMATE_HD}  3m
+    wait until element is enabled  ${FIOS_TV_PREFERRED_HD}  3m
     sleep  2s
 
 

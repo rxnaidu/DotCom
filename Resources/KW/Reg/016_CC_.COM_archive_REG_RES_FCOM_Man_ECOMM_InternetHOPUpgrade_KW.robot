@@ -30,7 +30,7 @@ Verify user launches into Self Service Portal successfully
 
 Select close on auto payment popup
     Verify page elements
-    Close Auto Pay popup for Ecom
+    Close Auto Pay popup
     Close Upgrade popup
 
 Click on Upgrade button for Internet

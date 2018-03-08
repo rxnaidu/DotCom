@@ -65,10 +65,10 @@ Select Account Number
     ${Select_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
     wait until page contains  My Services
     wait until page contains  Account Summary
-    wait until element is visible  ${ACCOUNT}
-    wait until element is enabled  ${ACCOUNT}
+    run keyword and ignore error  wait until element is visible  ${ACCOUNT}  30
+    run keyword and ignore error  wait until element is enabled  ${ACCOUNT}  30
     sleep  3s
-    select from list by label  ${ACCOUNT}  ${Select_Account_Num}
+    run keyword and ignore error  select from list by label  ${ACCOUNT}  ${Select_Account_Num}
     wait until page contains  My Services
     wait until page contains  Account Summary
     sleep  20s

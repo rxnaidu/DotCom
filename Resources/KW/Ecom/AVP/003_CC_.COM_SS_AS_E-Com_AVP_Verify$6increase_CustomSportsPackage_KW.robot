@@ -1,14 +1,14 @@
 *** Settings ***
 Library  Selenium2Library  60
-Resource  ../../PO/Common.robot
-Resource  ../../PO/LoginPage.robot
-Resource  ../../PO/RES/HomeRes.robot
-Resource  ../../PO/RES/AccountSummary.robot
-Resource  ../../PO/RES/AddPackage.robot
-Resource  ../../Properties/reg_PR.robot
+Resource  ../../../PO/Common.robot
+Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/RES/HomeRes.robot
+Resource  ../../../PO/RES/AccountSummary.robot
+Resource  ../../../PO/RES/AddPackage.robot
+Resource  ../../../Properties/Ecom_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC15
+${TESTCASE_NO}  TC03
 ${REGION}  FT
 ${ORD_ID_DATA}  1
 
@@ -33,8 +33,8 @@ Select close on auto payment popup
 Click Shop button for Video Upgrade
     Click Shop Button
 
-Click Select button for adding Fios TV Extreme HD product
-    Add Fios TV Extreme HD Product
+Click Select button for adding Fios TV Custom Sports and More product
+    Add Fios TV Custom Sports and More Product
 
 Clear saved products from cart
     Click Return to My Account

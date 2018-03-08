@@ -16,7 +16,7 @@ Hop Updrade
 
     Enter User name and Password and Select Sign In button
 
-#    Select Account Number from dropdown
+    Select Account Number from dropdown
 
     Verify user launches into Self Service Portal successfully
 

@@ -1,10 +1,10 @@
 *** Settings ***
 Library  Selenium2Library  90
 
-Resource  ../../Resources/KW/Ecom/005_CC_.COM_SS_AS_E-Com_AVP_Verify$6increase_UltimateVideoPackage_KW.robot
-Resource  ../../Resources/PO/Common.robot
+Resource  ../../../Resources/KW/Ecom/VC/001_CC_.COM_SS_AS_E-Com_VC_PremiumChannelPackages_KW.robot
+Resource  ../../../Resources/PO/Common.robot
 
-Test Teardown  Common.End Web Test
+#Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 
@@ -24,6 +24,6 @@ ECOM Regression
 
     Click Shop button for Video Upgrade
 
-    Click Select button for adding Fios TV Ultimate HD product
-
-    Clear saved products from cart
+#    Click Select button for adding Fios TV Preferred HD product
+#
+#    Clear saved products from cart

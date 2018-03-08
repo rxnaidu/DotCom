@@ -1,8 +1,8 @@
 *** Settings ***
 Library  Selenium2Library  90
 
-Resource  ../../Resources/KW/Ecom/004_CC_.COM_SS_AS_E-Com_AVP_Verify$6increase_ExtremePackage_KW.robot
-Resource  ../../Resources/PO/Common.robot
+Resource  ../../../Resources/KW/Ecom/AVP/004_CC_.COM_SS_AS_E-Com_AVP_Verify$6increase_ExtremePackage_KW.robot
+Resource  ../../../Resources/PO/Common.robot
 
 Test Teardown  Common.End Web Test
 

@@ -86,7 +86,7 @@ Close Auto Pay popup for Ecom
     sleep  2s
 
 Close Upgrade popup
-    run keyword and ignore error  wait until element is enabled  ${UPGRADE_POPUP}  10
+    run keyword and ignore error  wait until element is enabled  ${UPGRADE_POPUP}  5
     sleep  2s
     run keyword and ignore error  click element  ${UPGRADE_POPUP}
     sleep  2s

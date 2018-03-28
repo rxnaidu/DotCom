@@ -147,7 +147,7 @@ Click Save Payment Methods button and validate screen is navigated back to the M
 
 Verify Saved payment methods displayed details
     wait until page contains  Saved Payment Methods
-    sleep  5s
+    sleep  10s
     page should contain  Saved Payment Methods
 
 Click On the Trash can icon or the word Delete

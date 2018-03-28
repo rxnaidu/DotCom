@@ -90,3 +90,4 @@ Close Upgrade popup
     sleep  2s
     run keyword and ignore error  click element  ${UPGRADE_POPUP}
     sleep  2s
+

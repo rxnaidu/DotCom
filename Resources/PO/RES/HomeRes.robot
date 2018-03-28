@@ -456,5 +456,3 @@ Select Google+ option from Footer
     Scroll Page To Locator View  ${FOOTER_GOOGLE+}
     click element  ${FOOTER_GOOGLE+}
 
-
-

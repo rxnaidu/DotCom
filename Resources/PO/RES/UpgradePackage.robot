@@ -54,6 +54,8 @@ Click on Yes for router
 
 Update Can be reached number
     wait until element is enabled  ${CAN_BE_REACHED_TEL_NUM}
+    wait until element is visible  ${CAN_BE_REACHED_TEL_NUM}
+    wait until page contains  Contact Information
     sleep  3s
     input text  ${CAN_BE_REACHED_TEL_NUM}  4699745555
     click button  ${TEL_NUM_UPDATE_BTN}
@@ -105,8 +107,6 @@ Upgrade Fios TV Extreme HD Product
     sleep  2s
     click element  ${FIOS_TV_EXTREME_HD}
     sleep  2s
-
-
 
 Add Fios TV Ultimate HD Product
     wait until element is enabled  ${FIOS_TV_ULTIMATE_HD}

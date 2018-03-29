@@ -38,7 +38,7 @@ Click Internet Upgrade Button
 Validate Video Upgrade button
     wait until page contains  Video
     wait until page contains  Upgrade  4M
-    wait until element is visible  ${VIDEO_UPGRADE_BTN}  4M
+    wait until element is enabled  ${VIDEO_UPGRADE_BTN}  4M
     sleep  2s
 
 Click Video Upgrade Button

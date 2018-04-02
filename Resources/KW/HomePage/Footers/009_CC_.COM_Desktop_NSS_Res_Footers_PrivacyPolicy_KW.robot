@@ -19,7 +19,7 @@ Navigate to bottom of the Footer home page and click: Privacy Policy
     sleep  2s
 
 Verify URL changes to Privacy Policy Page
-    wait until page contains  Frontier Communications
+    wait until page contains  Frontier Communications  30s
     page should contain  Frontier Communications
 #    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PRIVACY_POLICY_URL}
 #    Verify currnt URL  ${EXPECTED_URL}

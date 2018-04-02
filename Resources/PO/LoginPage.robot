@@ -12,6 +12,7 @@ ${URL_PASSWORD}  name=password
 Load from Excel
     [Arguments]  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${URL_PASSWORD_DATA_EX}
     set window size  1024  768
+#    maximize browser window
     wait until page contains element  ${SIGNIN_BTN}
     wait until element is enabled  ${SIGNIN_BTN}
 
@@ -20,11 +21,11 @@ Load from Excel
     input password  ${URL_PASSWORD}  ${Url_Password_Inp}
     click button  ${SIGNIN_BTN}
 
-Load
-    maximize browser window
-    wait until page contains element  ${SIGNIN_BTN}
-    wait until element is enabled  ${SIGNIN_BTN}
-
-    input password  ${URL_PASSWORD}  ${URL_PASSWORD_DATA}
-    sleep  1s
-    click button  ${SIGNIN_BTN}
+#Load
+#    maximize browser window
+#    wait until page contains element  ${SIGNIN_BTN}
+#    wait until element is enabled  ${SIGNIN_BTN}
+#
+#    input password  ${URL_PASSWORD}  ${URL_PASSWORD_DATA}
+#    sleep  1s
+#    click button  ${SIGNIN_BTN}

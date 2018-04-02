@@ -3,8 +3,8 @@ Library  Selenium2Library
 Library  FTRutil
 
 *** Variables ***
-${URL}  https://qat01.frontier.com/
-${BROWSER}  Chrome
+#${URL}  https://qat01.frontier.com/
+#${BROWSER}  Chrome
 
 *** Keywords ***
 Begin Web Test from Excel
@@ -13,8 +13,8 @@ Begin Web Test from Excel
     ${URL_EXCEL}   read_excel_data_by_cell_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${DOTCOM_URL}
     open browser  ${URL_EXCEL}  ${BROWSER_EXCEL}
 
-Begin Web Test
-    open browser  ${URL}  ${BROWSER}
+#Begin Web Test
+#    open browser  ${URL}  ${BROWSER}
 
 End Web Test
     delete all cookies

@@ -2,18 +2,18 @@
 Library  Selenium2Library  60
 
 *** Variables ***
-${SHOP_TAB}  link=Shop
-${MY_ACCOUNT_TAB}  link=My Account
-${BUNDLE}  link=Bundles
-${INTERNET_OPA}  link=Internet
-${PHONE}  link=Phone
-${VIDEO/TV}  link=Video/TV
+${SHOP_TAB}  cs#ecomm-rv-anchor-Shop
+${MY_ACCOUNT_TAB}  css=#ecomm-rv-anchor-MyAccount
+${BUNDLE}  css=#ecomm-rv-anchor-Bundles
+${INTERNET_OPA}  css=#ecomm-rv-anchor-Internet
+${PHONE}  css=#ecomm-rv-anchor-Phone
+${VIDEO/TV}  css=[id="ecomm-rv-anchor-Video/TV"]
 ${DIGITAL_ESSENTIALS}  link=Digital Essentials
-${FRONTIER_SECURE}  link=Frontier Secure
-${MOVING}  link=Moving
+${FRONTIER_SECURE}  css=#ecomm-rv-anchor-FrontierSecure
+${MOVING}  css=#ecomm-rv-anchor-Moving
 
 #----------spanish---------------#
-${SHOP_TAB_SPA}  link=Comprar
+${SHOP_TAB_SPA}  css=#ecomm-rv-anchor-Comprar
 ${BUNDLE_SPA}  id=ecomm-rv-anchor-Paquetes
 ${INTERNET_SPA}  id=ecomm-rv-anchor-Internet
 ${PHONE_SPA}  id=ecomm-rv-anchor-Tel&#233;fono

@@ -12,6 +12,7 @@ Begin Web Test from Excel
     ${BROWSER_EXCEL}  read_excel_data_by_cell_name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${BROWSER_NAME}
     ${URL_EXCEL}   read_excel_data_by_cell_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${DOTCOM_URL}
     open browser  ${URL_EXCEL}  ${BROWSER_EXCEL}
+    set window size  1024  768
 
 #Begin Web Test
 #    open browser  ${URL}  ${BROWSER}

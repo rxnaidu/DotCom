@@ -2,19 +2,19 @@
 Library  Selenium2Library  60
 
 *** Variables ***
-${SUPPORT_TAB_SPA}  link=Soporte
-${HELP_CENTER_SPA}  link=Centro de ayuda
-${SUPPORT_WIZARD_SPA}  link=Asistente de soporte
-${TROUBLE_TICKET_STATUS_SPA}  link=Estado de la boleta del problema
-${ORDER_STATUS_SPA}  link=Estado del pedido
-${CONTACT_US_SPA}  link=Contáctanos
+${SUPPORT_TAB_SPA}  css=#ecomm-rv-anchor-Soporte
+${HELP_CENTER_SPA}  css=#ecomm-rv-anchor-Centrodeayuda
+${SUPPORT_WIZARD_SPA}  css=#ecomm-rv-anchor-Asistentedesoporte
+${TROUBLE_TICKET_STATUS_SPA}  css=#ecomm-rv-anchor-Estadodelaboletadelproblema
+${ORDER_STATUS_SPA}  css=#ecomm-rv-anchor-Estadodelpedido
+${CONTACT_US_SPA}  css=[id='ecomm-rv-anchor-Cont&#225;ctanos']
 
-${SUPPORT_TAB}  link=Support
-${HELP_CENTER}  link=Help Center
-${SUPPORT_WIZARD}  link=Support Wizard
-${TROUBLE_TICKET_STATUS}  link=Trouble Ticket Status
-${ORDER_STATUS}  link=Order Status
-${CONTACT_US}  link=Contact Us
+${SUPPORT_TAB}  css=#ecomm-rv-anchor-Support
+${HELP_CENTER}  css=#ecomm-rv-anchor-HelpCenter
+${SUPPORT_WIZARD}  cs#ecomm-rv-anchor-SupportWizard
+${TROUBLE_TICKET_STATUS}  css=#ecomm-rv-anchor-TroubleTicketStatus
+${ORDER_STATUS}  css=#ecomm-rv-anchor-OrderStatus
+${CONTACT_US}  css=#ecomm-rv-anchor-ContactUs
 
 *** Keywords ***
 

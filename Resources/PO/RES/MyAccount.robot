@@ -2,20 +2,20 @@
 Library  Selenium2Library  60
 
 *** Variables ***
-${MY_ACCOUNT_TAB}  link=My Account    #xpath=//div[@id='header-main']//a[contains(text(),'My Account')]
-${ACCOUNT_SUMMARY}  link=Account Summary
-${MY_PAYMENTS}  link=My Payments
-${MY_BILLS}  link=My Bills
-${MY_PROFILE}  link=My Profile
-${MY_FRONTIER_MOBILE_APP}  link=MyFrontier Mobile App
+${MY_ACCOUNT_TAB}  css=#ecomm-rv-anchor-MyAccount
+${ACCOUNT_SUMMARY}  css=#ecomm-rv-anchor-AccountSummary
+${MY_PAYMENTS}  css=#ecomm-rv-anchor-MyPayments
+${MY_BILLS}  css=#ecomm-rv-anchor-MyBills
+${MY_PROFILE}  css=#ecomm-rv-anchor-MyProfile
+${MY_FRONTIER_MOBILE_APP}  css=#ecomm-rv-anchor-MyFrontierMobileApp
 
 #----------Spanish Language-------------#
-${MY_ACCOUNT_TAB_SPA}  link=Mi cuenta
-${ACCOUNT_SUMMARY_SPA}  link=Resumen de cuenta
-${MY_PAYMENTS_SPA}  link=Mis pagos
-${MY_BILLS_SPA}  link=Mis facturas
-${MY_PROFILE_SPA}  link=Mi perfil
-${MY_FRONTIER_MOBILE_APP_SPA}  link=Aplicación móvil MyFrontier
+${MY_ACCOUNT_TAB_SPA}  css=#ecomm-rv-anchor-Micuenta
+${ACCOUNT_SUMMARY_SPA}  css=#ecomm-rv-anchor-Resumendecuenta
+${MY_PAYMENTS_SPA}  css=#ecomm-rv-anchor-Mispagos
+${MY_BILLS_SPA}  css=#ecomm-rv-anchor-Misfacturas
+${MY_PROFILE_SPA}  css=#ecomm-rv-anchor-Miperfil
+${MY_FRONTIER_MOBILE_APP_SPA}  css=[id='ecomm-rv-anchor-Aplicaci&#243;nm&#243;vilMyFrontier']
 
 ${CANCEL_BTN}  xpath=//button[contains(text(),'Cancel')]
 ${SIGN_IN_BTN}  xpath=//button[contains(text(),'Sign In')]

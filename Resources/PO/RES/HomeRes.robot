@@ -4,7 +4,7 @@ Library  FTRutil
 
 *** Variables ***
 ${INTERNET}  xpath=//h5[text()='Internet']
-${SIGNIN_DROPDOWN}  link=Sign In
+${SIGNIN_DROPDOWN}  css=#signinDropdown
 ${USERNAME}  css=.login-modal-table #fid-login-inline-username
 ${PASSWORD}  css=.login-modal-table #fid-login-inline-password
 ${USER_SIGNIN_BTN}  css=.btn.btn-primary.btn-block

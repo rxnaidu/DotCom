@@ -16,7 +16,7 @@ ${SIGNUP_FOR_AUTO_PAY}  id=mnuSignup
 ${PAYMENT_TO_BE_APPLIET_DROPDOWN}  xpath=//select[@ng-model='scheduleDayBefore']
 ${CONTINUE_BTN}  id=btnForContSignUpID
 ${CANCEL_BTN}  xpath=//button[@id='btnForContSignUpID']/following-sibling::a
-${CONFIRM_BTN}  XPATH=//button[text()='CONFIRM']
+${CONFIRM_BTN}  xpath=//button[text()='CONFIRM']
 ${MANAGE_PAYMENT_METHODS}  xpath=//a[text()='Manage Payment Methods ']
 ${MANAGE_AUTO_PAY}  xpath=//a[text()='Manage Auto Pay ']
 ${MANAGE_AUTO_PAY_FROM_MYPAYMENTS_TAB}  id=mnuAuto

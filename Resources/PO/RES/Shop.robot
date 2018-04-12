@@ -2,15 +2,15 @@
 Library  Selenium2Library  60
 
 *** Variables ***
-${SHOP_TAB}  cs#ecomm-rv-anchor-Shop
-${MY_ACCOUNT_TAB}  css=#ecomm-rv-anchor-MyAccount
-${BUNDLE}  css=#ecomm-rv-anchor-Bundles
-${INTERNET_OPA}  css=#ecomm-rv-anchor-Internet
-${PHONE}  css=#ecomm-rv-anchor-Phone
+${SHOP_TAB}  id=ecomm-rv-anchor-Shop
+${MY_ACCOUNT_TAB}  id=ecomm-rv-anchor-MyAccount
+${BUNDLE}  id=ecomm-rv-anchor-Bundles
+${INTERNET_OPA}  id=ecomm-rv-anchor-Internet
+${PHONE}  id=ecomm-rv-anchor-Phone
 ${VIDEO/TV}  css=[id="ecomm-rv-anchor-Video/TV"]
 ${DIGITAL_ESSENTIALS}  link=Digital Essentials
-${FRONTIER_SECURE}  css=#ecomm-rv-anchor-FrontierSecure
-${MOVING}  css=#ecomm-rv-anchor-Moving
+${FRONTIER_SECURE}  id=ecomm-rv-anchor-FrontierSecure
+${MOVING}  id=ecomm-rv-anchor-Moving
 
 #----------spanish---------------#
 ${SHOP_TAB_SPA}  css=#ecomm-rv-anchor-Comprar

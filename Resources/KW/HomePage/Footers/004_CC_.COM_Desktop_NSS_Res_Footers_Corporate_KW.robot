@@ -45,8 +45,8 @@ Navigate to bottom of the Footer home page and click: Corporate > Careers
     Select Careers option from Footer
 
 Verify URL changes to Careers Page
-    wait until page contains  Current Openings
-    page should contain  Current Openings
+    wait until page contains  Careers
+    page should contain  Careers
 #    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${CAREERS_URL}
 #    Verify currnt URL  ${EXPECTED_URL}
 

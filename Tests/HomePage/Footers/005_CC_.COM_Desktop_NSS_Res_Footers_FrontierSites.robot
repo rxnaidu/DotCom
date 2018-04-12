@@ -24,11 +24,11 @@ Test Teardown  Common.End Web Test
 #
 #    Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business
-
-    Verify URL changes to Frontier Business Page
-
-    Go back to Home Page
+#    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business
+#
+#    Verify URL changes to Frontier Business Page
+#
+#    Go back to Home Page
 
 #    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Games
 #

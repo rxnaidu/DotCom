@@ -42,11 +42,11 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-    Navigate to bottom of the Footer home page and click: Support > Test Your Speed
-
-    Verify URL changes to Test Your Speed Page
-
-    Go back to Home Page
+#    Navigate to bottom of the Footer home page and click: Support > Test Your Speed
+#
+#    Verify URL changes to Test Your Speed Page
+#
+#    Go back to Home Page
 
     Navigate to bottom of the Footer home page and click: Support> Contact Us
 

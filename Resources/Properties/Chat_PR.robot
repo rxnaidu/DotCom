@@ -4,7 +4,7 @@
 #====================================================================================================================#
 ${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat01.xlsx
 #${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat02.xlsx
-#${EXCEL_LOC}  C:/Development/Robot/DotCom/Resources/TestData/qat03.xlsx
+#${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat03.xlsx
 #${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/prod.xlsx
 #====================================================================================================================#
 #------Do not Touch---------Configuration keywords for accessing Excel sheet Test Data-----------

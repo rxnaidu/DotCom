@@ -11,7 +11,7 @@ ${CONTACT_US_SPA}  css=[id='ecomm-rv-anchor-Cont&#225;ctanos']
 
 ${SUPPORT_TAB}  css=#ecomm-rv-anchor-Support
 ${HELP_CENTER}  css=#ecomm-rv-anchor-HelpCenter
-${SUPPORT_WIZARD}  cs#ecomm-rv-anchor-SupportWizard
+${SUPPORT_WIZARD}  css=#ecomm-rv-anchor-SupportWizard
 ${TROUBLE_TICKET_STATUS}  css=#ecomm-rv-anchor-TroubleTicketStatus
 ${ORDER_STATUS}  css=#ecomm-rv-anchor-OrderStatus
 ${CONTACT_US}  css=#ecomm-rv-anchor-ContactUs

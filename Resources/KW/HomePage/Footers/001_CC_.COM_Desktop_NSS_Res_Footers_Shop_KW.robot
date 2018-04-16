@@ -3,7 +3,7 @@ Library  Selenium2Library  30
 Library  String
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/HomeRes.robot
+Resource  ../../../PO/HomePageFooter.robot
 Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***

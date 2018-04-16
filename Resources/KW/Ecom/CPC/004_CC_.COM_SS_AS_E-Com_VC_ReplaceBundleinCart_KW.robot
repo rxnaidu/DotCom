@@ -2,9 +2,9 @@
 Library  Selenium2Library  60
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/HomeRes.robot
-Resource  ../../../PO/RES/AccountSummary.robot
-Resource  ../../../PO/RES/AddPackage.robot
+Resource  ../../../PO/HomePage.robot
+Resource  ../../../PO/AccountSummary.robot
+Resource  ../../../PO/EcomAddPackage.robot
 Resource  ../../../Properties/Ecom_PR.robot
 
 *** Variables ***

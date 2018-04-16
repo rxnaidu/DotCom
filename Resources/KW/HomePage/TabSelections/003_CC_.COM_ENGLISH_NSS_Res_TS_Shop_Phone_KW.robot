@@ -3,7 +3,7 @@ Library  Selenium2Library  60
 Library  String
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/Shop.robot
+Resource  ../../../PO/HomePageHeader.robot
 Resource  ../../../Properties/tabSelections_PR.robot
 
 *** Variables ***
@@ -15,8 +15,8 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Click on the Tab selections as follows: Shop > Phone
-    shop.Mouse over on Shop Tab
-    shop.Select Phone option
+    Mouse over on Shop Tab
+    Select Phone option
 
 Verify URL changes to Phone
     wait until page contains  Phone

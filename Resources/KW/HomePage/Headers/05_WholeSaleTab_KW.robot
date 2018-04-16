@@ -1,8 +1,8 @@
 *** Settings ***
 Library  Selenium2Library  60
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/HomeRes.robot
-Resource  ../../../PO/WHOL/HomeWhol.robot
+Resource  ../../../PO/HomePage.robot
+Resource  ../../../PO/HomePageWhol.robot
 Resource  ../../../PO/Common.robot
 Resource  ../../../Properties/headers_PR.robot
 
@@ -18,7 +18,7 @@ User clicks Wholesale Tab
     Select Wholesale Tab
 
 Verify Wholesale home page is displayed
-    homeWhol.Verify Wholesale home Page
+    Verify Wholesale home Page
 
 User clicks back button
     go back

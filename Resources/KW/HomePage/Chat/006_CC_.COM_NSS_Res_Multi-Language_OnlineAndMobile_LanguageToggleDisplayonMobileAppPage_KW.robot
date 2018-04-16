@@ -2,7 +2,7 @@
 Library  Selenium2Library  30
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/MyAccount.robot
+Resource  ../../../PO/HomePageHeader.robot
 Resource  ../../../Properties/Chat_PR.robot
 
 *** Variables ***
@@ -14,8 +14,8 @@ User launch Ftr.com application using URL
     Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Select the Mobile App option from the Support Category Drop down
-    myAccount.Mouse over on My Account Tab
-    myAccount.Select My Frontier Mobile App option
+    Mouse over on My Account Tab
+    Select My Frontier Mobile App option
 
 Validate MyFrontier Mobole App Landing Page
     wait until page contains  Mobile App

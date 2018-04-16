@@ -3,7 +3,7 @@ Library  Selenium2Library  60
 Library  String
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/Support.robot
+Resource  ../../../PO/HomePageHeader.robot
 Resource  ../../../Properties/tabSelections_PR.robot
 
 *** Variables ***
@@ -15,8 +15,8 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Click on the Tab selections as follows: Support> Order Status
-    support.Mouse over on Support Tab
-    support.Select Order Status option
+    Mouse over on Support Tab
+    Select Order Status option
 
 Verify URL changes to Order Status
     wait until page contains  Order Status

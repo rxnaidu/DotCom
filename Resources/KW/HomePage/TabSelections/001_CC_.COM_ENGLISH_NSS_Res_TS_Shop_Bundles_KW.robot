@@ -2,7 +2,7 @@
 Library  Selenium2Library  60
 Library  String
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/Shop.robot
+Resource  ../../../PO/HomePageHeader.robot
 Resource  ../../../PO/Common.robot
 Resource  ../../../Properties/tabSelections_PR.robot
 
@@ -15,8 +15,8 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Click on the Tab selections as follows: Shop > Bundles
-    shop.Mouse over on Shop Tab
-    shop.Select Bundle option
+    Mouse over on Shop Tab
+    Select Bundle option
 
 Verify URL changes to Bundles
     wait until page contains  bundle

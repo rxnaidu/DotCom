@@ -3,7 +3,7 @@ Library  Selenium2Library  60
 Library  String
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/Shop.robot
+Resource  ../../../PO/HomePageHeader.robot
 Resource  ../../../Properties/tabSelections_PR.robot
 
 *** Variables ***
@@ -16,8 +16,8 @@ User launch Ftr.com application using URL
 
 Click on the Tab selections as follows: Shop > Internet
     sleep  2s
-    shop.Mouse over on Shop Tab
-    shop.Select Internet option
+    Mouse over on Shop Tab
+    Select Internet option
 
 Verify URL changes to Internet
     wait until page contains  Internet

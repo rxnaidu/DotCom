@@ -2,8 +2,8 @@
 Library  Selenium2Library  30
 Resource  ../../PO/Common.robot
 Resource  ../../PO/LoginPage.robot
-Resource  ../../PO/RES/HomeRes.robot
-Resource  ../../PO/RES/AccountSummary.robot
+Resource  ../../PO/HomePage.robot
+Resource  ../../PO/AccountSummary.robot
 Resource  ../../Properties/reg_PR.robot
 
 *** Variables ***

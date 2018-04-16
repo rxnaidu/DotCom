@@ -2,8 +2,8 @@
 Library  Selenium2Library  60
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/HomeRes.robot
-Resource  ../../../PO/BUS/HomeBus.robot
+Resource  ../../../PO/HomePage.robot
+Resource  ../../../PO/HomePageBus.robot
 Resource  ../../../Properties/headers_PR.robot
 
 *** Variables ***

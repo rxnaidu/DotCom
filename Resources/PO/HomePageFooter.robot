@@ -1,188 +1,14 @@
 *** Settings ***
 Library  Selenium2Library
 Library  FTRutil
-
+#Library  robot/libraries/String.py
+Library  String
+Resource  ../Selectors/HomePageFooterSelector.robot
 *** Variables ***
-${INTERNET}  xpath=//h5[text()='Internet']
-${SIGNIN_DROPDOWN}  css=#signinDropdown
-${USERNAME}  css=.login-modal-table #fid-login-inline-username
-${PASSWORD}  css=.login-modal-table #fid-login-inline-password
-${USER_SIGNIN_BTN}  css=.btn.btn-primary.btn-block
-${LANGUAGE_TOGGLE}  css=.lang-selector.hidden-xs>a
-${SIGN_OUT}  id=aSignOut
-${RESIDENTIAL_TAB}  link=Residential
-${BUSINESS_TAB}  link=Business
-${WHOLESALE_TAB}  link=Wholesale
-
-${SEARCH_TEXT}  id=gsc-i-id1
-${SEARCH_BTN}  css=[title="search"]
-
-#---------Footer page options--------#
-#SHOP
-${FOOTER_BUNDLE}  xpath=//footer[@id='footer']//a[text()='Bundles']
-${FOOTER_INTERNET}  xpath=//footer[@id='footer']//a[text()='Internet']
-${FOOTER_PHONE}  xpath=//footer[@id='footer']//a[text()='Phone']
-${FOOTER_VIDEO/TV}  xpath=//footer[@id='footer']//a[text()='Video/TV']
-${FOOTER_DIGITAL_ESSENTIALS}  xpath=//footer[@id='footer']//a[text()='Digital Essentials']
-${FOOTER_MOVING}  xpath=//footer[@id='footer']//a[text()='Moving']
-${DISCOUNT_PROGRAMS}  xpath=//footer[@id='footer']//a[text()='Discount Programs']
-${FOOTER_SHOP_FRONTIER_SECURE}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Secure')]
-#MY ACCOUNT
-${FOOTER_PAY_BILL}  xpath=//footer[@id='footer']//a[text()='Pay Bill']
-${FOOTER_CHECK_EMAIL}  xpath=//footer[@id='footer']//a[text()='Check EMail']
-${FOOTER_MANAGE_ACCOUNT}  xpath=//footer[@id='footer']//a[text()='Manage Account']
-${FOOTER_MYFRONTIER_APP}  xpath=//footer[@id='footer']//a[text()='MyFrontier App']
-${FOOTER_WATCH_TV}  xpath=//footer[@id='footer']//a[text()='Watch TV']
-${FOOTER_ENTERPRISE_ACCOUNTS}  xpath=//footer[@id='footer']//a[text()='Enterprise Accounts']
-
-#SUPPORT
-${FOOTER_CONTACT_US}  xpath=//footer[@id='footer']//a[text()='Contact Us']
-${FOOTER_HELP_CENTER}  xpath=//footer[@id='footer']//a[text()='Help Center']
-${FOOTER_ORDER_STATUS}  xpath=//footer[@id='footer']//a[contains(text(),'Order Status')]
-${FOOTER_TROUBLE_TICKET_STATUS}  xpath=//footer[@id='footer']//a[contains(text(),'Trouble Ticket Status')]
-${FOOTER_SUPPORT_WIZARD}  xpath=//footer[@id='footer']//a[contains(text(),'Support Wizard')]
-${FOOTER_TEST_YOUR_SPEED}  xpath=//footer[@id='footer']//a[contains(text(),'Test Your Speed')]
-${FOOTER_VIDEO_GALLERY}  xpath=//footer[@id='footer']//a[contains(text(),'Video Gallery')]
-
-#CORPORATE
-${FOOTER_ABOUT_US}  xpath=//footer[@id='footer']//a[contains(text(),'About Us')]
-${FOOTER_INVESTOR_RELATIONS}  xpath=//footer[@id='footer']//a[contains(text(),'Investor Relations')]
-${FOOTER_NEWS}  xpath=//footer[@id='footer']//a[contains(text(),'News')]
-${FOOTER_CAREERS}  xpath=//footer[@id='footer']//a[contains(text(),'Careers')]
-${FOOTER_SUPPLIERS}  xpath=//footer[@id='footer']//a[contains(text(),'Suppliers')]
-${FOOTER_PRESSROOM}  xpath=//footer[@id='footer']//a[contains(text(),'Pressroom')]
-${FOOTER_MAKING_A_DIFFERENCE}  xpath=//footer[@id='footer']//a[contains(text(),'Making a Difference')]
-${FOOTER_PUBLIC_INSPECTION_FILES}  xpath=//footer[@id='footer']//a[contains(text(),'Public Inspection Files')]
-
-#FRONTIER SITES
-#${FOOTER_GET_VANTAGE}  xpath=//footer[@id='footer']//a[contains(text(),'Get Vantage')]
-${FOOTER_GET_VANTAGE}  xpath=//a[contains(text(),'Get Vantage')]
-${FOOTER_FRONTIER_SECURE}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Secure')]
-${FOOTER_FRONTIER_BUSINESSEDGE}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Business')]
-${FOOTER_FRONTIER_GAMES}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Games')]
-${FOOTER_FRONTIER_WIFI}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier WI-FI')]
-${FOOTER_WHOLESALE}  xpath=//footer[@id='footer']//a[contains(text(),'Wholesale')]
-${FOOTER_FRONTIER_YAHOO_PORTAL}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Yahoo Portal')]
-${FOOTER_REFERRAL_PROGRAM}  xpath=//footer[@id='footer']//a[contains(text(),'Referral Program')]
-${FOOTER_FRONTIER_BUSINESS_PARTNER}  xpath=//footer[@id='footer']//a[contains(text(),'Frontier Business Partner')]
-
-#REGIONAL SITES
-${FOOTER_FRONTIER_INTERNET}  xpath=//footer[@id='footer']//a[text()='Frontier Internet']
-${FOOTER_LOCAL_INTERNET}  xpath=//footer[@id='footer']//a[text()='Local Internet']
-${FOOTER_FRONTIER_FIOS}  xpath=//footer[@id='footer']//a[text()='Frontier FiOS']
-${FOOTER_FRONTIER_PLANS}  xpath=//footer[@id='footer']//a[text()='Frontier Plans']
-${FOOTER_FRONTIER_BROADBAND}  xpath=//footer[@id='footer']//a[text()='Frontier Broadband']
-${FOOTER_FRONTIER_INTERNET_PLANS}  xpath=//footer[@id='footer']//a[text()='Frontier Internet Plans']
-${FOOTER_FRONTIER_BUNDLES}  xpath=//footer[@id='footer']//a[text()='Frontier Bundles']
-${FOOTER_FRONTIER_WEST}  xpath=//footer[@id='footer']//a[text()='Frontier West']
-
-#FTR
-${FOOTER_POLICIES_NOTIFICATIONS}  xpath=//ul[@id='policies']//a[contains(text(),'Policies & Notifications')]
-${FOOTER_TERMS_CONDITIONS}  xpath=//ul[@id='policies']//a[contains(text(),'Terms & Conditions')]
-${FOOTER_PRIVACY_POLICY}  xpath=//ul[@id='policies']//a[contains(text(),'Privacy Policy')]
-${FOOTER_STORE_LOCATOR}  xpath=//ul[@id='policies']//a[contains(text(),'Store Locator')]
-${FOOTER_SITE_MAP}  xpath=//ul[@id='policies']//a[contains(text(),'Site Map')]
-
-${FOOTER_TWITTER}  xpath=//div[@id='social-icons']//i[@title="Twitter"]
-${FOOTER_FACEBOOK}  xpath=//div[@id='social-icons']//i[@title="Facebook"]
-${FOOTER_LINKEDIN}  xpath=//div[@id='social-icons']//i[@title="Linkedin"]
-${FOOTER_YOUTUBE}  xpath=//div[@id='social-icons']//i[@title="YouTube"]
-${FOOTER_GOOGLE+}  xpath=//div[@id='social-icons']//i[@title="Google+"]
-
 *** Keywords ***
-Sign In link
-    wait until element is enabled  ${SIGNIN_DROPDOWN}
-    click link  ${SIGNIN_DROPDOWN}
-    sleep  1s
-
-Sign Out
-    wait until element is enabled  ${SIGN_OUT}
-    sleep  2s
-    click link  ${SIGN_OUT}
-
-User Sign In from Excel
-    [Arguments]  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
-
-    ${Username_Inp_Ex}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${USERNAME_SIGNIN}
-    ${Password_Inp_Ex}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PASSWORD_SIGNIN}
-
-    wait until element is enabled  ${USERNAME}
-    input text  ${USERNAME}  ${Username_Inp_Ex}
-
-    wait until element is enabled  ${PASSWORD}
-    input password  ${PASSWORD}  ${Password_Inp_Ex}
-
-    wait until element is enabled  ${USER_SIGNIN_BTN}
-    click button  ${USER_SIGNIN_BTN}
-
-#    wait until element is enabled  ${INTERNET}
-    wait until page contains  Summary  100s
-    wait until page contains  Key Account Info
-    sleep  10s
-
-User Sign In
-    [Arguments]  ${Username_Inp}  ${Password_Inp}
-    wait until element is enabled  ${USERNAME}
-    input text  ${USERNAME}  ${Username_Inp}
-
-    wait until element is enabled  ${PASSWORD}
-    input password  ${PASSWORD}  ${Password_Inp}
-
-    wait until element is enabled  ${USER_SIGNIN_BTN}
-    click button  ${USER_SIGNIN_BTN}
-    sleep  3s
-
-Select Residential Tab
-    wait until element is enabled  ${RESIDENTIAL_TAB}
-    click link  ${RESIDENTIAL_TAB}
-
-Select Business Tab
-    wait until element is enabled  ${BUSINESS_TAB}
-    click link  ${BUSINESS_TAB}
-
-Select Wholesale Tab
-    wait until element is enabled  ${WHOLESALE_TAB}
-    click link  ${WHOLESALE_TAB}
-
-Select Multi-Language Toggle for Spanish Language
-    wait until page contains  Shop
-    wait until page contains  My Account
-    wait until element is enabled  ${LANGUAGE_TOGGLE}
-
-    page should contain  Español
-    click element  ${LANGUAGE_TOGGLE}
-
-Verify Toggle display English
-    wait until page contains  Comprar
-    wait until page contains  Mi cuenta
-    wait until page contains  Soporte
-
-    wait until element is enabled  ${LANGUAGE_TOGGLE}
-    page should contain  English
-
-Verify Residential Home Page
-    sleep  2s
-    wait until page contains  Shop
-    wait until page contains  My Account
-    page should contain  Pay Your Bill
-    page should contain  Check Your Mail
-    page should contain  Check Your Order Status
-
-Search Text
-    [Arguments]  ${Search_Inp}
-    wait until element is enabled  ${SEARCH_TEXT}
-
-    input text  ${SEARCH_TEXT}  ${Search_Inp}
-    click element  ${SEARCH_BTN}
-
-Verify Search Text Results
-    [Arguments]  ${Search_Inp}
-    wait until page contains  All
-    wait until page contains  Help Center
-
-    page should contain  ${Search_Inp}
-
-#----------------Footer page Options--------------------------#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Footer page Common Options
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 Verify currnt URL
     [Arguments]  ${EXPECTED_URL}
@@ -196,7 +22,9 @@ Go back to Home Page
     go back
     sleep  3s
 
-#SHOP
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Footer Shop
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 Select Bundle option from Footer
     wait until element is enabled  ${FOOTER_BUNDLE}
     Scroll Page To Locator View  ${FOOTER_BUNDLE}
@@ -230,7 +58,9 @@ Select Discount programes option from Footer
     wait until element is enabled  ${DISCOUNT_PROGRAMS}
     click element  ${DISCOUNT_PROGRAMS}
 
-#MY ACCOUNT
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Footer My Account
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 Select Pay Bill option from Footer
     wait until element is enabled  ${FOOTER_PAY_BILL}
     Scroll Page To Locator View  ${FOOTER_PAY_BILL}
@@ -261,7 +91,9 @@ Select Enterprise Accounts option from Footer
     Scroll Page To Locator View  ${FOOTER_ENTERPRISE_ACCOUNTS}
     click element  ${FOOTER_ENTERPRISE_ACCOUNTS}
 
-#SUPPORT
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Footer Support
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 Select Contact Us option from Footer
     wait until element is enabled  ${FOOTER_CONTACT_US}
     Scroll Page To Locator View  ${FOOTER_CONTACT_US}
@@ -297,7 +129,9 @@ Select Video Gallery option from Footer
     Scroll Page To Locator View  ${FOOTER_VIDEO_GALLERY}
     click element  ${FOOTER_VIDEO_GALLERY}
 
-#CORPORATE
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Footer Corporate
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 Select About Us option from Footer
     wait until element is enabled  ${FOOTER_ABOUT_US}
     Scroll Page To Locator View  ${FOOTER_ABOUT_US}
@@ -331,7 +165,9 @@ Select Public Inspection Files option from Footer
     wait until element is enabled  ${FOOTER_PUBLIC_INSPECTION_FILES}
     click element  ${FOOTER_PUBLIC_INSPECTION_FILES}
 
-#FRONTIER SITES
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Footer Frontier Sites
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 Select Get Vantage option from Footer
     wait until element is enabled  ${FOOTER_GET_VANTAGE}
     #sleep  2s
@@ -370,7 +206,10 @@ Select Frontier Business Partner option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_BUSINESS_PARTNER}
     click element  ${FOOTER_FRONTIER_BUSINESS_PARTNER}
 
-#FRONTIER SITES
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Footer Sales Partners
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 Select Frontier Internet option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_INTERNET}
     Scroll Page To Locator View  ${FOOTER_FRONTIER_INTERNET}
@@ -404,7 +243,10 @@ Select Frontier West option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_WEST}
     click element  ${FOOTER_FRONTIER_WEST}
 
-#FTR
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Footer Bottom line Links
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 Select Policies & Notifications option from Footer
     wait until element is enabled  ${FOOTER_POLICIES_NOTIFICATIONS}
     Scroll Page To Locator View  ${FOOTER_POLICIES_NOTIFICATIONS}
@@ -429,6 +271,10 @@ Select Site Map option from Footer
     wait until element is enabled  ${FOOTER_SITE_MAP}
     Scroll Page To Locator View  ${FOOTER_SITE_MAP}
     click element  ${FOOTER_SITE_MAP}
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Footer Bottom line Social Media Links
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 Select Twitter option from Footer
     wait until element is enabled  ${FOOTER_TWITTER}

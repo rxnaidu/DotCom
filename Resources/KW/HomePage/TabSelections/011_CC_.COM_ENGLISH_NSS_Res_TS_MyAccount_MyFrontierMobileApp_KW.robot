@@ -3,7 +3,7 @@ Library  Selenium2Library  60
 Library  String
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/MyAccount.robot
+Resource  ../../../PO/HomePageHeader.robot
 Resource  ../../../Properties/tabSelections_PR.robot
 
 *** Variables ***
@@ -15,8 +15,8 @@ User launch Ftr.com application using URL
     loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
 Click on the Tab selections as follows: My Account> MyFrontier Mobole App
-    myAccount.Mouse over on My Account Tab
-    myAccount.Select My Frontier Mobile App option
+    Mouse over on My Account Tab
+    Select My Frontier Mobile App option
 
 Verify URL changes to MyFrontier Mobole App
     wait until page contains  Mobile App

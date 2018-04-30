@@ -9,7 +9,7 @@ ${RES_EXCEL_PATH}  C:/Development/Robot/DotCom/Resources/TestData/qat01.xlsx
 #====================================================================================================================#
 #------Do not Touch---------Configuration keywords for accessing Excel sheet Test Data-----------
 #====================================================================================================================#
-${SHEET_NAME}  ECommerce
+${SHEET_NAME}  Ecom
 ${BROWSER_NAME}  Browser
 ${DOTCOM_URL}  DotCom_Url
 ${DOTCOM_URL_PASSWORD}  DotCom_Url_Password

@@ -15,7 +15,7 @@ Chat Validations
 
 #    Select the X in the upper right hand corner of the Browser
 
-    Launch new Browser session and navigate to qatxx.frontier.com
-
-    Validate the display of the Frontier.com Residential Home page
+#    Launch new Browser session and navigate to qatxx.frontier.com
+#
+#    Validate the display of the Frontier.com Residential Home page
 

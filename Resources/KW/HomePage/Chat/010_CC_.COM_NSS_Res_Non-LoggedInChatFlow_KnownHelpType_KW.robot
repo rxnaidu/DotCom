@@ -8,7 +8,7 @@ Resource  ../../../PO/Chat.robot
 Resource  ../../../Properties/Chat_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC09
+${TESTCASE_NO}  TC10
 
 *** Keywords ***
 User launch Ftr.com application using URL

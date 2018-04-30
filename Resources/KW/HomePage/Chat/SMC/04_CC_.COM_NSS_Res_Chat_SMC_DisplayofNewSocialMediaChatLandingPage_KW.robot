@@ -5,7 +5,7 @@ Resource  ../../../../PO/Common.robot
 Resource  ../../../../Properties/Chat_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC42
+${TESTCASE_NO}  TC41
 @{CHAT_LINK}  None
 ${REMOVED_SPACES}  None
 
@@ -15,7 +15,7 @@ ${URL_PASSWORD}  name=password
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    Begin Web Test from Excel  ${RES_EXCEL_PATH} ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
+    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
     set window size  1024  768
 
 Validate the display of the URL Generator

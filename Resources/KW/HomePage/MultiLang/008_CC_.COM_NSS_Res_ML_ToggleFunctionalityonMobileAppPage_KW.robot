@@ -2,9 +2,9 @@
 Library  Selenium2Library  60
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/MyAccount.robot
-Resource  ../../../PO/RES/HomeRes.robot
-Resource  ../../../Properties/headers_PR.robot
+Resource  ../../../PO/HomePageHeader.robot
+Resource  ../../../PO/HomePage.robot
+Resource  ../../../Properties/MultiLang_PR.robot
 
 *** Variables ***
 ${TESTCASE_NO}  TC06

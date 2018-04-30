@@ -13,6 +13,4 @@ Multi Language Features
 
     User clicks Business Tab
 
-    Verify Business home page is displayed
-
     Validate the Multi-Language Toggle DOES NOT display on the Business Home page

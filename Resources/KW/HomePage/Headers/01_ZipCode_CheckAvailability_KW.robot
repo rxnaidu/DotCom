@@ -2,18 +2,10 @@
 Library  Selenium2Library  60
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
+Resource  ../../../PO/HomePage.robot
 Resource  ../../../Properties/headers_PR.robot
 
 *** Variables ***
-${CHANGE_DROPDOWN}  css=#locationDropdown > span
-${ZIP_CODE}  css=#zipcode
-${CHEK_AVAILABILITY_BTN}  id=zipcodeAnchor
-${SHOP_DROPDOWN}   link=Shop
-${BUNDLE_OPTION}  link=Bundles
-${LANGUAGE_TOGGLE}  css=.lang-selector.hidden-xs>a
-${LANGUAGE_TOGGLE_IMAGE}  css=.lang-selector.hidden-xs>a>i
-#${ZIP_CODE_LOCATION}  xpath=//a[@id='locationDropdown']/span
-${ZIP_CODE_LOCATION}  xpath=//span[contains(text(),'Plano')]
 ${TESTCASE_NO}  TC01
 
 *** Keywords ***
@@ -27,7 +19,7 @@ Select change option from header
     click element  ${CHANGE_DROPDOWN}
 
 Enter Zip Code and select Check Availability Button
-    ${Zip_Code1_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ZIP_CODE1}
+    ${Zip_Code1_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ZIP_CODE_NUM1}
     input text  ${ZIP_CODE}  ${Zip_Code1_Inp}
 
     wait until element is enabled  ${CHEK_AVAILABILITY_BTN}
@@ -47,7 +39,7 @@ Verify header now changes to "Plano,TX"
     should be equal   ${Expected_Location_Text}  ${Actual_Location_Text}
 
 Select Change link again and enter zip code and select Check Availability Button
-    ${Zip_Code2_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ZIP_CODE2}
+    ${Zip_Code2_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ZIP_CODE_NUM2}
 
     wait until element is enabled  ${CHANGE_DROPDOWN}
     click element  ${CHANGE_DROPDOWN}

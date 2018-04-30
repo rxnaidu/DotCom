@@ -2,9 +2,9 @@
 Library  Selenium2Library  60
 Resource  ../../../PO/Common.robot
 Resource  ../../../PO/LoginPage.robot
-Resource  ../../../PO/RES/HomeRes.robot
-Resource  ../../../PO/BUS/HomeBus.robot
-Resource  ../../../Properties/headers_PR.robot
+Resource  ../../../PO/HomePage.robot
+Resource  ../../../PO/HomePageBus.robot
+Resource  ../../../Properties/MultiLang_PR.robot
 
 *** Variables ***
 ${TESTCASE_NO}  TC05
@@ -18,7 +18,7 @@ User clicks Business Tab
     Select Business Tab
 
 Verify Business home page is displayed
-    homeBus.Verify Business home Page
+    Verify Business home Page
 
 Validate Small Business prodcuts link is displayed
     page should contain  Small Business

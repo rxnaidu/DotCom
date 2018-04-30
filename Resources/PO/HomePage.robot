@@ -96,3 +96,24 @@ Verify Search Text Results
 
     page should contain  ${Search_Inp}
 
+Enter zipcode and click Check Availability
+    [Arguments]  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ZIP_CODE_NUM}
+    wait until element is enabled  ${CHANGE_DROPDOWN}
+    wait until element is visible  ${CHANGE_DROPDOWN}
+    click element  ${CHANGE_DROPDOWN}
+    ${Zip_Code1_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ZIP_CODE_NUM}
+    ${Zip_Code1_Inp}  convert to integer  ${Zip_Code1_Inp}
+    wait until element is enabled  ${ZIP_CODE}
+    wait until element is visible  ${ZIP_CODE}
+    input text  ${ZIP_CODE}  ${Zip_Code1_Inp}
+    wait until element is enabled  ${CHEK_AVAILABILITY_BTN}
+    click link  ${CHEK_AVAILABILITY_BTN}
+    sleep  2s
+
+Verify Geolocation Indicator
+    wait until element is enabled  ${GEOLOCATION_INDICATOR}
+    page should contain element  ${GEOLOCATION_INDICATOR}
+
+Validate Frontier Logo
+    wait until element is enabled  ${FRONTIER_LOGO}
+    page should contain element  ${FRONTIER_LOGO}

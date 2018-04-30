@@ -4,10 +4,11 @@ Resource  ../Selectors/HomePageHeaderSelector.robot
 
 *** Keywords ***
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#                                       Header Shop
+#                                       Header Shop English
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 Mouse over on Shop Tab
     wait until page contains  Shop
+    wait until element is visible  ${SHOP_TAB}
     wait until element is enabled  ${SHOP_TAB}
     focus  ${SHOP_TAB}
     sleep  1s
@@ -49,11 +50,39 @@ Select Frontier Secure option
     wait until element is enabled  ${FRONTIER_SECURE}
     click link  ${FRONTIER_SECURE}
 
+#----------------Frontier Secure Products Validations Start-------------------------#
+Select Frontier Content Anywhere
+    #Digital Living
+    wait until element is enabled  ${DITITAL_LIVING_LEARN_MORE_BTN}
+    wait until element is visible  ${DITITAL_LIVING_LEARN_MORE_BTN}
+    click element  ${DITITAL_LIVING_LEARN_MORE_BTN}
+
+    #Frontier Content Anywhere
+    wait until element is enabled  ${FRONTIER_CONTEMT_ANYWHERE_LEARN_MORE_BTN}
+    click element  ${FRONTIER_CONTEMT_ANYWHERE_LEARN_MORE_BTN}
+
+Select Frontier Identity Protection
+    wait until element is enabled  ${FRONTIER_IDENTITY_PROTECTION_LEARN_MORE_BTN}
+    click element  ${FRONTIER_IDENTITY_PROTECTION_LEARN_MORE_BTN}
+
+Select Multi-Device Security
+    wait until element is enabled  ${FRONTIER_MULTI_DEVICE_SECURITY_LEARN_MORE_BTN}
+    click element  ${FRONTIER_MULTI_DEVICE_SECURITY_LEARN_MORE_BTN}
+
+Select Frontier Premium Technical Support
+    wait until element is enabled  ${FRONTIER_PREMIUM_TECHNICAL_SUPPORT_LEARN_MORE_BTN}
+    click element  ${FRONTIER_PREMIUM_TECHNICAL_SUPPORT_LEARN_MORE_BTN}
+
+#----------------Frontier Secure Products Validations End-------------------------#
+
 Select Moving option
     wait until element is enabled  ${MOVING}
     click link  ${MOVING}
 
-#----------------SPANISH  LANGUAGE--------------------------#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Header Shop Spanish
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
 Mouse over on Shop Tab-Spanish
     wait until page contains  Comprar
     wait until element is enabled  ${SHOP_TAB_SPA}

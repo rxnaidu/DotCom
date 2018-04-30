@@ -4,6 +4,25 @@ Library  FTRutil
 Resource  ../Selectors/ChatSelector.robot
 
 *** Keywords ***
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Chat Links Validation
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+Validate Floating Chat link
+    wait until element is enabled  ${CHAT_BUTTON}
+    page should contain element  ${CHAT_BUTTON}
+
+Validate chat link near Banner
+    wait until element is enabled  ${CHAT_LINK_BANNER}
+    page should contain element  ${CHAT_LINK_BANNER}
+
+Validate Chat link near Footer
+    wait until element is enabled  ${CHAT_LINK_FOOTER}
+    page should contain element  ${CHAT_LINK_FOOTER}
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#                                       Chat
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 Click Chat
     wait until element is enabled  ${CHAT_BUTTON}
     sleep  2s

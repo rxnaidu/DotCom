@@ -5,7 +5,7 @@ Resource  ../../../../PO/Common.robot
 Resource  ../../../../Properties/Chat_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC41
+${TESTCASE_NO}  TC40
 @{CHAT_LINK}  None
 ${REMOVED_SPACES}  None
 

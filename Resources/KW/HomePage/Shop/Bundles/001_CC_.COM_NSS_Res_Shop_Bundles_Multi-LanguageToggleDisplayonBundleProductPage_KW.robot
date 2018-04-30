@@ -1,9 +1,10 @@
 *** Settings ***
 Library  Selenium2Library  30
-Resource  ../../PO/Common.robot
-Resource  ../../PO/LoginPage.robot
-Resource  ../../PO/HomePage.robot
-Resource  ../../Properties/reg_PR.robot
+Resource  ../../../../PO/Common.robot
+Resource  ../../../../PO/LoginPage.robot
+Resource  ../../../../PO/HomePage.robot
+Resource  ../../../../PO/HomePageHeader.robot
+Resource  ../../../../Properties/Shop_PR.robot
 
 *** Variables ***
 ${TESTCASE_NO}  TC01
@@ -13,12 +14,12 @@ User launch Ftr.com application using URL
     Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
     Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
-Select the Sign In link
-    Sign In link
+Select the Bundle option from the Shop Category Drop down
+    Mouse over on Shop Tab
+    Select Bundle option
 
-Enter User name and Password and Select Sign In button
-    User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
+Enter In Territory Copper Zip Code (14626) in the Zip Code Field and Select the Check Availability Button
+    Enter zipcode and click Check Availability  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ZIP_CODE_NUM1}
 
-Verify user launches into Self Service Portal successfully
-    wait until page contains  welcome to Frontier!
-    page should contain  welcome to Frontier!
+Validate the display of the Multi-Language Toggle Geolocation indicator on the Bundle Product page
+    Verify Geolocation Indicator

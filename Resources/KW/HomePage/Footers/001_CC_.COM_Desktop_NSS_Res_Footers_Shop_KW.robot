@@ -27,8 +27,8 @@ Navigate to bottom of the Footer home page and click: Shop > Internet
     Select Internet option from Footer
 
 Verify URL changes to Internet Page
-    wait until page contains  internet
-    page should contain  internet
+    wait until page contains  Internet
+    page should contain  Internet
 #    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${INTERNET_URL}
 #    Verify currnt URL  ${EXPECTED_URL}
 

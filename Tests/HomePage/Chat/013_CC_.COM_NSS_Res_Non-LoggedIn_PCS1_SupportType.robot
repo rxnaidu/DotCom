@@ -11,9 +11,7 @@ Chat Validations
 
     User launch Ftr.com application using URL
 
-    Select the new Multi-Language Toggle on the Residential Home page
-
-    Home page should display in Spanish and toggle display 'English'
+    Select Internet from Shop Tab
 
     Select the floating Chat ICON
 

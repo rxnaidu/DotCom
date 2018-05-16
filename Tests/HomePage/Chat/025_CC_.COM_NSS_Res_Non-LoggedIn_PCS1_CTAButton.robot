@@ -11,7 +11,7 @@ Chat Validations
 
     User launch Ftr.com application using URL
 
-    Select Internet from Shop Tab
+    Select Moving from Shop Tab
 
     Select the floating Chat ICON
 

@@ -14,9 +14,10 @@ User launch Ftr.com application using URL
     Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
     Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
 
-Select Internet from Shop Tab
+Select Moving from Shop Tab
     Mouse over on Shop Tab
-    Select Internet option
+    Select Moving option
+
 Select the floating Chat ICON
     Click Chat
 

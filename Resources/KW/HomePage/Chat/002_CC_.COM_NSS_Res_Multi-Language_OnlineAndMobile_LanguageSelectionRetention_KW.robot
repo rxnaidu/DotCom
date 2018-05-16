@@ -19,12 +19,11 @@ Select the new Multi-Language Toggle on the Residential Home page
 Home page should display in Spanish and toggle display 'English'
     Verify Toggle display English
 
-#Select the X in the upper right hand corner of the Browser
-#    close browser
-
 Launch new Browser session and navigate to qatxx.frontier.com
-    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+#    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
+#    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+#    select window  https://qat02.frontier.com
+    Press Key    https://qat02.frontier.com    \\20
 
 Validate the display of the Frontier.com Residential Home page
     Verify Toggle display English

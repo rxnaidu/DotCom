@@ -13,8 +13,6 @@ Chat Validations
 
     Select the new Multi-Language Toggle on the Residential Home page
 
-#    Select the X in the upper right hand corner of the Browser
-
 #    Launch new Browser session and navigate to qatxx.frontier.com
 #
 #    Validate the display of the Frontier.com Residential Home page

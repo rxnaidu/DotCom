@@ -11,8 +11,8 @@ Test Teardown  Common.End Web Test
 
     User launch Ftr.com application using URL
 
-#    Select the Sign In link
-#
-#    Enter User name and Password and Select Sign In button
-#
-#    Verify user launches into Self Service Portal successfully
+    Select the Sign In link
+
+    Enter User name and Password and Select Sign In button
+
+    Verify user launches into Self Service Portal successfully

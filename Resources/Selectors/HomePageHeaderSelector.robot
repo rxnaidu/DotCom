@@ -13,6 +13,16 @@ ${PHONE}  id=ecomm-rv-anchor-Phone
 ${VIDEO/TV}  css=[id="ecomm-rv-anchor-Video/TV"]
 ${DIGITAL_ESSENTIALS}  link=Digital Essentials
 ${FRONTIER_SECURE}  id=ecomm-rv-anchor-FrontierSecure
+${MOVING}  css=#ecomm-rv-anchor-Moving
+
+#-------------Internet Validations Start-------------#
+${SIMPLY_BB_ULTRA}  css=h3 [href="/shop/internet/dsl/simply-ultra"]
+${SIMPLY_FIOS_50/50}  css=h3 [ href="/shop/internet/fios/simply-50"]
+${SIMPLY_FIOS_100/100}  css=h3 [ href="/shop/internet/fios/simply-100"]
+
+
+#-------------Internet Validations End-------------#
+
 #-------------Frontier Secure Validations Start-------------#
 ${FRONTIER_CONTEMT_ANYWHERE_LEARN_MORE_BTN}  xpath=//h2[text()='Frontier Content Anywhere']/following-sibling::p[2]/a
 ${DITITAL_LIVING_LEARN_MORE_BTN}  xpath=//a[text()='Digital Living']/../following-sibling::div[2]/a
@@ -20,7 +30,12 @@ ${FRONTIER_IDENTITY_PROTECTION_LEARN_MORE_BTN}  xpath=//a[text()='Frontier Ident
 ${FRONTIER_MULTI_DEVICE_SECURITY_LEARN_MORE_BTN}  xpath=//a[text()='Frontier Multi-Device Security']/../following-sibling::div[2]/a
 ${FRONTIER_PREMIUM_TECHNICAL_SUPPORT_LEARN_MORE_BTN}  xpath=//a[text()='Frontier Premium Technical Support']/../following-sibling::div[2]/a
 #-------------Frontier Secure Validations End-------------#
-${MOVING}  id=ecomm-rv-anchor-Moving
+
+#----------------Frontier Secure Products Validations End-------------------------#
+${FCC_BB_DISCLOSURE_DOC_LINK}  css=.fa-arrow-circle-o-right>a
+
+#----------------Internet Products FCC BB Disclosure Document Start-------------------------#
+
 
 #----------Shop spanish---------------#
 ${SHOP_TAB_SPA}  css=#ecomm-rv-anchor-Comprar

@@ -50,6 +50,29 @@ Select Frontier Secure option
     wait until element is enabled  ${FRONTIER_SECURE}
     click link  ${FRONTIER_SECURE}
 
+Select Moving option
+    wait until element is enabled  ${MOVING}
+    click element  ${MOVING}
+
+#----------------Internet Products Validations Start-------------------------#
+
+Select Simply BB Ultra
+    wait until element is enabled  ${SIMPLY_BB_ULTRA}
+    click element  ${SIMPLY_BB_ULTRA}
+    wait until page contains  Broadband Ultra
+
+Select Simply FIOS 50/50
+    wait until element is enabled  ${SIMPLY_FIOS_50/50}
+    click element  ${SIMPLY_FIOS_50/50}
+    wait until page contains  50/50 Internet Package
+
+Select Simply FIOS 100/100
+    wait until element is enabled  ${SIMPLY_FIOS_100/100}
+    click element  ${SIMPLY_FIOS_100/100}
+    wait until page contains  100/100 Internet Package
+
+#----------------Internet Products Validations End-------------------------#
+
 #----------------Frontier Secure Products Validations Start-------------------------#
 Select Frontier Content Anywhere
     #Digital Living
@@ -75,9 +98,12 @@ Select Frontier Premium Technical Support
 
 #----------------Frontier Secure Products Validations End-------------------------#
 
-Select Moving option
-    wait until element is enabled  ${MOVING}
-    click link  ${MOVING}
+#----------------Internet Products FCC BB Disclosure Document Start-------------------------#
+Select FCC BB Diclosure Document
+    wait until element is enabled  ${FCC_BB_DISCLOSURE_DOC_LINK}
+    click element  ${FCC_BB_DISCLOSURE_DOC_LINK}
+
+#----------------Internet Products FCC BB Disclosure Document  End-------------------------#
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #                                       Header Shop Spanish

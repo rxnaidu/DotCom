@@ -67,12 +67,12 @@ Select Multi-Language Toggle for Spanish Language
     click element  ${LANGUAGE_TOGGLE}
 
 Verify Toggle display English
-    wait until page contains  Comprar
-    wait until page contains  Mi cuenta
-    wait until page contains  Soporte
-
     wait until element is enabled  ${LANGUAGE_TOGGLE}
     page should contain  English
+
+Verify Toggle display Spanish
+    wait until element is enabled  ${LANGUAGE_TOGGLE}
+    page should contain  Español
 
 Verify Residential Home Page
     sleep  2s
@@ -117,3 +117,8 @@ Verify Geolocation Indicator
 Validate Frontier Logo
     wait until element is enabled  ${FRONTIER_LOGO}
     page should contain element  ${FRONTIER_LOGO}
+
+Validate Internet page Tel No
+    wait until element is enabled  ${BANNER_TEL_NO}
+    page should contain  Call
+    ${Tel_No}  get text  ${BANNER_TEL_NO}

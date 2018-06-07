@@ -21,7 +21,6 @@ Navigate to bottom of the Footer home page and click: LinkedIn
 Move to LinkedIn window Tab
     sleep  6s
     @{titles}  get window titles
-    @{window_names}  Get Window Names
     select window  ${LINKEDIN_TAB_TITLE}
 
 Verify URL changes to LinkedIn Page

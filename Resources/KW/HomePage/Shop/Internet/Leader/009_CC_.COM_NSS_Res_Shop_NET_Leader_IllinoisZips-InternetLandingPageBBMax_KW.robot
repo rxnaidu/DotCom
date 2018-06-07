@@ -7,7 +7,7 @@ Resource  ../../../../../PO/HomePageHeader.robot
 Resource  ../../../../../Properties/Shop_PR.robot
 
 *** Variables ***
-${TESTCASE_NO}  TC37
+${TESTCASE_NO}  TC43
 
 *** Keywords ***
 User launch Ftr.com application using URL

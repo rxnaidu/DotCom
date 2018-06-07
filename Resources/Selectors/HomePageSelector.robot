@@ -23,11 +23,9 @@ ${SIGN_OUT}  id=aSignOut
 ${RESIDENTIAL_TAB}  link=Residential
 ${BUSINESS_TAB}  link=Business
 ${WHOLESALE_TAB}  link=Wholesale
-
 ${SEARCH_TEXT}  id=gsc-i-id1
 ${SEARCH_BTN}  css=[title="search"]
-
 ${GEOLOCATION_INDICATOR}  css=.fa.fa-map-marker.green
-
 ${FRONTIER_LOGO}  id=ecomm-rv-navbar-brand
+${BANNER_TEL_NO}  css=.product-banner  .InvocaSpanClass
 

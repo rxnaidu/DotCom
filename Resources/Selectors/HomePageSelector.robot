@@ -21,7 +21,7 @@ ${USER_SIGNIN_BTN}  css=.btn.btn-primary.btn-block
 ${LANGUAGE_TOGGLE}  css=.lang-selector.hidden-xs>a
 ${SIGN_OUT}  id=aSignOut
 ${RESIDENTIAL_TAB}  link=Residential
-${BUSINESS_TAB}  link=Business
+${BUSINESS_TAB}  link=Small Business
 ${WHOLESALE_TAB}  link=Wholesale
 ${SEARCH_TEXT}  id=gsc-i-id1
 ${SEARCH_BTN}  css=[title="search"]

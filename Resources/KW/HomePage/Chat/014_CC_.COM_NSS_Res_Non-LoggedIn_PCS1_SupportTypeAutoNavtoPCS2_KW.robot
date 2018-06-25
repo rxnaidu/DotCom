@@ -21,10 +21,6 @@ Select Moving from Shop Tab
 Select the floating Chat ICON
     Click Chat
 
-#Validate Customer type Section
-#    Validate Residential Radio on Chat
-#    Validate Business Radio on Chat
-
 Select Residential on Customer Type
     Click Residential Radio on Chat
 

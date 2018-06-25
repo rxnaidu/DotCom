@@ -24,8 +24,8 @@ Select the floating Chat ICON
 Select Residential on Customer Type
     Click Residential Radio on Chat
 
-Select Repair on Support Type
-    Click Repair Radio on Chat
+Select Technical Support on Support Type
+    Click Technical Support Radio on Chat
 
 Validate Service Type Section
     validate Internet on chat

@@ -34,7 +34,8 @@ Click Residential Radio on Chat
 
 Validate Residential Radio on Chat
     wait until element is enabled  ${CHAT_RESIDENTIAL_RADIO}
-    ${CUST_TYPE_RESI}  get text  ${CHAT_RESIDENTIAL_RADIO}
+    #${CUST_TYPE_RESI}  get text  ${CHAT_RESIDENTIAL_RADIO}
+    ${CUST_TYPE_RESI}  get value  ${CHAT_RESIDENTIAL_RADIO}
     should be equal  ${CUST_TYPE_RESI}  Residential
 
 Click Business Radio on Chat
@@ -46,10 +47,15 @@ Validate Business Radio on Chat
     ${CUST_TYPE_BUS}  get text  ${CHAT_BUSINESS_RADIO}
     should be equal  ${CUST_TYPE_BUS}  Business
 
-Click Repair Radio on Chat
-    wait until element is enabled  ${CHAT_REPAIR_RADIO}
-    wait until element is visible  ${CHAT_REPAIR_RADIO}
-    click element  ${CHAT_REPAIR_RADIO}
+Click Technical Support Radio on Chat
+    wait until element is enabled  ${CHAT_TECHNICAL_SUPPORT_RADIO}
+    wait until element is visible  ${CHAT_TECHNICAL_SUPPORT_RADIO}
+    click element  ${CHAT_TECHNICAL_SUPPORT_RADIO}
+
+#Click Repair Radio on Chat
+#    wait until element is enabled  ${CHAT_REPAIR_RADIO}
+#    wait until element is visible  ${CHAT_REPAIR_RADIO}
+#    click element  ${CHAT_REPAIR_RADIO}
 
 Validate Repair Radio on Chat
     wait until element is enabled  ${CHAT_REPAIR_RADIO}

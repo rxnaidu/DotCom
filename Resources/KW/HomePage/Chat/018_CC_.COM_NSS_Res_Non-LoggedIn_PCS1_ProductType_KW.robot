@@ -25,9 +25,9 @@ Select Residential on Customer Type
     sleep  2s
     Click Residential Radio on Chat
 
-Select Repair on Support Type
+Select Technical Support on Support Type
     sleep  2s
-    Click Repair Radio on Chat
+    Click Technical Support Radio on Chat
 
 Select Internet on Service Type
     sleep  2s

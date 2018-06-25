@@ -17,7 +17,7 @@ Chat Validations
 
     Select Residential on Customer Type
 
-    Select Repair on Support Type
+    Select Technical Support on Support Type
 
     Select Frontier Secure on Service Type
 

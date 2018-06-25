@@ -24,5 +24,5 @@ Select the floating Chat ICON
 Select Residential on Customer Type
     Click Residential Radio on Chat
 
-Select Repair on Support Type
-    Click Repair Radio on Chat
+Select Technical Support on Support Type
+    Click Products and Sales Radio on Chat

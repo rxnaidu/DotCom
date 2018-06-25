@@ -17,7 +17,7 @@ Chat Validations
 
     Select Residential on Customer Type
 
-    Select Repair on Support Type
+    Select Technical Support on Support Type
 
     Select Voice on Service Type
 

@@ -15,14 +15,13 @@ ${POPUP_UNLINK}  xpath=//button[text()='Unlink']
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}
 
 Select the Sign In link
     Sign In link
 
 Enter User name and Password and Select Sign In button
-    User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
+    User Sign In from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
     sleep  20s
@@ -31,7 +30,7 @@ Select close on auto payment popup
 Verify 17 digit Account Number displayed on Account Summary page
     accountSummary.Verify page elements
 
-    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+    ${Expected_Account_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
     page should contain  ${Expected_Account_Num}
 
 Select My Profile from the 2nd Tier Nav Tab
@@ -58,7 +57,7 @@ Click Unlink for an account number
     sleep  6s
     scroll_down_page_half
 
-    ${Remove_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${UNLINK_ACT_NUM}
+    ${Remove_Acct_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${UNLINK_ACT_NUM}
     ${hh_Remove_Acct_Num}  set variable  '${Remove_Acct_Num}'
     ${hh_ACCT_NUM_UNLINK}  set variable  xpath=//*[contains(text(), ${hh_Remove_Acct_Num})]//following-sibling::td[4]/a
 

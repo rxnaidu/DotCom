@@ -3,7 +3,8 @@ Library  Selenium2Library  60
 Resource  ../../../../Resources/KW/HomePage/Chat/SMC/04_CC_.COM_NSS_Res_Chat_SMC_DisplayofNewSocialMediaChatLandingPage_KW.robot
 Resource  ../../../../Resources/PO/Common.robot
 
-Test Teardown  Common.End Web Test
+Test Setup  Begin Web Test Chat SMC
+Test Teardown  End Web Test
 
 *** Test Cases ***
 

@@ -12,15 +12,14 @@ ${TESTCASE_NO}  TC03
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}
 
 Select the Sign In link
     Sign In link
 
 Enter User name and Password and Select Sign In button
-    ${Username_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${USERNAME_INP}
-    ${Password_Inp}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PASSWORD_INP}
+    ${Username_Inp}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}   ${TESTCASE_NO}  ${USERNAME_INP}
+    ${Password_Inp}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}   ${TESTCASE_NO}  ${PASSWORD_INP}
 
     User Sign In  ${Username_Inp}  ${Password_Inp}
 

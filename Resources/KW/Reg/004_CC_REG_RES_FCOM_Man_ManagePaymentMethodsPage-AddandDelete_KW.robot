@@ -28,14 +28,13 @@ ${YES_PLEASE_DELETE_BTN}  xpath=//button[text()='Yes, Please Delete ']
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}
 
 Select the Sign In link
     Sign In link
 
 Enter User name and Password and Select Sign In button
-    User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
+    User Sign In from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
     Close Auto Pay popup for Ecom
@@ -43,7 +42,7 @@ Select close on auto payment popup
 Verify 17 digit Account Number displayed on Account Summary page
     accountSummary.Verify page elements
 
-    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+    ${Expected_Account_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
     page should contain  ${Expected_Account_Num}
 
 Mouse over on My My Payments Tab and verify displayed options
@@ -68,12 +67,12 @@ Mouse over on My My Payments Tab and select Manage Payment Methods option
 Validate Account number under Manage Payment Methods description
     page should contain  Add or manage the payment methods associated with your account below. You can make changes to saved payment methods or add a new credit card or checking account.
 
-    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+    ${Expected_Account_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
     page should contain  ${Expected_Account_Num}
 
 Verify displayed button text under Account number
 
-    ${Expected_Name_Button_Text}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${NAME_BUTTON_TEXT}
+    ${Expected_Name_Button_Text}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${NAME_BUTTON_TEXT}
 
     element should contain  ${ADD_PAYMENT_METHOD_BTN}   ${Expected_Name_Button_Text}
 
@@ -104,9 +103,9 @@ User is able to enter account details on displayed text fields
     page should contain  Select the type of payment method you'd like to add
     page should contain  Enter your checking account information below
 
-    ${Routing_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ROUTING_NUMBER}
-    ${Bank_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BANK_ACCOUNT_NUMBER}
-    ${Re_Enter_Bank_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${RE_ENTER_BANK_ACCOUNT_NUMBER}
+    ${Routing_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ROUTING_NUMBER}
+    ${Bank_Acct_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BANK_ACCOUNT_NUMBER}
+    ${Re_Enter_Bank_Acct_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${RE_ENTER_BANK_ACCOUNT_NUMBER}
 
     select frame  id=iframe
     wait until element is enabled  id=routingNumber

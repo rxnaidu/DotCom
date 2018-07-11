@@ -24,14 +24,13 @@ ${PAYMENT_METHOD_DROPDOWN}  xpath=//select[@ng-model="paymentMethod"]
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}
 
 Select the Sign In link
     Sign In link
 
 Enter User name and Password and Select Sign In button
-    User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
+    User Sign In from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
     Close Auto Pay popup
@@ -39,7 +38,7 @@ Select close on auto payment popup
 Verify 17 digit Account Number displayed on Account Summary page
     accountSummary.Verify page elements
 
-    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+    ${Expected_Account_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
     page should contain  ${Expected_Account_Num}
 
 Verify Sign Up for Auto Pay option is present
@@ -85,7 +84,7 @@ Validate the display of the Account Field Sign Up for Auto Pay screen
     page should contain  My Payments
     page should contain  Sign up for Auto Pay
 
-    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+    ${Expected_Account_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
     page should contain  ${Expected_Account_Num}
 
 Validate the system defaults to "Choose a payment method"

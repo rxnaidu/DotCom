@@ -5,6 +5,7 @@ Library  Selenium2Library  30
 Resource  ../../../Resources/KW/HomePage/TabSelections/011_CC_.COM_ENGLISH_NSS_Res_TS_MyAccount_MyFrontierMobileApp_KW.robot
 Resource  ../../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

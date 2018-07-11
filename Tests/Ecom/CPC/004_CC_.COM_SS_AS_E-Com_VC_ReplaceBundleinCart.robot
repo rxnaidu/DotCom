@@ -4,6 +4,7 @@ Library  Selenium2Library  90
 Resource  ../../../Resources/KW/Ecom/CPC/004_CC_.COM_SS_AS_E-Com_VC_ReplaceBundleinCart_KW.robot
 Resource  ../../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

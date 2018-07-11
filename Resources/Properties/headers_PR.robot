@@ -9,10 +9,10 @@
 #====================================================================================================================#
 #------Do not Touch---------Configuration keywords for accessing Excel sheet Test Data-----------
 #====================================================================================================================#
-${RES_EXCEL_PATH}  ${SPACE}
+#${RES_EXCEL_PATH}  ${SPACE}
 ${SHEET_NAME}  Headers
 ${BROWSER_NAME}  Browser
-${DOTCOM_URL}  DotCom_Url
+#${DOTCOM_URL}  DotCom_Url
 ${DOTCOM_URL_PASSWORD}  DotCom_Url_Password
 
 ${ZIP_CODE_NUM1}  Zipcode1

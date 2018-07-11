@@ -11,8 +11,7 @@ ${REMOVED_SPACES}  None
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    set window size  1024  768
+    Launch SMS URL  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}
 
 Validate the display of the URL Generator
     wait until page contains  Social Media Chat Link Generator

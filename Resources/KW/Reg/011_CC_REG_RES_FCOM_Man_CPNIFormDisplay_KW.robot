@@ -9,14 +9,10 @@ ${TESTCASE_NO}  TC08
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}
     wait until page contains  Shop
     wait until page contains  My Account
-
-    ${URL_EXCEL_AGAIN}   read_excel_data_by_cell_name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${DOTCOM_URL}
-
-    go to  ${URL_EXCEL_AGAIN}
+    go to  ${URL}
 
 Verify CPNI page details
     wait until page contains  Frontier CPNI

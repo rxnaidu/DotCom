@@ -4,7 +4,8 @@ Library  Selenium2Library  60
 Resource  ../../Resources/KW/Reg/005_CC_REG_RES_FCOM_Man_SignUpForAutoPayWithExistPaymentMethod-WithoutDefaultPaymentMethod_KW.robot
 Resource  ../../Resources/PO/Common.robot
 
-#Test Teardown  Common.End Web Test
+Test Setup  Begin Web Test
+Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 

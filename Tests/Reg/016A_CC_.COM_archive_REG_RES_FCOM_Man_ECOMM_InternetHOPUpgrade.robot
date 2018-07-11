@@ -4,6 +4,7 @@ Library  Selenium2Library  90
 Resource  ../../Resources/KW/Reg/016_CC_.COM_archive_REG_RES_FCOM_Man_ECOMM_InternetHOPUpgrade_KW.robot
 Resource  ../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

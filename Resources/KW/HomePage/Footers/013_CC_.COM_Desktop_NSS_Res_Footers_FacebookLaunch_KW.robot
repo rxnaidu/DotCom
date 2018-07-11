@@ -12,8 +12,7 @@ ${FACEBOOK_TAB_TITLE}  Frontier Communications - Home | Facebook
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    common.Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}
 
 Navigate to bottom of the Footer home page and click: Facebook
     Select Facebook option from Footer

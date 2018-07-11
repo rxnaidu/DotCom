@@ -4,7 +4,8 @@ Library  Selenium2Library  90
 Resource  ../../../Resources/KW/Ecom/CPC/008_CC_.COM_SS_AS_E-Com_VC_AddChannelPackage_KW.robot
 Resource  ../../../Resources/PO/Common.robot
 
-#Test Teardown  Common.End Web Test
+Test Setup  Begin Web Test
+Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 

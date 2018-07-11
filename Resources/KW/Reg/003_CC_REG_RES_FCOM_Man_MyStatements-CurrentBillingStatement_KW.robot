@@ -11,14 +11,13 @@ ${TESTCASE_NO}  TC02
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}
 
 Select the Sign In link
     Sign In link
 
 Enter User name and Password and Select Sign In button
-    User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
+    User Sign In from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
     Verify page elements
@@ -28,7 +27,7 @@ Select Account from drop down on Account Summary Page
     Select Account Number
 
 Verify 17 digit Account Number displayed on Account Summary page
-    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+    ${Expected_Account_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
     sleep  2s
     page should contain  ${Expected_Account_Num}
 
@@ -48,19 +47,19 @@ Validate Current Bill Page
 
     page should contain  Here is a detailed view of your current Frontier bill. Click the plus sign (+) to expand each section and reveal line item charges.
 
-    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+    ${Expected_Account_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
     page should contain  ${Expected_Account_Num}
 
 Validate Billing Date is displayed
     page should contain  Billing Date
 
-    ${Billing_Date}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BILLING_DATE}
+    ${Billing_Date}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BILLING_DATE}
     page should contain  ${Billing_Date}
 
 Validate Current Bill dates
     page should contain  Current Bill
 
-    ${Current_Bill_Dates}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${CURRENT_BILL_DATE}
+    ${Current_Bill_Dates}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${CURRENT_BILL_DATE}
     page should contain  ${Current_Bill_Dates}
 
 #Select + to expand Frontier Monthly Service Charges
@@ -85,19 +84,19 @@ Select + to expand Taxas and other services
 Validate current charges
     page should contain  Current Balance
 
-    ${Current_Balance}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${CURRENT_BALANCE}
+    ${Current_Balance}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${CURRENT_BALANCE}
     page should contain  ${Current_Balance}
 
 Validate Total Bill Amount
     page should contain  Total Bill Amount
 
-    ${Total_Bill_Amount}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${TOTAL_BILL_AMOUNT}
+    ${Total_Bill_Amount}  read excel data by cell name  ${EXCEL_LOC} ${SHEET_NAME}  ${TESTCASE_NO}  ${TOTAL_BILL_AMOUNT}
     page should contain  ${Total_Bill_Amount}
 
 Validate New Charges Due Date
     page should contain  New Charges Due Date
 
-    ${New_Charges_Due Date}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${NEW_CHARGES_DUE_DATE}
+    ${New_Charges_Due Date}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${NEW_CHARGES_DUE_DATE}
     page should contain  ${New_Charges_Due Date}
 
 #Validate Pay Bill button

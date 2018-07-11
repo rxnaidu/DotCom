@@ -4,6 +4,7 @@ Library  Selenium2Library  60
 Resource  ../../Resources/KW/Reg/004_CC_REG_RES_FCOM_Man_ManagePaymentMethodsPage-AddandDelete_KW.robot
 Resource  ../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

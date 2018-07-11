@@ -3,6 +3,7 @@ Library  Selenium2Library  60
 Resource  ../../../../../Resources/KW/HomePage/Shop/Internet/Leader/001_CC_.COM_NSS_Res_Shop_NET_Leader_GeneralZips-InternetProductPage_KW.robot
 Resource  ../../../../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

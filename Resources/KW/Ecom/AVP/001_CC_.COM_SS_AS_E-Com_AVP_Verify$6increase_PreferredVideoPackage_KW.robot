@@ -1,7 +1,6 @@
 *** Settings ***
 Library  Selenium2Library  60
 Resource  ../../../PO/Common.robot
-Resource  ../../../PO/LoginPage.robot
 Resource  ../../../PO/HomePage.robot
 Resource  ../../../PO/AccountSummary.robot
 Resource  ../../../PO/EcomAddPackage.robot
@@ -14,14 +13,13 @@ ${ORD_ID_DATA}  1
 
 *** Keywords ***
 User launch Ftr.com application using URL
-    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}
 
 Select the Sign In link
     Sign In link
 
 Enter User name and Password and Select Sign In button
-    User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
+    User Sign In from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Verify Video Add Shop option is displayed under Account Summary
     Verify Add Video page elements

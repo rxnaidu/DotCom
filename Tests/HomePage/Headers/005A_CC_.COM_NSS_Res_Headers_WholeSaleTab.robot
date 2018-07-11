@@ -4,6 +4,7 @@ Library  Selenium2Library  30
 Resource  ../../../Resources/KW/HomePage/Headers/05_WholeSaleTab_KW.robot
 Resource  ../../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

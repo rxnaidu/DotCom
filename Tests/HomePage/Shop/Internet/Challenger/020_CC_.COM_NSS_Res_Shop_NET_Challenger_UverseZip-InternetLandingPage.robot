@@ -2,6 +2,7 @@
 Library  Selenium2Library  60
 Resource  ../../../../../Resources/KW/HomePage/Shop/Internet/Challenger/020_CC_.COM_NSS_Res_Shop_NET_Challenger_UverseZip-InternetLandingPage_KW.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

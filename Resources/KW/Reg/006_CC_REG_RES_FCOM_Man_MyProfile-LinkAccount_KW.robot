@@ -29,14 +29,13 @@ ${FTR_BLG_ACT_PIN_INP}  xpath=//input[@id='link-account-id']
 ${LINK_CONTINUE}  xpath=//span[text()='Continue']
 *** Keywords ***
 User launch Ftr.com application using URL
-    Begin Web Test from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}  ${DOTCOM_URL}
-    loginPage.Load from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${DOTCOM_URL_PASSWORD}
+    Begin Web Test from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${BROWSER_NAME}
 
 Select the Sign In link
     Sign In link
 
 Enter User name and Password and Select Sign In button
-    User Sign In from Excel  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
+    User Sign In from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
     sleep  20s
@@ -45,7 +44,7 @@ Select close on auto payment popup
 Verify 17 digit Account Number displayed on Account Summary page
     accountSummary.Verify page elements
 
-    ${Expected_Account_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+    ${Expected_Account_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
     page should contain  ${Expected_Account_Num}
 
 Select My Profile from the 2nd Tier Nav Tab
@@ -85,7 +84,7 @@ Select Billing Account Number option and enter account number
     sleep  4s
     click element  ${BILLING_ACCT_NUM}
     sleep  2s
-    ${Enter_Your_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${LINK_BILLING_ACT_NUM}
+    ${Enter_Your_Acct_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${LINK_BILLING_ACT_NUM}
     input text  ${BILLING_ACCT_NUM_TEXT}  ${Enter_Your_Acct_Num}
 
     click element  ${LINK_CONTINUE}
@@ -100,7 +99,7 @@ Select Frontier Billing Account PIN and continue
 
     Scroll Page To Locator View  xpath=//span[text()='Frontier Billing Account PIN']
 
-    ${Enter_Your_Acct_Num}  read excel data by cell name  ${RES_EXCEL_PATH}  ${SHEET_NAME}  ${TESTCASE_NO}  ${LINK_BILLING_ACT_PIN}
+    ${Enter_Your_Acct_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${LINK_BILLING_ACT_PIN}
     input text  ${FTR_BLG_ACT_PIN_INP}  ${Enter_Your_Acct_Num}
     click element  ${LINK_CONTINUE}
     wait until page contains  Your Frontier ID has been linked to this Account

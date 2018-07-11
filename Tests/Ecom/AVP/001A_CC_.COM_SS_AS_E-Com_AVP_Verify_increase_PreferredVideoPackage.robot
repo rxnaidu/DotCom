@@ -4,6 +4,7 @@ Library  Selenium2Library  90
 Resource  ../../../Resources/KW/Ecom/AVP/001_CC_.COM_SS_AS_E-Com_AVP_Verify$6increase_PreferredVideoPackage_KW.robot
 Resource  ../../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

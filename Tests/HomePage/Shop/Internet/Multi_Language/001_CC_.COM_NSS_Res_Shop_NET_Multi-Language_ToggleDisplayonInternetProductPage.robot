@@ -3,7 +3,8 @@ Library  Selenium2Library  30
 Resource  ../../../../../Resources/KW/HomePage/Shop/Internet/Multi_Language/001_CC_.COM_NSS_Res_Shop_NET_Multi-Language_ToggleDisplayonInternetProductPage_KW.robot
 Resource  ../../../../../Resources/PO/Common.robot
 
-#Test Teardown  Common.End Web Test
+Test Setup  Begin Web Test
+Test Teardown  Common.End Web Test
 
 *** Test Cases ***
 Internet Multi_Language

@@ -3,6 +3,7 @@ Library  Selenium2Library  30
 Resource  ../../../Resources/KW/HomePage/MultiLang/009_CC_.COM_NSS_Res_ML_SiteWideTranslationNavigation_KW.robot
 Resource  ../../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

@@ -5,6 +5,7 @@ Library  Selenium2Library  30
 Resource  ../../../Resources/KW/HomePage/Footers/004_CC_.COM_Desktop_NSS_Res_Footers_Corporate_KW.robot
 Resource  ../../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

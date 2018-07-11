@@ -4,6 +4,7 @@ Library  Selenium2Library  60
 Resource  ../../Resources/KW/REG/011_CC_REG_RES_FCOM_Man_CPNIFormDisplay_KW.robot
 Resource  ../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test CPNI
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

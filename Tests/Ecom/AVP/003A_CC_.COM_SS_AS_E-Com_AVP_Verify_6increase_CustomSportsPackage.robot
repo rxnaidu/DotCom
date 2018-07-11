@@ -1,9 +1,9 @@
 *** Settings ***
 Library  Selenium2Library  90
-
 Resource  ../../../Resources/KW/Ecom/AVP/003_CC_.COM_SS_AS_E-Com_AVP_Verify$6increase_CustomSportsPackage_KW.robot
 Resource  ../../../Resources/PO/Common.robot
 
+Test Setup  Begin Web Test
 Test Teardown  Common.End Web Test
 
 *** Test Cases ***

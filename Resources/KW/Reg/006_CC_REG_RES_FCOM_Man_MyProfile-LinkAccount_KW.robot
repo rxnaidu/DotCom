@@ -39,6 +39,7 @@ Enter User name and Password and Select Sign In button
 
 Select close on auto payment popup
     sleep  20s
+    Close Upgrade Now Popup
     Close Auto Pay popup
 
 Verify 17 digit Account Number displayed on Account Summary page

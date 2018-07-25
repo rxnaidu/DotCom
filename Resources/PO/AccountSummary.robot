@@ -68,6 +68,10 @@ Close Auto Pay popup
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}
     sleep  2s
 
+Close Upgrade Now Popup
+    wait until element is enabled  css=.boltupgx>span  5
+    click element  css=.boltupgx>span
+
 Close Auto Pay popup for Ecom
     run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  3m
     sleep  2s

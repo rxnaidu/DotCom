@@ -4,7 +4,7 @@ Resource  ../../Resources/KW/Reg/002_CC_REG_RES_FCOM_Man_SignIn_ExistingFrontier
 Resource  ../../Resources/PO/Common.robot
 
 Test Setup  Begin Web Test
-Test Teardown  Common.End Web Test
+Test Teardown  End Web Test
 
 *** Test Cases ***
 
@@ -12,8 +12,8 @@ Test Teardown  Common.End Web Test
 
     User launch Ftr.com application using URL
 
-#    Select the Sign In link
-#
-#    Enter User name and Password and Select Sign In button
-#
-#    Verify user launches into Self Service Portal successfully
+    Select the Sign In link
+
+    Enter User name and Password and Select Sign In button
+
+    Verify user launches into Self Service Portal successfully

@@ -43,7 +43,7 @@ Chat Validations
 
     Navigate to the other pages on the site: Support
 
-    Navigate to Help Center and verify Floating Chat is displayed
+#    Navigate to Help Center and verify Floating Chat is displayed
 
     Navigate to Support Wizard and verify Floating Chat is displayed
 

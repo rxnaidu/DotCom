@@ -73,6 +73,7 @@ Close Upgrade Now Popup
     click element  css=.boltupgx>span
 
 Close Auto Pay popup for Ecom
+    Close New Popups
     run keyword and ignore error  wait until element is enabled  ${AUTOPAY_POPUP}  3m
     sleep  2s
     run keyword and ignore error  click element  ${AUTOPAY_POPUP}
@@ -84,3 +85,8 @@ Close Upgrade popup
     run keyword and ignore error  click element  ${UPGRADE_POPUP}
     sleep  2s
 
+Close New Popups
+    run keyword and ignore error  wait until element is enabled  css=.boltoncontainer>a:nth-of-type(1)  10s
+    run keyword and ignore error  click element  css=.boltoncontainer>a:nth-of-type(1)
+    run keyword and ignore error  wait until element is enabled  css=#kplDeferButton  10s
+    run keyword and ignore error  click element  css=#kplDeferButton

@@ -32,20 +32,17 @@ Select the More Contacts & Languages Tab
     click element  xpath=//div[@id='morecontacts-tab']/a
     sleep  2s
 Select Residential from the Customer Type field
-    wait until element is enabled  xpath=//div[@id='collapseOne-morecontacts']//input[@value="Residential"]/following-sibling::label[1]
-    click element  xpath=//div[@id='collapseOne-morecontacts']//input[@value="Residential"]/following-sibling::label[1]
+    wait until element is enabled  css=#collapseOne-morecontacts [value="Residential"]+label span
+    click element  css=#collapseOne-morecontacts [value="Residential"]+label span
     sleep  2s
 Select Internet from the Service Type field (or any other Service Type)
-    wait until element is enabled  xpath=//div[@id='collapseTwo-morecontacts']//input[@value="Internet"]/following-sibling::label[1]
-    click element  xpath=//div[@id='collapseTwo-morecontacts']//input[@value="Internet"]/following-sibling::label[1]
+    wait until element is enabled  css=#collapseTwo-morecontacts [value="Internet"]+label span
+    click element  css=#collapseTwo-morecontacts [value="Internet"]+label span
     sleep  2s
 Select Frontier FIOS from the Product Type field (or any other Product Type)
-    wait until element is enabled  xpath=//div[@id='collapseThree-morecontacts']//input[@value="Frontier-FiOS"]/following-sibling::label[1]
-    click element  xpath=//div[@id='collapseThree-morecontacts']//input[@value="Frontier-FiOS"]/following-sibling::label[1]
+    wait until element is enabled  css=#collapseThree-morecontacts [value="Frontier-FiOS"]+label span
+    click element  css=#collapseThree-morecontacts [value="Frontier-FiOS"]+label span
     sleep  2s
-Select Repair from the Help Type field
-    wait until element is enabled  xpath=//div[@id='collapseFour-morecontacts']//input[@value="Repair"]/following-sibling::label[1]
-    click element  xpath=//div[@id='collapseFour-morecontacts']//input[@value="Repair"]/following-sibling::label[1]
-    sleep  2s
+
 Select the floating Chat ICON
     Click Chat

@@ -34,8 +34,8 @@ Click Residential Radio on Chat
 
 Validate Residential Radio on Chat
     wait until element is enabled  ${CHAT_RESIDENTIAL_RADIO}
-    #${CUST_TYPE_RESI}  get text  ${CHAT_RESIDENTIAL_RADIO}
-    ${CUST_TYPE_RESI}  get value  ${CHAT_RESIDENTIAL_RADIO}
+    ${CUST_TYPE_RESI}  get text  ${CHAT_RESIDENTIAL_RADIO}
+#    ${CUST_TYPE_RESI}  get value  ${CHAT_RESIDENTIAL_RADIO}
     should be equal  ${CUST_TYPE_RESI}  Residential
 
 Click Business Radio on Chat

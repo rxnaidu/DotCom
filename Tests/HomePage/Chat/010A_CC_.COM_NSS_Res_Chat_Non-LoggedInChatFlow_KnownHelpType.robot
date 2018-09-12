@@ -26,8 +26,6 @@ Chat Validations
 
     Select Frontier FIOS from the Product Type field (or any other Product Type)
 
-    Select Repair from the Help Type field
-
     Select the floating Chat ICON
 
 

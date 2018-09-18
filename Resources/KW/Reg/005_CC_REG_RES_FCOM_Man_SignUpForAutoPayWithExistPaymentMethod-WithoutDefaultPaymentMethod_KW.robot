@@ -189,7 +189,7 @@ Cancel Auto Pay option
     click link  link=Cancel Auto Pay
     wait until element is enabled  css=.modal-dialog .modal-footer .btn-default
     sleep  2s
-    click link  css=.modal-dialog .modal-footer .btn-default
+    click element  css=.modal-dialog .modal-footer .btn-default
     wait until page contains  Auto Pay payments have been cancelled
     sleep  2s
 

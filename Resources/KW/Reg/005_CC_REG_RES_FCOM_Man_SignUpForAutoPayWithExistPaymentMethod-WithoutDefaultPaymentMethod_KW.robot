@@ -187,9 +187,9 @@ Cancel Auto Pay option
     sleep  6s
     SCROLL_DOWN_PAGE_HALF
     click link  link=Cancel Auto Pay
-    wait until element is enabled  link=Yes, Please Cancel
+    wait until element is enabled  css=.modal-dialog .modal-footer .btn-default
     sleep  2s
-    click link  link=Yes, Please Cancel
+    click link  css=.modal-dialog .modal-footer .btn-default
     wait until page contains  Auto Pay payments have been cancelled
     sleep  2s
 

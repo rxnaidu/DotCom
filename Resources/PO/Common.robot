@@ -19,9 +19,9 @@ ${DOTCOM_TEST01_URL}  https://qat01.frontier.com/
 ${DOTCOM_TEST02_URL}  https://qat02.frontier.com/
 ${DOTCOM_TEST03_URL}  https://qat03.frontier.com/
 
-${DOTCOM_TEST01_EXCEL}  C:/Development/Robot/DotCom/Resources/TestData/qat01.xlsx
-${DOTCOM_TEST02_EXCEL}  C:/Development/Robot/DotCom/Resources/TestData/qat02.xlsx
-${DOTCOM_TEST03_EXCEL}  C:/Development/Robot/DotCom/Resources/TestData/qat03.xlsx
+${DOTCOM_TEST01_EXCEL}  C:/Development/Robot/DotCom/TestData/qat01.xlsx
+${DOTCOM_TEST02_EXCEL}  C:/Development/Robot/DotCom/TestData/qat02.xlsx
+${DOTCOM_TEST03_EXCEL}  C:/Development/Robot/DotCom/TestData/qat03.xlsx
 
 
 ${DOTCOM_CPNI_TEST01_URL}  https://qat01.frontier.com/resources/cpni

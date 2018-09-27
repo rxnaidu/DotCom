@@ -8,8 +8,8 @@ Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***
 ${TESTCASE_NO}  TC14
-#${LINKEDIN_TAB_TITLE}  LinkedIn: Log In or Sign Up
-${LINKEDIN_TAB_TITLE}  Frontier Communications | LinkedIn
+${LINKEDIN_TAB_TITLE}  LinkedIn: Log In or Sign Up
+#${LINKEDIN_TAB_TITLE}  Frontier Communications | LinkedIn
 
 *** Keywords ***
 User launch Ftr.com application using URL
@@ -25,4 +25,4 @@ Move to LinkedIn window Tab
 
 Verify URL changes to LinkedIn Page
     wait until page contains  LinkedIn
-    page should contain  Sign In
+    page should contain  Sign

@@ -87,7 +87,7 @@ Close Upgrade popup
     sleep  2s
 
 Close New Popups
-    run keyword and ignore error  wait until element is enabled  css=.boltoncontainer>a:nth-of-type(1)  10s
-    run keyword and ignore error  click element  css=.boltoncontainer>a:nth-of-type(1)
-    run keyword and ignore error  wait until element is enabled  css=#kplDeferButton  10s
-    run keyword and ignore error  click element  css=#kplDeferButton
+    run keyword and ignore error  wait until element is enabled  css=.boltoncontainer .boltupgx  10s
+    run keyword and ignore error  click element  css=.boltoncontainer .boltupgx
+#    run keyword and ignore error  wait until element is enabled  css=#kplDeferButton  10s
+#    run keyword and ignore error  click element  css=#kplDeferButton

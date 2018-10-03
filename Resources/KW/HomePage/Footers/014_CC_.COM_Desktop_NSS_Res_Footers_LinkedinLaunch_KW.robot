@@ -8,7 +8,7 @@ Resource  ../../../Properties/footers_PR.robot
 
 *** Variables ***
 ${TESTCASE_NO}  TC14
-${LINKEDIN_TAB_TITLE}  LinkedIn: Log In or Sign Up
+#${LINKEDIN_TAB_TITLE}  LinkedIn: Log In or Sign Up
 #${LINKEDIN_TAB_TITLE}  Frontier Communications | LinkedIn
 
 *** Keywords ***
@@ -21,7 +21,10 @@ Navigate to bottom of the Footer home page and click: LinkedIn
 Move to LinkedIn window Tab
     sleep  6s
     @{titles}  get window titles
-    select window  ${LINKEDIN_TAB_TITLE}
+    @{window_names}  get window names
+#    select window  ${LINKEDIN_TAB_TITLE}
+    log  @{titles}[1]
+    select window  @{titles}[1]
 
 Verify URL changes to LinkedIn Page
     wait until page contains  LinkedIn

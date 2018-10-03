@@ -12,8 +12,8 @@ ${SCREEN_HIGHT}  768
 
 ${URL}  ${SPACE}
 ${EXCEL_LOC}  ${SPACE}
-#${ENV}  ${SPACE}
-${ENV}  Test03
+${ENV}  ${SPACE}
+#${ENV}  Test03
 
 ${DOTCOM_TEST01_URL}  https://qat01.frontier.com/
 ${DOTCOM_TEST02_URL}  https://qat02.frontier.com/

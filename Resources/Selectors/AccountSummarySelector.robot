@@ -2,7 +2,7 @@
 Library  Selenium2Library  60
 
 *** Variables ***
-${AUTOPAY_POPUP}  id=btnClose
+${AUTOPAY_POPUP}  css=.modal-bg-cyan .modal-dialog .boltoncontainer a:nth-child(1)
 ${INTERNET}  xpath=//h5[text()='Internet']
 ${PHONE}  xpath=//h5[text()='Phone']
 ${VIDEO}  xpath=//h5[text()='Video']

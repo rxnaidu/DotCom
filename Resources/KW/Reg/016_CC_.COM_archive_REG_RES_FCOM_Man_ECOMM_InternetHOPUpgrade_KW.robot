@@ -28,9 +28,7 @@ Verify user launches into Self Service Portal successfully
     Validate Internet Upgrade button
 
 Select close on auto payment popup
-    Verify page elements
-    Close Auto Pay popup
-    Close Upgrade popup
+    Close Auto Pay popup for Ecom
 
 Click on Upgrade button for Internet
     Click Internet Upgrade Button

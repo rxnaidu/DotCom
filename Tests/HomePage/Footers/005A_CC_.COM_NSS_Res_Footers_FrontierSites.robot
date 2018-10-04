@@ -13,29 +13,11 @@ Test Teardown  Common.End Web Test
 
     User launch Ftr.com application using URL
 
-    Navigate to bottom of the Footer home page and click: Frontier Sites > Get Vantage
+    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business
 
-    Verify URL changes to Get Vantage Page
+    Verify URL changes to Frontier Business Page
 
     Go back to Home Page
-
-#    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Secure
-#
-#    Verify URL changes to Frontier Secure Page
-#
-#    Go back to Home Page
-
-#    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business
-#
-#    Verify URL changes to Frontier Business Page
-#
-#    Go back to Home Page
-
-#    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Games
-#
-#    Verify URL changes to Frontier Games Page
-#
-#    Go back to Home Page
 
     Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier WI-FI
 
@@ -55,14 +37,11 @@ Test Teardown  Common.End Web Test
 
     Go back to Home Page
 
-#    Navigate to bottom of the Footer home page and click: Frontier Sites > Referral Program
-#
-#    Verify URL changes to Referral Program Page
-#
-#    Go back to Home Page
+    Navigate to bottom of the Footer home page and click: Frontier Sites > Online Phone Directories
 
-#    Navigate to bottom of the Footer home page and click: Frontier Sites > Frontier Business Partner
-#
-#    Verify URL changes to Frontier Business Partner Page
+    Verify URL changes to Online Phone Directories Page
+
+    Go back to Home Page
+
 
 

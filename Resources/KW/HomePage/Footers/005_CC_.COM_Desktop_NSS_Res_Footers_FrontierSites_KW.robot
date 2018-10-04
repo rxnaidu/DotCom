@@ -76,6 +76,13 @@ Verify URL changes to Frontier Yahoo Portal Page
 #    ${EXPECTED_URL}  read excel data by cell name   ${RES_EXCEL_PATH}  ${SHEET_NAME}   ${TESTCASE_NO}  ${FRONTIER_YAHOO_PORTAL_URL}
 #    Verify currnt URL  ${EXPECTED_URL}
 
+Navigate to bottom of the Footer home page and click: Frontier Sites > Online Phone Directories
+    Select Online Phone Directories option from Footer
+
+Verify URL changes to Online Phone Directories Page
+    wait until page contains  Frontier
+    page should contain  Frontier
+
 Navigate to bottom of the Footer home page and click: Frontier Sites > Referral Program
     Select Referral Program option from Footer
 

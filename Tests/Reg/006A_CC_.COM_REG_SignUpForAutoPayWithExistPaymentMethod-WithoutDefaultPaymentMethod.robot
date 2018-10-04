@@ -19,19 +19,7 @@ Test Teardown  Common.End Web Test
 
     Select close on auto payment popup
 
-#    Verify 17 digit Account Number displayed on Account Summary page
-
-#    Mouse over on My Payments Tab and verify displayed options
-
     Verify Sign Up for Auto Pay option is present
-
-#    Cancel Auto Pay from My Payments Tab
-
-#    Mouse over on My Payments Tab and select Sign up for Auto Pay option
-
-#    Validate the display of the Account Field Sign Up for Auto Pay screen
-
-#    Validate the system defaults to "Choose a payment method"  #--Not displaying on the screen now.
 
     Validate can select a saved payment method from the drop down menu
 
@@ -55,11 +43,7 @@ Test Teardown  Common.End Web Test
 
     Validate page elements on Confirmation screen
 
-#    Validate in the side tool bar a link that says Manage Auto Pay and when clicked user is navigated to the Manage Auto Pay screen
-#
-#    # Removing added Auto Payment method for re-executing this test case next time.
-#
-#    Cancel Auto Pay option
+
 
 
 

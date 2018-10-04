@@ -17,14 +17,16 @@ ${CREDIT_CARD_RADIO}  id=fundingAccountTypeCreditCard
 ${ROUTING_NUMBER_INP}  id=routingNumber
 ${BANK_ACCOUNT_NUMBER_INP}  id=fundingAccountNumber
 ${RE_ENTER_BANK_ACCOUNT_NUMBER_INP}  id=fundingAccountNumberRetype
-${CHECK_IMG}  xpath=//div[@id='routingNumberHelp']/img
+${CHECK_IMG}  css=#ttImage
 ${CONTINUE_BTN}  id=btnAchAddVerifySubmit
 ${CANCEL_BTN}  xpath=//a[@id="btnAchAddVerifySubmit"]/following-sibling::a[1]
 ${SAVE_PAYMENT_METHOD_BTN}  xpath=//span[text()='Save Payment Method']
 ${DELETE_TRASH_BTN}  xpath=//div[@id='manage-payment']//div[@class="panel-group"]/div[1]//h4/a/i/small
 #//span[contains(text(),'account ending in 0002')]/../i
 ${DO_NOT_DELETE_BTN}  xpath=//button[text()='No, Do Not Delete']
-${YES_PLEASE_DELETE_BTN}  xpath=//button[text()='Yes, Please Delete ']
+${YES_PLEASE_DELETE_BTN}  css=[ng-click='$close()']
+${TOOLIP_ROUTING_NUMBER}  css=#achAddVerify > div:nth-child(15) > div.span4.text-alignment.nowrap.form-field-alignment > a
+${TOOLTIP_BANK_ACCOUNT_NUMBER}  css=#achAddVerify > div:nth-child(16) > div.span4.text-alignment.nowrap.form-field-alignment > a
 
 *** Keywords ***
 User launch Ftr.com application using URL
@@ -37,7 +39,7 @@ Enter User name and Password and Select Sign In button
     User Sign In from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
-    Close Auto Pay popup for Ecom
+    Close Auto Pay popup
 
 Verify 17 digit Account Number displayed on Account Summary page
     accountSummary.Verify page elements
@@ -114,8 +116,17 @@ User is able to enter account details on displayed text fields
     input text  ${BANK_ACCOUNT_NUMBER_INP}  ${Bank_Acct_Num}
     input text  ${RE_ENTER_BANK_ACCOUNT_NUMBER_INP}  ${Re_Enter_Bank_Acct_Num}
 
-Verify check image is displayed on the screen
+Verify tooltip image for Routing Number and Bank Account Number
+    click element  ${TOOLIP_ROUTING_NUMBER}
+    sleep  2s
     page should contain image  ${CHECK_IMG}
+    click element  ${TOOLIP_ROUTING_NUMBER}
+    sleep  2s
+    click element  ${TOOLTIP_BANK_ACCOUNT_NUMBER}
+    sleep  2s
+    page should contain image  ${CHECK_IMG}
+    click element  ${TOOLTIP_BANK_ACCOUNT_NUMBER}
+    sleep  2s
 
 Verify Continue and Cancel buttons are displayed
     #Cancel button check
@@ -152,13 +163,11 @@ Verify Saved payment methods displayed details
 Click On the Trash can icon or the word Delete
     wait until element is visible  ${DELETE_TRASH_BTN}  90
     wait until element is enabled  ${DELETE_TRASH_BTN}
-    sleep  60s
     click element  ${DELETE_TRASH_BTN}
 
 Verify Delete Payment Method modal window options and click Delete option
     sleep  2s
     wait until page contains  Delete Payment Method
-    page should contain  Are you sure you wish to DELETE the payment method?
     wait until element is enabled  ${YES_PLEASE_DELETE_BTN}
     sleep  2s
     click element  ${YES_PLEASE_DELETE_BTN}

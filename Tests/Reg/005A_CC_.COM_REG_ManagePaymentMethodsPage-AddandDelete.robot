@@ -19,13 +19,7 @@ Test Teardown  Common.End Web Test
 
     Select close on auto payment popup
 
-#    Verify 17 digit Account Number displayed on Account Summary page
-
     Mouse over on My My Payments Tab and select Manage Payment Methods option
-
-#    Validate Account number under Manage Payment Methods description
-
-    Verify displayed button text under Account number
 
     Verify Saved Payment Methods section is displayed
 
@@ -35,7 +29,7 @@ Test Teardown  Common.End Web Test
 
     User is able to enter account details on displayed text fields
 
-    Verify check image is displayed on the screen
+    Verify tooltip image for Routing Number and Bank Account Number
 
     Verify Continue and Cancel buttons are displayed
 

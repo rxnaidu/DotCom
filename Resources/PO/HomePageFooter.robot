@@ -180,32 +180,43 @@ Select Frontier Secure option from Footer
 
 Select Frontier Business option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_BUSINESSEDGE}
+    Scroll Page To Locator View  ${FOOTER_FRONTIER_BUSINESSEDGE}
     click element  ${FOOTER_FRONTIER_BUSINESSEDGE}
 
 Select Frontier Games option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_GAMES}
+    Scroll Page To Locator View  ${FOOTER_FRONTIER_GAMES}
     click element  ${FOOTER_FRONTIER_GAMES}
 
 Select Frontier WI-FI option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_WIFI}
+    Scroll Page To Locator View  ${FOOTER_FRONTIER_WIFI}
     click element  ${FOOTER_FRONTIER_WIFI}
 
 Select Wholesale option from Footer
     wait until element is enabled  ${FOOTER_WHOLESALE}
+    Scroll Page To Locator View  ${FOOTER_WHOLESALE}
     click element  ${FOOTER_WHOLESALE}
 
 Select Frontier Yahoo Portal option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_YAHOO_PORTAL}
+    Scroll Page To Locator View  ${FOOTER_FRONTIER_YAHOO_PORTAL}
     click element  ${FOOTER_FRONTIER_YAHOO_PORTAL}
 
 Select Referral Program option from Footer
     wait until element is enabled  ${FOOTER_REFERRAL_PROGRAM}
+    Scroll Page To Locator View  ${FOOTER_REFERRAL_PROGRAM}
     click element  ${FOOTER_REFERRAL_PROGRAM}
 
 Select Frontier Business Partner option from Footer
     wait until element is enabled  ${FOOTER_FRONTIER_BUSINESS_PARTNER}
+    Scroll Page To Locator View  ${FOOTER_FRONTIER_BUSINESS_PARTNER}
     click element  ${FOOTER_FRONTIER_BUSINESS_PARTNER}
 
+Select Online Phone Directories option from Footer
+    wait until element is enabled  ${FOOTER_ONLINE_PHONE_DIRECTORIES}
+    Scroll Page To Locator View  ${FOOTER_ONLINE_PHONE_DIRECTORIES}
+    click element  ${FOOTER_ONLINE_PHONE_DIRECTORIES}
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #                                       Footer Sales Partners

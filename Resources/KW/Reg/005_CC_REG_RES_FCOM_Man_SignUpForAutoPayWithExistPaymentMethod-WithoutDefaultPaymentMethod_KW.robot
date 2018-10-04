@@ -35,11 +35,11 @@ Enter User name and Password and Select Sign In button
 Select close on auto payment popup
     Close Auto Pay popup
 
-Verify 17 digit Account Number displayed on Account Summary page
-    accountSummary.Verify page elements
-
-    ${Expected_Account_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
-    page should contain  ${Expected_Account_Num}
+#Verify 17 digit Account Number displayed on Account Summary page
+#    accountSummary.Verify page elements
+#
+#    ${Expected_Account_Num}  read excel data by cell name  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${ACT_NUM}
+#    page should contain  ${Expected_Account_Num}
 
 Verify Sign Up for Auto Pay option is present
     wait until element is enabled  ${MY_PAYMENTS_TAB}

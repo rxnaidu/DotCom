@@ -20,8 +20,7 @@ Enter User name and Password and Select Sign In button
     User Sign In from Excel  ${EXCEL_LOC}  ${SHEET_NAME}  ${TESTCASE_NO}  ${USERNAME_SIGNIN}  ${PASSWORD_SIGNIN}
 
 Select close on auto payment popup
-    Verify page elements
-    Close Auto Pay popup for Ecom
+    Close Auto Pay popup
 
 Select Account from drop down on Account Summary Page
     Select Account Number
